@@ -10,6 +10,8 @@ Runs via GitHub Actions on a schedule.
 """
 
 import requests
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import json
 import os
 import sys
@@ -112,6 +114,7 @@ def is_file(url):
 def fetch_all_pages():
     print("Phase 1: Fetching all published pages...")
     pages = []
+    users = {}  # Accumulate across all batches
     offset = 0
 
     while True:
@@ -119,7 +122,7 @@ def fetch_all_pages():
             f"{JSONAPI_URL}?filter[status]=1"
             f"&include=uid"
             f"&fields[node--multi_column_page]=body,title,path,drupal_internal__nid"
-            f"&fields[user--user]=mail,name"
+            f"&fields[user--user]=mail,name,display_name"
             f"&page[limit]={PAGE_LIMIT}&page[offset]={offset}"
         )
         try:
@@ -133,12 +136,13 @@ def fetch_all_pages():
         if not data.get("data"):
             break
 
-        # Build user lookup from included
-        users = {}
+        # Build user lookup from included (accumulates across batches)
         for inc in data.get("included", []):
-            if inc.get("type") == "user--user":
-                if inc.get("type") == "user--user" and "attributes" in inc:
-                    users[inc["id"]] = inc["attributes"].get("mail") or inc["attributes"].get("name") or ""
+            if inc.get("type") == "user--user" and "attributes" in inc:
+                attrs = inc["attributes"]
+                email = attrs.get("mail") or attrs.get("display_name") or attrs.get("name") or ""
+                if email:
+                    users[inc["id"]] = email
 
         for node in data["data"]:
             attrs = node["attributes"]
@@ -152,9 +156,15 @@ def fetch_all_pages():
             page_url = f"{BASE_URL}{alias}" if alias else f"{BASE_URL}/node/{nid}"
 
             # Get author from uid relationship
-            uid_data = node.get("relationships", {}).get("uid", {}).get("data", {})
+            uid_data = node.get("relationships", {}).get("uid", {}).get("data")
             uid_id = uid_data.get("id", "") if uid_data else ""
             author_email = users.get(uid_id, "")
+            # Fallback: if no match in included, try to find any user for this node
+            if not author_email and uid_id:
+                for inc in data.get("included", []):
+                    if inc.get("id") == uid_id and "attributes" in inc:
+                        author_email = inc["attributes"].get("mail") or inc["attributes"].get("display_name") or inc["attributes"].get("name") or ""
+                        break
 
             pages.append({
                 "nid": nid,
@@ -170,7 +180,8 @@ def fetch_all_pages():
         offset += PAGE_LIMIT
         time.sleep(0.1)
 
-    print(f"  Total: {len(pages)} published pages")
+    authors_found = sum(1 for p in pages if p["author"])
+    print(f"  Total: {len(pages)} published pages, {authors_found} with authors ({len(users)} unique users)")
     return pages
 
 
@@ -202,33 +213,68 @@ def extract_all_links(pages):
 
 
 # ─── Phase 3: Check URLs ─────────────────────────────────────────────────────
+BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+}
+
+# Only these HTTP status codes mean the link is DEFINITELY dead
+CONFIRMED_DEAD_CODES = {404, 410, 451, 500, 502, 503, 521, 522, 523}
+
+
 def check_url(url):
-    """Check a single URL. Returns (url, status, error)."""
+    """Check a single URL with multi-step verification to minimize false positives.
+    Returns (url, status, error) where error=None means link is OK."""
+    import time as _time
+
+    # Step 1: HEAD request
     try:
-        resp = requests.head(
-            url, timeout=CHECK_TIMEOUT, allow_redirects=True,
-            headers={"User-Agent": "Maine-DOE-Link-Checker/1.0"}
-        )
+        resp = requests.head(url, timeout=CHECK_TIMEOUT, allow_redirects=True, headers=BROWSER_HEADERS)
         if resp.status_code < 400:
             return (url, resp.status_code, None)
-        # Try GET as fallback (some servers reject HEAD)
-        if resp.status_code in (403, 405, 406):
-            resp2 = requests.get(
-                url, timeout=CHECK_TIMEOUT, allow_redirects=True,
-                headers={"User-Agent": "Maine-DOE-Link-Checker/1.0"},
-                stream=True
-            )
-            resp2.close()
-            if resp2.status_code < 400:
-                return (url, resp2.status_code, None)
-            return (url, resp2.status_code, f"{resp2.status_code} {resp2.reason}")
-        return (url, resp.status_code, f"{resp.status_code} {resp.reason}")
+        if resp.status_code in CONFIRMED_DEAD_CODES:
+            # Confirmed dead via HEAD — but verify with GET since some servers reject HEAD
+            pass
+        # Fall through to GET for any 4xx/5xx
+    except (requests.exceptions.SSLError, requests.exceptions.ConnectionError, requests.exceptions.Timeout):
+        pass  # Fall through to GET
+    except Exception:
+        pass
+
+    # Step 2: GET request (many servers block HEAD but allow GET)
+    try:
+        resp = requests.get(url, timeout=CHECK_TIMEOUT, allow_redirects=True, headers=BROWSER_HEADERS, stream=True)
+        resp.close()
+        if resp.status_code < 400:
+            return (url, resp.status_code, None)
+        if resp.status_code in CONFIRMED_DEAD_CODES:
+            return (url, resp.status_code, f"{resp.status_code} {resp.reason}")
+        # 403, 401, 406, 429, etc. = site is alive but blocking us
+        return (url, resp.status_code, "blocked")
+    except requests.exceptions.SSLError:
+        pass  # Try without SSL verification
+    except requests.exceptions.ConnectionError:
+        pass  # Retry after delay
+    except requests.exceptions.Timeout:
+        pass  # Retry after delay
+    except Exception as e:
+        return (url, 0, str(e)[:100])
+
+    # Step 3: Retry GET after short delay (handles rate limiting)
+    _time.sleep(2)
+    try:
+        resp = requests.get(url, timeout=CHECK_TIMEOUT + 5, allow_redirects=True, headers=BROWSER_HEADERS, stream=True, verify=False)
+        resp.close()
+        if resp.status_code < 400:
+            return (url, resp.status_code, None)
+        if resp.status_code in CONFIRMED_DEAD_CODES:
+            return (url, resp.status_code, f"{resp.status_code} {resp.reason}")
+        return (url, resp.status_code, "blocked")
+    except requests.exceptions.ConnectionError:
+        return (url, 0, "connection_error")
     except requests.exceptions.Timeout:
         return (url, 0, "timeout")
-    except requests.exceptions.ConnectionError as e:
-        return (url, 0, "connection_error")
-    except requests.exceptions.SSLError as e:
-        return (url, 0, "ssl_error")
     except Exception as e:
         return (url, 0, str(e)[:100])
 
@@ -268,10 +314,15 @@ def categorize(url, error):
         return "INTERNAL_404"
     if is_other_maine(url):
         return "OTHER_MAINE_GOV"
+    # Connection errors and access blocks from external sites are often false positives
+    # (sites blocking cloud IPs/bot detection, not actually dead)
+    # Anything that isn't a confirmed HTTP error = site might be fine but blocking us
+    if error in ("connection_error", "ssl_error", "timeout", "blocked"):
+        return "EXTERNAL_UNVERIFIABLE"
     return "EXTERNAL_DEAD"
 
 
-def build_results(link_map, check_results):
+def build_results(link_map, check_results, page_count):
     print("Phase 4: Building results...")
     dead_links = []
 
@@ -293,7 +344,7 @@ def build_results(link_map, check_results):
             })
 
     dead_links.sort(key=lambda x: (
-        ["MISSING_FILE", "INTERNAL_404", "OTHER_MAINE_GOV", "EXTERNAL_DEAD"].index(x["category"]),
+        ["MISSING_FILE", "INTERNAL_404", "EXTERNAL_DEAD", "EXTERNAL_UNVERIFIABLE", "OTHER_MAINE_GOV"].index(x["category"]),
         x["page_url"]
     ))
 
@@ -307,17 +358,18 @@ def build_results(link_map, check_results):
 
     meta = {
         "scan_date": datetime.now().isoformat(),
-        "pages_scanned": len(link_map),
-        "urls_checked": len(check_results) + sum(1 for u in link_map if u not in check_results),
+        "pages_scanned": page_count,
+        "urls_checked": len(check_results),
         "broken_found": len(dead_links),
         "affected_pages": unique_pages,
         "affected_authors": unique_authors,
         "by_category": by_cat,
     }
 
-    actionable_count = sum(1 for d in dead_links if d["category"] != "OTHER_MAINE_GOV")
+    actionable_count = sum(1 for d in dead_links if d["category"] not in ("OTHER_MAINE_GOV", "EXTERNAL_UNVERIFIABLE"))
     other_count = sum(1 for d in dead_links if d["category"] == "OTHER_MAINE_GOV")
-    print(f"  {actionable_count} actionable + {other_count} other-maine.gov across {unique_pages} pages, {unique_authors} authors")
+    unverif_count = sum(1 for d in dead_links if d["category"] == "EXTERNAL_UNVERIFIABLE")
+    print(f"  {actionable_count} actionable + {unverif_count} unverifiable + {other_count} other-maine.gov across {unique_pages} pages, {unique_authors} authors")
     for cat, count in by_cat.items():
         print(f"    {cat}: {count}")
 
@@ -365,7 +417,7 @@ def send_author_emails(dead_links, meta):
     # Group by author
     by_author = {}
     for d in dead_links:
-        if d["category"] == "OTHER_MAINE_GOV":
+        if d["category"] in ("OTHER_MAINE_GOV", "EXTERNAL_UNVERIFIABLE"):
             continue
         email = d["author"]
         if not email or "@" not in email:
@@ -399,8 +451,9 @@ def send_author_emails(dead_links, meta):
                 cat_label = {
                     "MISSING_FILE": "Missing File",
                     "INTERNAL_404": "Internal 404",
-                    "OTHER_MAINE_GOV": "Other Maine.gov",
                     "EXTERNAL_DEAD": "External Dead",
+                    "EXTERNAL_UNVERIFIABLE": "Unverifiable",
+                    "OTHER_MAINE_GOV": "Other Maine.gov",
                 }.get(link["category"], link["category"])
                 rows += f'<tr>'
                 rows += f'<td style="padding:6px 12px;border-bottom:1px solid #eee">{link["anchor"]}</td>'
@@ -488,8 +541,9 @@ def generate_report(dead_links, meta):
     by_cat = meta.get("by_category", {})
 
     # Separate actionable (DOE) from informational (other maine.gov)
-    actionable = [d for d in dead_links if d["category"] != "OTHER_MAINE_GOV"]
+    actionable = [d for d in dead_links if d["category"] not in ("OTHER_MAINE_GOV", "EXTERNAL_UNVERIFIABLE")]
     other_maine = [d for d in dead_links if d["category"] == "OTHER_MAINE_GOV"]
+    unverifiable = [d for d in dead_links if d["category"] == "EXTERNAL_UNVERIFIABLE"]
     total = len(actionable)
     pages_affected = len(set(d["page_url"] for d in actionable)) if actionable else 0
 
@@ -508,8 +562,8 @@ def generate_report(dead_links, meta):
         short = page_url.replace("https://www.maine.gov/doe/", "/doe/")
         author = page_data["author"] or "—"
         for i, link in enumerate(page_data["links"]):
-            cat_colors = {"MISSING_FILE": "#e74c3c", "INTERNAL_404": "#e67e22", "OTHER_MAINE_GOV": "#3498db", "EXTERNAL_DEAD": "#f1c40f"}
-            cat_labels = {"MISSING_FILE": "Missing File", "INTERNAL_404": "Internal 404", "OTHER_MAINE_GOV": "Other Maine.gov", "EXTERNAL_DEAD": "External Dead"}
+            cat_colors = {"MISSING_FILE": "#e74c3c", "INTERNAL_404": "#e67e22", "EXTERNAL_DEAD": "#f1c40f", "EXTERNAL_UNVERIFIABLE": "#95a5a6", "OTHER_MAINE_GOV": "#3498db"}
+            cat_labels = {"MISSING_FILE": "Missing File", "INTERNAL_404": "Internal 404", "EXTERNAL_DEAD": "External Dead", "EXTERNAL_UNVERIFIABLE": "Unverifiable", "OTHER_MAINE_GOV": "Other Maine.gov"}
             color = cat_colors.get(link["category"], "#999")
             label = cat_labels.get(link["category"], link["category"])
             page_cell = f'<td style="padding:8px 12px;border-bottom:1px solid rgba(109,139,166,0.1)"><a href="{page_url}" target="_blank" style="color:#42c3f7;text-decoration:underline">{short}</a></td>' if i == 0 else '<td style="padding:8px 12px;border-bottom:1px solid rgba(109,139,166,0.1)"></td>'
@@ -533,9 +587,9 @@ def generate_report(dead_links, meta):
         </div>"""
     else:
         cat_stats = ""
-        cat_icons = {"MISSING_FILE": "\U0001f534", "INTERNAL_404": "\U0001f7e0", "OTHER_MAINE_GOV": "\U0001f535", "EXTERNAL_DEAD": "\U0001f7e1"}
-        cat_labels = {"MISSING_FILE": "Missing Files", "INTERNAL_404": "Internal 404s", "OTHER_MAINE_GOV": "Other Maine.gov", "EXTERNAL_DEAD": "External Dead"}
-        for cat in ["MISSING_FILE", "INTERNAL_404", "EXTERNAL_DEAD"]:
+        cat_icons = {"MISSING_FILE": "\U0001f534", "INTERNAL_404": "\U0001f7e0", "EXTERNAL_DEAD": "\U0001f7e1", "EXTERNAL_UNVERIFIABLE": "\u26AA"}
+        cat_labels = {"MISSING_FILE": "Missing Files", "INTERNAL_404": "Internal 404s", "EXTERNAL_DEAD": "External Dead", "EXTERNAL_UNVERIFIABLE": "Unverifiable"}
+        for cat in ["MISSING_FILE", "INTERNAL_404", "EXTERNAL_DEAD", "EXTERNAL_UNVERIFIABLE"]:
             count = by_cat.get(cat, 0)
             if count:
                 cat_stats += f'<div style="background:rgba(66,195,247,0.08);border:1px solid rgba(66,195,247,0.2);border-radius:8px;padding:6px 14px;font-size:13px"><strong style="color:#42c3f7">{count}</strong> {cat_icons.get(cat, "")} {cat_labels.get(cat, cat)}</div>'
@@ -577,14 +631,14 @@ def generate_report(dead_links, meta):
   <h1 style="font-size:24px;color:#fff;margin:0">Dead Link Report</h1>
   <p style="font-size:14px;color:#8ab4d4;margin:6px 0 0">
     Maine DOE &middot; maine.gov/doe &middot; Scanned {scan_date} &middot;
-    {meta["pages_scanned"]} pages checked &middot; {meta["urls_checked"]} URLs verified
+    {meta["pages_scanned"]} pages scanned &middot; {meta["urls_checked"]} URLs checked
   </p>
 </div>
 <div style="padding:24px">
   {status_html}
 </div>
 <div style="padding:0 24px 24px;font-size:12px;color:#3a5068">
-  {f'<p style="color:#6d8ba6;margin-bottom:8px">Also found {len(other_maine)} broken link(s) to other maine.gov departments (e.g., /sos/, /dhhs/, /labor/). These are outside DOE control and not shown above.</p>' if other_maine else ''}
+  {f'<p style="color:#6d8ba6;margin-bottom:8px">Also excluded from this report: {len(unverifiable)} unverifiable external link(s) (sites that block automated checks) and {len(other_maine)} broken link(s) to other maine.gov departments outside DOE.</p>' if (other_maine or unverifiable) else ''}
   Generated automatically by the Maine DOE Dead Link Scanner.
   Contact the Web Team with questions.
 </div>
@@ -611,7 +665,7 @@ def main():
 
     link_map = extract_all_links(pages)
     check_results = check_all_urls(link_map)
-    dead_links, meta = build_results(link_map, check_results)
+    dead_links, meta = build_results(link_map, check_results, len(pages))
     save_results(dead_links, meta)
     generate_report(dead_links, meta)
     send_author_emails(dead_links, meta)
