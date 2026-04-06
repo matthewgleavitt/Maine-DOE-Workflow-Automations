@@ -149,7 +149,7 @@ def fetch_all_pages():
             nid = attrs.get("drupal_internal__nid")
             title = attrs.get("title", "")
 
-            page_url = f"https://www.maine.gov{alias}" if alias else f"{BASE_URL}/node/{nid}"
+            page_url = f"{BASE_URL}{alias}" if alias else f"{BASE_URL}/node/{nid}"
 
             # Get author from uid relationship
             uid_data = node.get("relationships", {}).get("uid", {}).get("data", {})
@@ -315,7 +315,9 @@ def build_results(link_map, check_results):
         "by_category": by_cat,
     }
 
-    print(f"  {len(dead_links)} broken link references across {unique_pages} pages, {unique_authors} authors")
+    actionable_count = sum(1 for d in dead_links if d["category"] != "OTHER_MAINE_GOV")
+    other_count = sum(1 for d in dead_links if d["category"] == "OTHER_MAINE_GOV")
+    print(f"  {actionable_count} actionable + {other_count} other-maine.gov across {unique_pages} pages, {unique_authors} authors")
     for cat, count in by_cat.items():
         print(f"    {cat}: {count}")
 
@@ -363,6 +365,8 @@ def send_author_emails(dead_links, meta):
     # Group by author
     by_author = {}
     for d in dead_links:
+        if d["category"] == "OTHER_MAINE_GOV":
+            continue
         email = d["author"]
         if not email or "@" not in email:
             continue
@@ -482,12 +486,16 @@ def generate_report(dead_links, meta):
     print("Generating HTML report...")
     scan_date = datetime.fromisoformat(meta["scan_date"]).strftime("%B %d, %Y")
     by_cat = meta.get("by_category", {})
-    total = meta["broken_found"]
-    pages_affected = meta["affected_pages"]
 
-    # Group by page
+    # Separate actionable (DOE) from informational (other maine.gov)
+    actionable = [d for d in dead_links if d["category"] != "OTHER_MAINE_GOV"]
+    other_maine = [d for d in dead_links if d["category"] == "OTHER_MAINE_GOV"]
+    total = len(actionable)
+    pages_affected = len(set(d["page_url"] for d in actionable)) if actionable else 0
+
+    # Group by page (actionable only)
     pages = {}
-    for d in dead_links:
+    for d in actionable:
         pu = d["page_url"]
         if pu not in pages:
             pages[pu] = {"title": d["page_title"], "author": d["author"], "nid": d["nid"], "links": []}
@@ -527,7 +535,7 @@ def generate_report(dead_links, meta):
         cat_stats = ""
         cat_icons = {"MISSING_FILE": "\U0001f534", "INTERNAL_404": "\U0001f7e0", "OTHER_MAINE_GOV": "\U0001f535", "EXTERNAL_DEAD": "\U0001f7e1"}
         cat_labels = {"MISSING_FILE": "Missing Files", "INTERNAL_404": "Internal 404s", "OTHER_MAINE_GOV": "Other Maine.gov", "EXTERNAL_DEAD": "External Dead"}
-        for cat in ["MISSING_FILE", "INTERNAL_404", "OTHER_MAINE_GOV", "EXTERNAL_DEAD"]:
+        for cat in ["MISSING_FILE", "INTERNAL_404", "EXTERNAL_DEAD"]:
             count = by_cat.get(cat, 0)
             if count:
                 cat_stats += f'<div style="background:rgba(66,195,247,0.08);border:1px solid rgba(66,195,247,0.2);border-radius:8px;padding:6px 14px;font-size:13px"><strong style="color:#42c3f7">{count}</strong> {cat_icons.get(cat, "")} {cat_labels.get(cat, cat)}</div>'
@@ -576,6 +584,7 @@ def generate_report(dead_links, meta):
   {status_html}
 </div>
 <div style="padding:0 24px 24px;font-size:12px;color:#3a5068">
+  {f'<p style="color:#6d8ba6;margin-bottom:8px">Also found {len(other_maine)} broken link(s) to other maine.gov departments (e.g., /sos/, /dhhs/, /labor/). These are outside DOE control and not shown above.</p>' if other_maine else ''}
   Generated automatically by the Maine DOE Dead Link Scanner.
   Contact the Web Team with questions.
 </div>
