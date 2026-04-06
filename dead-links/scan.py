@@ -1,5 +1,6 @@
 """
 Maine DOE Dead Link Scanner
+Version: 1.5 — 2026-04-06 9:30 PM ET
 Runs via GitHub Actions on a schedule.
 - Fetches all published pages via JSON:API
 - Extracts every <a href> and <img src>
@@ -652,7 +653,8 @@ def generate_report(dead_links, meta):
 # ─── Main ─────────────────────────────────────────────────────────────────────
 def main():
     start = time.time()
-    print(f"═══ Maine DOE Dead Link Scanner ═══")
+    VERSION = "1.5 — 2026-04-06 9:30 PM ET"
+    print(f"═══ Maine DOE Dead Link Scanner v{VERSION} ═══")
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"External checks: {'enabled' if CHECK_EXTERNAL else 'disabled'}")
     print(f"Email sending: {'enabled' if SEND_EMAILS else 'disabled'}")
