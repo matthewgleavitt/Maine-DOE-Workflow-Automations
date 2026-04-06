@@ -1,6 +1,6 @@
 """
 Maine DOE Dead Link Scanner
-Version: 1.8 — 2026-04-06 9:30 PM ET
+Version: 1.9 — 2026-04-06 9:30 PM ET
 Runs via GitHub Actions on a schedule.
 - Fetches all published pages via JSON:API
 - Extracts every <a href> and <img src>
@@ -564,8 +564,131 @@ def send_author_emails(dead_links, meta):
 
 
 
+
+
+# ─── Phase 5c: Orphan File Detection ─────────────────────────────────────────
+ADMIN_EMAIL = os.environ.get("ADMIN_EMAIL", "matthew.g.leavitt@maine.gov")
+
+def find_orphan_files(pages):
+    """Find managed files not referenced in any page body."""
+    print("\nPhase 5c: Checking for orphan files...")
+
+    # Step 1: Build set of all file URLs referenced in page bodies
+    referenced_files = set()
+    for page in pages:
+        body = page.get("body", "")
+        if not body:
+            continue
+        parser = LinkExtractor()
+        try:
+            parser.feed(body)
+        except Exception:
+            pass
+        for href, anchor, link_type in parser.links:
+            url = href
+            if url.startswith("/"):
+                url = "https://www.maine.gov" + url
+            if "/sites/maine.gov.doe/files/" in url:
+                # Normalize: decode and lowercase for comparison
+                try:
+                    url = requests.utils.unquote(url).lower()
+                except Exception:
+                    url = url.lower()
+                referenced_files.add(url)
+
+    print(f"  Found {len(referenced_files)} unique file URLs in page bodies")
+
+    # Step 2: Fetch all managed files from JSON:API
+    print("  Fetching all file entities...")
+    all_files = []
+    offset = 0
+    while True:
+        url = (
+            f"{BASE_URL}/jsonapi/file/file"
+            f"?fields[file--file]=filename,uri,drupal_internal__fid,filesize,created"
+            f"&page[limit]={PAGE_LIMIT}&page[offset]={offset}"
+        )
+        try:
+            resp = requests.get(url, timeout=30, headers={"Accept": "application/vnd.api+json"})
+            if not resp.ok:
+                print(f"  Error fetching files at offset {offset}: {resp.status_code}")
+                break
+            data = resp.json()
+        except Exception as e:
+            print(f"  Error: {e}")
+            break
+
+        if not data.get("data"):
+            break
+
+        for f in data["data"]:
+            attrs = f.get("attributes", {})
+            uri = attrs.get("uri", {})
+            file_url = uri.get("url", "") if isinstance(uri, dict) else ""
+            if not file_url:
+                continue
+            # Only check managed files in the DOE files directory
+            if "/sites/maine.gov.doe/files/" not in file_url:
+                continue
+            fid = attrs.get("drupal_internal__fid")
+            filename = attrs.get("filename", "")
+            filesize = attrs.get("filesize", 0)
+            created = attrs.get("created", "")
+
+            all_files.append({
+                "fid": fid,
+                "filename": filename,
+                "url": file_url,
+                "filesize": filesize,
+                "created": created,
+            })
+
+        if not data.get("links", {}).get("next"):
+            break
+        offset += PAGE_LIMIT
+        if offset % 500 == 0:
+            print(f"  Loaded {len(all_files)} files...")
+        time.sleep(0.1)
+
+    print(f"  Total: {len(all_files)} managed files in CMS")
+
+    # Step 3: Find orphans — files not referenced in any body
+    orphans = []
+    for f in all_files:
+        # Normalize file URL for comparison
+        full_url = "https://www.maine.gov" + f["url"] if f["url"].startswith("/") else f["url"]
+        try:
+            normalized = requests.utils.unquote(full_url).lower()
+        except Exception:
+            normalized = full_url.lower()
+        if normalized not in referenced_files:
+            orphans.append(f)
+
+    # Sort by filesize descending (biggest waste first)
+    orphans.sort(key=lambda x: -(x.get("filesize") or 0))
+
+    total_size = sum(f.get("filesize") or 0 for f in orphans)
+    print(f"  Found {len(orphans)} orphan files ({total_size // 1024 // 1024} MB)")
+
+    return orphans
+
+
+def save_orphan_results(orphans):
+    """Save orphan file results to JSON."""
+    output = {
+        "scan_date": datetime.now().isoformat(),
+        "orphan_count": len(orphans),
+        "total_size_bytes": sum(f.get("filesize") or 0 for f in orphans),
+        "files": orphans
+    }
+    orphan_path = os.path.join(os.path.dirname(__file__) or ".", "orphan-files.json")
+    with open(orphan_path, "w") as f:
+        json.dump(output, f, indent=2)
+    print(f"  Orphan results saved to {orphan_path}")
+    return output
+
 # ─── Phase 5b: Generate HTML report page ─────────────────────────────────────
-def generate_report(dead_links, meta):
+def generate_report(dead_links, meta, orphans=None):
     print("Generating HTML report...")
     scan_date = datetime.fromisoformat(meta["scan_date"]).strftime("%B %d, %Y")
     by_cat = meta.get("by_category", {})
@@ -644,6 +767,40 @@ def generate_report(dead_links, meta):
         </table>
         </div>"""
 
+    # Build orphan section HTML
+    if orphans:
+        orphan_total_mb = sum(f.get("filesize") or 0 for f in orphans) / 1024 / 1024
+        orphan_rows = ""
+        for of in orphans[:50]:  # Show top 50 by size
+            size_kb = (of.get("filesize") or 0) / 1024
+            size_str = f"{size_kb:.0f} KB" if size_kb < 1024 else f"{size_kb/1024:.1f} MB"
+            orphan_rows += f"""<tr>
+              <td style="padding:6px 12px;border-bottom:1px solid rgba(109,139,166,0.1)">{of.get("fid","")}</td>
+              <td style="padding:6px 12px;border-bottom:1px solid rgba(109,139,166,0.1)">{of.get("filename","")}</td>
+              <td style="padding:6px 12px;border-bottom:1px solid rgba(109,139,166,0.1)">{size_str}</td>
+              <td style="padding:6px 12px;border-bottom:1px solid rgba(109,139,166,0.1);font-size:11px;color:#6d8ba6">{of.get("created","")[:10]}</td>
+            </tr>"""
+        orphan_html = f"""
+        <div style="margin-top:24px;background:rgba(27,58,84,0.4);border:1px solid rgba(109,139,166,0.15);border-radius:10px;padding:20px">
+          <h2 style="font-size:18px;color:#fff;margin:0 0 8px">📁 Orphan Files</h2>
+          <p style="font-size:13px;color:#8ab4d4;margin-bottom:12px">{len(orphans)} files not referenced in any page body ({orphan_total_mb:.1f} MB total)</p>
+          <div style="overflow-x:auto">
+          <table style="width:100%;border-collapse:collapse;font-size:13px">
+            <thead><tr style="background:#1b3a54">
+              <th style="padding:8px 12px;text-align:left;color:#42c3f7">FID</th>
+              <th style="padding:8px 12px;text-align:left;color:#42c3f7">Filename</th>
+              <th style="padding:8px 12px;text-align:left;color:#42c3f7">Size</th>
+              <th style="padding:8px 12px;text-align:left;color:#42c3f7">Uploaded</th>
+            </tr></thead>
+            <tbody>{orphan_rows}</tbody>
+          </table>
+          </div>
+          {"<p style='font-size:12px;color:#6d8ba6;margin-top:8px'>Showing top 50 by size. Full list in orphan-files.json.</p>" if len(orphans) > 50 else ""}
+          <p style="font-size:12px;color:#6d8ba6;margin-top:8px">Use the Orphan File Finder tool on maine.gov/doe to review and delete these files.</p>
+        </div>"""
+    else:
+        orphan_html = ""
+
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -667,6 +824,9 @@ def generate_report(dead_links, meta):
 <div style="padding:24px">
   {status_html}
 </div>
+<div style="padding:0 24px 24px">
+  {orphan_html}
+</div>
 <div style="padding:0 24px 24px;font-size:12px;color:#3a5068">
   {f'<p style="color:#6d8ba6;margin-bottom:8px">Also excluded from this report: {len(unverifiable)} unverifiable external link(s) (sites that block automated checks) and {len(other_maine)} broken link(s) to other maine.gov departments outside DOE.</p>' if (other_maine or unverifiable) else ''}
   Generated automatically by the Maine DOE Dead Link Scanner.
@@ -682,7 +842,7 @@ def generate_report(dead_links, meta):
 # ─── Main ─────────────────────────────────────────────────────────────────────
 def main():
     start = time.time()
-    VERSION = "1.8 — 2026-04-06 9:30 PM ET"
+    VERSION = "1.9 — 2026-04-06 9:30 PM ET"
     print(f"═══ Maine DOE Dead Link Scanner v{VERSION} ═══")
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"External checks: {'enabled' if CHECK_EXTERNAL else 'disabled'}")
@@ -709,8 +869,61 @@ def main():
     check_results = check_all_urls(link_map, allowlist)
     dead_links, meta = build_results(link_map, check_results, len(pages))
     save_results(dead_links, meta)
-    generate_report(dead_links, meta)
+    orphans = find_orphan_files(pages)
+    save_orphan_results(orphans)
+    generate_report(dead_links, meta, orphans)
     send_author_emails(dead_links, meta)
+
+    # Send orphan notification to admin only
+    if SEND_EMAILS and MAILERSEND_API_KEY and orphans:
+        print(f"\nSending orphan file notification to {ADMIN_EMAIL}...")
+        orphan_total_mb = sum(f.get("filesize") or 0 for f in orphans) / 1024 / 1024
+        orphan_rows = ""
+        for of in orphans[:30]:
+            size_kb = (of.get("filesize") or 0) / 1024
+            size_str = f"{size_kb:.0f} KB" if size_kb < 1024 else f"{size_kb/1024:.1f} MB"
+            orphan_rows += f'<tr><td style="padding:6px 12px;border-bottom:1px solid #eee">{of.get("filename","")}</td><td style="padding:6px 12px;border-bottom:1px solid #eee">{size_str}</td><td style="padding:6px 12px;border-bottom:1px solid #eee;font-size:12px;color:#666">{of.get("created","")[:10]}</td></tr>'
+
+        orphan_email = f"""
+        <div style="font-family:Calibri,sans-serif;max-width:700px;margin:0 auto">
+            <div style="background:#182b3c;padding:20px 24px;border-radius:8px 8px 0 0">
+                <h2 style="color:#fff;margin:0">📁 Orphan Files Detected</h2>
+                <p style="color:#8ab4d4;margin:6px 0 0;font-size:14px">Monthly scan — {datetime.now().strftime("%B %d, %Y")}</p>
+            </div>
+            <div style="padding:20px 24px;background:#fff;border:1px solid #e9ecef">
+                <p>{len(orphans)} managed files ({orphan_total_mb:.1f} MB) are not referenced in any page body.
+                These may be safe to delete.</p>
+                <table style="width:100%;border-collapse:collapse;margin:16px 0">
+                    <thead><tr style="background:#182b3c;color:#fff">
+                        <th style="padding:8px 12px;text-align:left">Filename</th>
+                        <th style="padding:8px 12px;text-align:left">Size</th>
+                        <th style="padding:8px 12px;text-align:left">Uploaded</th>
+                    </tr></thead>
+                    <tbody>{orphan_rows}</tbody>
+                </table>
+                {"<p style=\'font-size:13px;color:#666\'>Showing top 30. Full list in orphan-files.json on GitHub.</p>" if len(orphans) > 30 else ""}
+                <p style="font-size:13px;color:#666">Review and delete using the Orphan File Finder tool.</p>
+            </div>
+        </div>"""
+
+        try:
+            resp = requests.post(
+                "https://api.mailersend.com/v1/email",
+                json={
+                    "from": {"email": FROM_EMAIL, "name": FROM_NAME},
+                    "to": [{"email": ADMIN_EMAIL}],
+                    "subject": f"📁 {len(orphans)} Orphan Files Detected on maine.gov/doe",
+                    "html": orphan_email,
+                },
+                headers={"Authorization": f"Bearer {MAILERSEND_API_KEY}", "Content-Type": "application/json"},
+                timeout=15,
+            )
+            if resp.status_code in (200, 201, 202):
+                print(f"  ✓ Orphan notification sent to {ADMIN_EMAIL}")
+            else:
+                print(f"  ✗ Failed: {resp.status_code} {resp.text[:100]}")
+        except Exception as e:
+            print(f"  ✗ Error: {e}")
 
     elapsed = time.time() - start
     print(f"\n═══ Complete in {elapsed:.0f}s ═══")
