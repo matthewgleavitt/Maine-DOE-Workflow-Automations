@@ -1,0 +1,97 @@
+name: Dead Link Scanner
+
+on:
+  schedule:
+    - cron: '0 10 1 * *'
+  
+  workflow_dispatch:
+    inputs:
+      check_external:
+        description: 'Check external links (slower but comprehensive)'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      send_emails:
+        description: 'Send notification emails to authors'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run dead link scan
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          FROM_EMAIL: ${{ vars.FROM_EMAIL || 'matthew.g.leavitt@maine.gov' }}
+          FROM_NAME: ${{ vars.FROM_NAME || 'Maine DOE Web Team' }}
+          CHECK_EXTERNAL: ${{ github.event.inputs.check_external || 'true' }}
+          SEND_EMAILS: ${{ github.event.inputs.send_emails || 'false' }}
+        run: python dead-links/scan.py
+
+      - name: Commit results
+        run: |
+          git config user.name "Dead Link Scanner"
+          git config user.email "actions@github.com"
+          git add dead-links/scan-results.json dead-links/scan-results-compact.json dead-links/index.html
+          git diff --staged --quiet || git commit -m "Scan results: $(date +'%Y-%m-%d')"
+          git push
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-results-${{ github.run_number }}
+          path: |
+            dead-links/scan-results.json
+            dead-links/scan-results-compact.json
+            dead-links/index.html
+          retention-days: 90
+
+  deploy:
+    needs: scan
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo (with latest results)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Pull latest
+        run: git pull
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload to Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dead-links
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
