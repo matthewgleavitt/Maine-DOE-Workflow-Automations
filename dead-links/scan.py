@@ -3,7 +3,7 @@ Maine DOE Dead Link Scanner
 Runs via GitHub Actions on a schedule.
 - Fetches all published pages via JSON:API
 - Extracts every <a href> and <img src>
-- Checks each URL via HEAD request (no CORS restrictions server-side)
+- Checks each DOE URL via HEAD request (no CORS restrictions server-side)
 - Groups results by page author (node uid)
 - Sends email notifications to authors via SendGrid
 - Saves results JSON for the browser triage tool
