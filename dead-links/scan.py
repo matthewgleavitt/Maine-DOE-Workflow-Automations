@@ -28,8 +28,8 @@ CHECK_TIMEOUT = 15
 MAX_WORKERS = 10
 RESULTS_FILE = "dead-links/scan-results.json"
 
-# SendGrid
-SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY", "")
+# MailerSend
+MAILERSEND_API_KEY = os.environ.get("MAILERSEND_API_KEY", "")
 FROM_EMAIL = os.environ.get("FROM_EMAIL", "matthew.g.leavitt@maine.gov")
 FROM_NAME = os.environ.get("FROM_NAME", "Maine DOE Web Team")
 SEND_EMAILS = os.environ.get("SEND_EMAILS", "false").lower() == "true"
@@ -87,7 +87,20 @@ def resolve_url(href, page_url):
     return urljoin(page_url, href)
 
 
+def is_doe(url):
+    """Links within maine.gov/doe/ — our pages and files."""
+    lower = url.lower()
+    return "maine.gov/doe/" in lower or "maine.gov/doe" == lower.rstrip("/")
+
+
+def is_other_maine(url):
+    """Links to other maine.gov departments (not DOE) — we can't control these."""
+    lower = url.lower()
+    return ("maine.gov" in lower) and not is_doe(url)
+
+
 def is_internal(url):
+    """Any maine.gov link."""
     return "maine.gov" in url.lower()
 
 
@@ -249,10 +262,12 @@ def check_all_urls(link_map):
 
 # ─── Phase 4: Build results ──────────────────────────────────────────────────
 def categorize(url, error):
-    if is_file(url):
+    if is_file(url) and is_doe(url):
         return "MISSING_FILE"
-    if is_internal(url):
+    if is_doe(url):
         return "INTERNAL_404"
+    if is_other_maine(url):
+        return "OTHER_MAINE_GOV"
     return "EXTERNAL_DEAD"
 
 
@@ -278,7 +293,7 @@ def build_results(link_map, check_results):
             })
 
     dead_links.sort(key=lambda x: (
-        ["MISSING_FILE", "INTERNAL_404", "EXTERNAL_DEAD"].index(x["category"]),
+        ["MISSING_FILE", "INTERNAL_404", "OTHER_MAINE_GOV", "EXTERNAL_DEAD"].index(x["category"]),
         x["page_url"]
     ))
 
@@ -341,8 +356,8 @@ def send_author_emails(dead_links, meta):
     if not SEND_EMAILS:
         print("\nEmail sending disabled (set SEND_EMAILS=true to enable)")
         return
-    if not SENDGRID_API_KEY:
-        print("\nNo SENDGRID_API_KEY set — skipping emails")
+    if not MAILERSEND_API_KEY:
+        print("\nNo MAILERSEND_API_KEY set — skipping emails")
         return
 
     # Group by author
@@ -380,6 +395,7 @@ def send_author_emails(dead_links, meta):
                 cat_label = {
                     "MISSING_FILE": "Missing File",
                     "INTERNAL_404": "Internal 404",
+                    "OTHER_MAINE_GOV": "Other Maine.gov",
                     "EXTERNAL_DEAD": "External Dead",
                 }.get(link["category"], link["category"])
                 rows += f'<tr>'
@@ -431,20 +447,20 @@ def send_author_emails(dead_links, meta):
         </div>
         """
 
-        # Send via SendGrid
-        sg_data = {
-            "personalizations": [{"to": [{"email": author_email}]}],
+        # Send via MailerSend
+        ms_data = {
             "from": {"email": FROM_EMAIL, "name": FROM_NAME},
+            "to": [{"email": author_email}],
             "subject": f"Action Needed: {total} Broken Link{'s' if total != 1 else ''} on Your DOE Pages",
-            "content": [{"type": "text/html", "value": html_body}],
+            "html": html_body,
         }
 
         try:
             resp = requests.post(
-                "https://api.sendgrid.com/v3/mail/send",
-                json=sg_data,
+                "https://api.mailersend.com/v1/email",
+                json=ms_data,
                 headers={
-                    "Authorization": f"Bearer {SENDGRID_API_KEY}",
+                    "Authorization": f"Bearer {MAILERSEND_API_KEY}",
                     "Content-Type": "application/json",
                 },
                 timeout=15,
@@ -484,8 +500,8 @@ def generate_report(dead_links, meta):
         short = page_url.replace("https://www.maine.gov/doe/", "/doe/")
         author = page_data["author"] or "—"
         for i, link in enumerate(page_data["links"]):
-            cat_colors = {"MISSING_FILE": "#e74c3c", "INTERNAL_404": "#e67e22", "EXTERNAL_DEAD": "#f1c40f"}
-            cat_labels = {"MISSING_FILE": "Missing File", "INTERNAL_404": "Internal 404", "EXTERNAL_DEAD": "External Dead"}
+            cat_colors = {"MISSING_FILE": "#e74c3c", "INTERNAL_404": "#e67e22", "OTHER_MAINE_GOV": "#3498db", "EXTERNAL_DEAD": "#f1c40f"}
+            cat_labels = {"MISSING_FILE": "Missing File", "INTERNAL_404": "Internal 404", "OTHER_MAINE_GOV": "Other Maine.gov", "EXTERNAL_DEAD": "External Dead"}
             color = cat_colors.get(link["category"], "#999")
             label = cat_labels.get(link["category"], link["category"])
             page_cell = f'<td style="padding:8px 12px;border-bottom:1px solid rgba(109,139,166,0.1)"><a href="{page_url}" target="_blank" style="color:#42c3f7;text-decoration:underline">{short}</a></td>' if i == 0 else '<td style="padding:8px 12px;border-bottom:1px solid rgba(109,139,166,0.1)"></td>'
@@ -509,9 +525,9 @@ def generate_report(dead_links, meta):
         </div>"""
     else:
         cat_stats = ""
-        cat_icons = {"MISSING_FILE": "\U0001f534", "INTERNAL_404": "\U0001f7e0", "EXTERNAL_DEAD": "\U0001f7e1"}
-        cat_labels = {"MISSING_FILE": "Missing Files", "INTERNAL_404": "Internal 404s", "EXTERNAL_DEAD": "External Dead"}
-        for cat in ["MISSING_FILE", "INTERNAL_404", "EXTERNAL_DEAD"]:
+        cat_icons = {"MISSING_FILE": "\U0001f534", "INTERNAL_404": "\U0001f7e0", "OTHER_MAINE_GOV": "\U0001f535", "EXTERNAL_DEAD": "\U0001f7e1"}
+        cat_labels = {"MISSING_FILE": "Missing Files", "INTERNAL_404": "Internal 404s", "OTHER_MAINE_GOV": "Other Maine.gov", "EXTERNAL_DEAD": "External Dead"}
+        for cat in ["MISSING_FILE", "INTERNAL_404", "OTHER_MAINE_GOV", "EXTERNAL_DEAD"]:
             count = by_cat.get(cat, 0)
             if count:
                 cat_stats += f'<div style="background:rgba(66,195,247,0.08);border:1px solid rgba(66,195,247,0.2);border-radius:8px;padding:6px 14px;font-size:13px"><strong style="color:#42c3f7">{count}</strong> {cat_icons.get(cat, "")} {cat_labels.get(cat, cat)}</div>'
