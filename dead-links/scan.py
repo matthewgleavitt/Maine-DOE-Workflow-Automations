@@ -1,6 +1,6 @@
 """
 Maine DOE Dead Link Scanner
-Version: 1.5 — 2026-04-06 9:30 PM ET
+Version: 1.8 — 2026-04-06 9:30 PM ET
 Runs via GitHub Actions on a schedule.
 - Fetches all published pages via JSON:API
 - Extracts every <a href> and <img src>
@@ -114,6 +114,16 @@ def is_file(url):
 # ─── Phase 1: Fetch all pages ────────────────────────────────────────────────
 def fetch_all_pages():
     print("Phase 1: Fetching all published pages...")
+    # Load author map from repo (built by the browser-based author-mapper tool)
+    author_map = {}
+    author_map_path = os.path.join(os.path.dirname(__file__), "author-map.json")
+    if os.path.exists(author_map_path):
+        with open(author_map_path) as f:
+            author_map = json.load(f)
+        print(f"  Loaded author-map.json ({len(author_map)} entries)")
+    else:
+        print("  No author-map.json found — will try API for authors")
+
     pages = []
     users = {}  # Accumulate across all batches
     offset = 0
@@ -122,7 +132,7 @@ def fetch_all_pages():
         url = (
             f"{JSONAPI_URL}?filter[status]=1"
             f"&include=uid"
-            f"&fields[node--multi_column_page]=body,title,path,drupal_internal__nid"
+            f"&fields[node--multi_column_page]=body,title,path,drupal_internal__nid,field_page_owner_email"
             f"&fields[user--user]=mail,name,display_name"
             f"&page[limit]={PAGE_LIMIT}&page[offset]={offset}"
         )
@@ -159,13 +169,19 @@ def fetch_all_pages():
             # Get author from uid relationship
             uid_data = node.get("relationships", {}).get("uid", {}).get("data")
             uid_id = uid_data.get("id", "") if uid_data else ""
-            author_email = users.get(uid_id, "")
-            # Fallback: if no match in included, try to find any user for this node
+            # Source 1: field_page_owner_email (public custom field on the node)
+            author_email = attrs.get("field_page_owner_email") or ""
+            # Source 2: node author from uid relationship
+            if not author_email:
+                author_email = users.get(uid_id, "")
             if not author_email and uid_id:
                 for inc in data.get("included", []):
                     if inc.get("id") == uid_id and "attributes" in inc:
                         author_email = inc["attributes"].get("mail") or inc["attributes"].get("display_name") or inc["attributes"].get("name") or ""
                         break
+            # Source 3: author-map.json fallback (from browser-based mapper)
+            if not author_email and str(nid) in author_map:
+                author_email = author_map[str(nid)]
 
             pages.append({
                 "nid": nid,
@@ -182,7 +198,7 @@ def fetch_all_pages():
         time.sleep(0.1)
 
     authors_found = sum(1 for p in pages if p["author"])
-    print(f"  Total: {len(pages)} published pages, {authors_found} with authors ({len(users)} unique users)")
+    print(f"  Total: {len(pages)} published pages, {authors_found} with authors ({len(users)} unique API users, {len(author_map)} from author-map.json)")
     return pages
 
 
@@ -280,8 +296,14 @@ def check_url(url):
         return (url, 0, str(e)[:100])
 
 
-def check_all_urls(link_map):
+def check_all_urls(link_map, allowlist=None):
     urls_to_check = list(link_map.keys())
+    if allowlist:
+        before = len(urls_to_check)
+        urls_to_check = [u for u in urls_to_check if u not in allowlist]
+        skipped = before - len(urls_to_check)
+        if skipped:
+            print(f"  Skipped {skipped} allowlisted URLs")
     if not CHECK_EXTERNAL:
         internal_count = len([u for u in urls_to_check if is_internal(u)])
         external_count = len(urls_to_check) - internal_count
@@ -402,6 +424,13 @@ def save_results(dead_links, meta):
     with open("dead-links/scan-results-compact.json", "w") as f:
         json.dump({"meta": meta, "pages": compact_list}, f, separators=(",", ":"))
     print(f"Compact results saved to dead-links/scan-results-compact.json")
+
+    # Also save as .js for CORS-free loading via <script> tag
+    with open("dead-links/scan-results.js", "w") as f:
+        f.write("window.SCAN_DATA = ")
+        json.dump({"meta": meta, "pages": compact_list}, f, separators=(",", ":"))
+        f.write(";")
+    print(f"JS version saved to dead-links/scan-results.js")
 
     return output
 
@@ -653,12 +682,23 @@ def generate_report(dead_links, meta):
 # ─── Main ─────────────────────────────────────────────────────────────────────
 def main():
     start = time.time()
-    VERSION = "1.5 — 2026-04-06 9:30 PM ET"
+    VERSION = "1.8 — 2026-04-06 9:30 PM ET"
     print(f"═══ Maine DOE Dead Link Scanner v{VERSION} ═══")
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"External checks: {'enabled' if CHECK_EXTERNAL else 'disabled'}")
     print(f"Email sending: {'enabled' if SEND_EMAILS else 'disabled'}")
     print()
+
+    # Load verified-alive allowlist (URLs to skip checking)
+    allowlist = set()
+    allowlist_path = os.path.join(os.path.dirname(__file__), "verified-alive.json")
+    if os.path.exists(allowlist_path):
+        with open(allowlist_path) as f:
+            al_data = json.load(f)
+            allowlist = set(al_data.get("urls", []))
+        print(f"  Loaded verified-alive.json ({len(allowlist)} allowlisted URLs)")
+    else:
+        print("  No verified-alive.json found")
 
     pages = fetch_all_pages()
     if not pages:
@@ -666,7 +706,7 @@ def main():
         sys.exit(1)
 
     link_map = extract_all_links(pages)
-    check_results = check_all_urls(link_map)
+    check_results = check_all_urls(link_map, allowlist)
     dead_links, meta = build_results(link_map, check_results, len(pages))
     save_results(dead_links, meta)
     generate_report(dead_links, meta)
