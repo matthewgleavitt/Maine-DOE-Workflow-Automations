@@ -2,7 +2,7 @@ name: Dead Link Scanner
 
 on:
   schedule:
-    - cron: '0 10 1 * *'
+    - cron: '0 6 1 * *'  # 1st of each month, 2:00 AM ET
   
   workflow_dispatch:
     inputs:
@@ -55,7 +55,10 @@ jobs:
 
       - name: Run dead link scan
         env:
-          MAILERSEND_API_KEY: ${{ secrets.MAILERSEND_API_KEY }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_SERVER: ${{ vars.SMTP_SERVER || 'smtp.office365.com' }}
+          SMTP_PORT: ${{ vars.SMTP_PORT || '587' }}
           FROM_EMAIL: ${{ vars.FROM_EMAIL || 'matthew.g.leavitt@maine.gov' }}
           FROM_NAME: ${{ vars.FROM_NAME || 'Maine DOE Web Team' }}
           CHECK_EXTERNAL: ${{ github.event.inputs.check_external || 'true' }}
