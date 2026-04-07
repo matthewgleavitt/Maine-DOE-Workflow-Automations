@@ -6,7 +6,7 @@ Runs via GitHub Actions on a schedule.
 - Extracts every <a href> and <img src>
 - Checks each DOE URL via HEAD request (no CORS restrictions server-side)
 - Groups results by page author (node uid)
-- Sends email notifications to authors via SendGrid
+- Sends email notifications to authors via MailerSend
 - Saves results JSON for the browser triage tool
 """
 
