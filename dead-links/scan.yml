@@ -1,4 +1,4 @@
-name: Audit Scanner
+name: Dead Link Scanner
 
 on:
   schedule:
@@ -16,6 +16,14 @@ on:
           - 'false'
       send_emails:
         description: 'Send notification emails to authors'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      test_mode:
+        description: 'Test mode: send all emails to admin instead of real authors'
         required: false
         default: 'false'
         type: choice
@@ -52,6 +60,7 @@ jobs:
           FROM_NAME: ${{ vars.FROM_NAME || 'Maine DOE Web Team' }}
           CHECK_EXTERNAL: ${{ github.event.inputs.check_external || 'true' }}
           SEND_EMAILS: ${{ github.event.inputs.send_emails || 'false' }}
+          TEST_MODE: ${{ github.event.inputs.test_mode || 'false' }}
           ADMIN_EMAIL: ${{ vars.ADMIN_EMAIL || 'matthew.g.leavitt@maine.gov' }}
         run: python dead-links/scan.py
 
