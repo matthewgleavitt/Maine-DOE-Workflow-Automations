@@ -1,4 +1,4 @@
-name: Dead Link Scanner
+name: Audit Scanner
 
 on:
   schedule:
