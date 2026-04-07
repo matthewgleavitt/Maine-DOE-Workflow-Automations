@@ -29,11 +29,6 @@
       "month_name": "January",
       "owner": "Beth.Lambert@maine.gov"
     },
-    "3385": {
-      "month": 1,
-      "month_name": "January",
-      "owner": "Beth.Lambert@maine.gov"
-    },
     "61": {
       "month": 1,
       "month_name": "January",
@@ -614,17 +609,7 @@
       "month_name": "June",
       "owner": "erik.wade@maine.gov"
     },
-    "3190": {
-      "month": 6,
-      "month_name": "June",
-      "owner": "erik.wade@maine.gov"
-    },
     "3204": {
-      "month": 8,
-      "month_name": "August",
-      "owner": "erik.wade@maine.gov"
-    },
-    "3184": {
       "month": 8,
       "month_name": "August",
       "owner": "erik.wade@maine.gov"
@@ -954,11 +939,6 @@
       "month_name": "June",
       "owner": "matthew.g.leavitt@maine.gov"
     },
-    "4311": {
-      "month": 6,
-      "month_name": "June",
-      "owner": "matthew.g.leavitt@maine.gov"
-    },
     "4134": {
       "month": 6,
       "month_name": "June",
@@ -984,16 +964,6 @@
       "month_name": "August",
       "owner": "matthew.g.leavitt@maine.gov"
     },
-    "4569": {
-      "month": 8,
-      "month_name": "August",
-      "owner": "matthew.g.leavitt@maine.gov"
-    },
-    "4571": {
-      "month": 8,
-      "month_name": "August",
-      "owner": "matthew.g.leavitt@maine.gov"
-    },
     "4505": {
       "month": 8,
       "month_name": "August",
@@ -1005,11 +975,6 @@
       "owner": "matthew.g.leavitt@maine.gov"
     },
     "4146": {
-      "month": 8,
-      "month_name": "August",
-      "owner": "matthew.g.leavitt@maine.gov"
-    },
-    "4473": {
       "month": 8,
       "month_name": "August",
       "owner": "matthew.g.leavitt@maine.gov"
@@ -1089,37 +1054,12 @@
       "month_name": "October",
       "owner": "matthew.g.leavitt@maine.gov"
     },
-    "1143": {
-      "month": 12,
-      "month_name": "December",
-      "owner": "matthew.g.leavitt@maine.gov"
-    },
     "796": {
       "month": 12,
       "month_name": "December",
       "owner": "matthew.g.leavitt@maine.gov"
     },
-    "1234": {
-      "month": 12,
-      "month_name": "December",
-      "owner": "matthew.g.leavitt@maine.gov"
-    },
     "1831": {
-      "month": 12,
-      "month_name": "December",
-      "owner": "matthew.g.leavitt@maine.gov"
-    },
-    "4651": {
-      "month": 12,
-      "month_name": "December",
-      "owner": "matthew.g.leavitt@maine.gov"
-    },
-    "4555": {
-      "month": 12,
-      "month_name": "December",
-      "owner": "matthew.g.leavitt@maine.gov"
-    },
-    "4637": {
       "month": 12,
       "month_name": "December",
       "owner": "matthew.g.leavitt@maine.gov"
@@ -1350,11 +1290,6 @@
       "owner": "charlotte.ellis@maine.gov"
     },
     "4659": {
-      "month": 11,
-      "month_name": "November",
-      "owner": "charlotte.ellis@maine.gov"
-    },
-    "4667": {
       "month": 11,
       "month_name": "November",
       "owner": "charlotte.ellis@maine.gov"
@@ -1762,11 +1697,6 @@
     "465": {
       "month": 8,
       "month_name": "August",
-      "owner": "Nicole.Madore@maine.gov"
-    },
-    "521": {
-      "month": 11,
-      "month_name": "November",
       "owner": "Nicole.Madore@maine.gov"
     },
     "522": {
@@ -2294,11 +2224,6 @@
       "month_name": "September",
       "owner": "Jennifer.R.Robitaille@maine.gov"
     },
-    "3486": {
-      "month": 9,
-      "month_name": "September",
-      "owner": "Jennifer.R.Robitaille@maine.gov"
-    },
     "3353": {
       "month": 9,
       "month_name": "September",
@@ -2417,12 +2342,12 @@
     "1020": {
       "month": 10,
       "month_name": "October",
-      "owner": "W.Bear.Shea@maine.gov"
+      "owner": "sol.rheem@maine.gov"
     },
     "816": {
       "month": 10,
       "month_name": "October",
-      "owner": "W.Bear.Shea@maine.gov"
+      "owner": "sol.rheem@maine.gov"
     },
     "817": {
       "month": 10,
@@ -2558,11 +2483,6 @@
       "month": 8,
       "month_name": "August",
       "owner": "ariana.whiting@maine.gov"
-    },
-    "632": {
-      "month": 1,
-      "month_name": "January",
-      "owner": "Leeann.Larsen@maine.gov"
     },
     "885": {
       "month": 1,
@@ -2759,11 +2679,6 @@
       "month_name": "November",
       "owner": "Cheryl.Brackett@maine.gov"
     },
-    "4633": {
-      "month": 6,
-      "month_name": "June",
-      "owner": "Jennifer.Page@maine.gov"
-    },
     "1998": {
       "month": 6,
       "month_name": "June",
@@ -2840,11 +2755,6 @@
       "owner": "Jennifer.Page@maine.gov"
     },
     "4087": {
-      "month": 12,
-      "month_name": "December",
-      "owner": "Jennifer.Page@maine.gov"
-    },
-    "4120": {
       "month": 12,
       "month_name": "December",
       "owner": "Jennifer.Page@maine.gov"
@@ -2944,11 +2854,6 @@
       "month_name": "September",
       "owner": "drew.mitchell@maine.gov"
     },
-    "1446": {
-      "month": 4,
-      "month_name": "April",
-      "owner": "rita.pello@maine.gov"
-    },
     "424": {
       "month": 4,
       "month_name": "April",
@@ -2980,11 +2885,6 @@
       "owner": "rita.pello@maine.gov"
     },
     "4611": {
-      "month": 4,
-      "month_name": "April",
-      "owner": "rita.pello@maine.gov"
-    },
-    "4521": {
       "month": 4,
       "month_name": "April",
       "owner": "rita.pello@maine.gov"
@@ -3859,11 +3759,6 @@
       "month_name": "May",
       "owner": "janette.kirk@maine.gov"
     },
-    "956": {
-      "month": 5,
-      "month_name": "May",
-      "owner": "janette.kirk@maine.gov"
-    },
     "249": {
       "month": 10,
       "month_name": "October",
@@ -4254,11 +4149,6 @@
       "month_name": "October",
       "owner": "Brianne.Lolar@maine.gov"
     },
-    "1584": {
-      "month": 10,
-      "month_name": "October",
-      "owner": "Brianne.Lolar@maine.gov"
-    },
     "336": {
       "month": 11,
       "month_name": "November",
@@ -4280,11 +4170,6 @@
       "owner": "rachel.paling@maine.gov"
     },
     "1594": {
-      "month": 1,
-      "month_name": "January",
-      "owner": "rachel.paling@maine.gov"
-    },
-    "3234": {
       "month": 1,
       "month_name": "January",
       "owner": "rachel.paling@maine.gov"
@@ -4389,5 +4274,6 @@
       "month_name": "November",
       "owner": "Carolyn.Gross@maine.gov"
     }
-  }
+  },
+  "last_synced": "2026-04-07T13:44:00.994729"
 }
