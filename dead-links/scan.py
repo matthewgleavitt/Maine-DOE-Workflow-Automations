@@ -567,7 +567,7 @@ def send_author_emails(dead_links, meta):
         except Exception as e:
             print(f"  ✗ Error sending to {author_email}: {e}")
 
-        time.sleep(0.5)  # Rate limit
+        time.sleep(7)  # MailerSend: 10 requests/min limit
 
 
 
@@ -874,7 +874,7 @@ def check_content_audits(pages):
             except Exception as e:
                 print(f"    ✗ {owner_email}: {e}")
             
-            time.sleep(0.5)
+            time.sleep(7)  # MailerSend: 10 requests/min limit
     
     return due_pages
 
