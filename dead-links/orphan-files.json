@@ -1,7 +1,7 @@
 {
-  "scan_date": "2026-04-07T15:45:02.766138",
-  "orphan_count": 2724,
-  "total_size_bytes": 3081516133,
+  "scan_date": "2026-04-07T17:17:44.770430",
+  "orphan_count": 2729,
+  "total_size_bytes": 3087098439,
   "files": [
     {
       "fid": 30405,
@@ -870,6 +870,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/McAlister%20-%20Why.pdf",
       "filesize": 5206125,
       "created": "2020-05-28T14:20:29+00:00"
+    },
+    {
+      "fid": 45083,
+      "filename": "Child Nutrition - 2025 SFSP Training - 6.23.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%202025%20SFSP%20Training%20-%206.23.2025.pdf",
+      "filesize": 5172137,
+      "created": "2025-06-24T18:05:57+00:00"
     },
     {
       "fid": 30497,
@@ -7289,6 +7296,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/SAMPLE%20MV%20Editable%20Poster%20new.docx",
       "filesize": 305024,
       "created": "2021-10-15T01:53:02+00:00"
+    },
+    {
+      "fid": 23866,
+      "filename": "Maya Angelou.PNG",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/Maya%20Angelou.PNG",
+      "filesize": 302951,
+      "created": "2022-04-28T15:19:23+00:00"
     },
     {
       "fid": 28716,
@@ -16258,6 +16272,13 @@
       "created": "2024-02-02T16:36:47+00:00"
     },
     {
+      "fid": 16028,
+      "filename": "path2.png",
+      "url": "/doe/sites/maine.gov.doe/files/2021-01/path2.png",
+      "filesize": 36700,
+      "created": "2021-01-21T02:09:46+00:00"
+    },
+    {
       "fid": 33819,
       "filename": "SAU Dosage.png",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/SAU%20Dosage.png",
@@ -16312,6 +16333,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Revised%20Application%20Memo.pdf",
       "filesize": 35755,
       "created": "2023-03-01T14:32:38+00:00"
+    },
+    {
+      "fid": 16029,
+      "filename": "path3.png",
+      "url": "/doe/sites/maine.gov.doe/files/2021-01/path3.png",
+      "filesize": 35728,
+      "created": "2021-01-21T02:10:12+00:00"
     },
     {
       "fid": 33818,
@@ -16396,6 +16424,13 @@
       "url": "/doe/sites/maine.gov.doe/files/2020-10/2020_Maine_Coronavirus_Relief_Fund_Commitment_Report_30Oct2020.pdf",
       "filesize": 34983,
       "created": "2020-10-30T14:34:55+00:00"
+    },
+    {
+      "fid": 16027,
+      "filename": "path1.png",
+      "url": "/doe/sites/maine.gov.doe/files/2021-01/path1.png",
+      "filesize": 34790,
+      "created": "2021-01-21T01:56:58+00:00"
     },
     {
       "fid": 37451,
