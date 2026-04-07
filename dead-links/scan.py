@@ -37,6 +37,9 @@ FROM_EMAIL = os.environ.get("FROM_EMAIL", "matthew.g.leavitt@maine.gov")
 FROM_NAME = os.environ.get("FROM_NAME", "Maine DOE Web Team")
 SEND_EMAILS = os.environ.get("SEND_EMAILS", "false").lower() == "true"
 
+# Test mode: sends ALL emails to ADMIN_EMAIL instead of real authors
+TEST_MODE = os.environ.get("TEST_MODE", "false").lower() == "true"
+
 # Optional: skip external checks for faster runs
 CHECK_EXTERNAL = os.environ.get("CHECK_EXTERNAL", "true").lower() == "true"
 
@@ -445,13 +448,17 @@ def send_author_emails(dead_links, meta):
         print("\nNo MAILERSEND_API_KEY set — skipping emails")
         return
 
-    # Group by author
+    # Group by author (actionable only)
     by_author = {}
+    unverifiable_by_author = {}
     for d in dead_links:
-        if d["category"] in ("OTHER_MAINE_GOV", "EXTERNAL_UNVERIFIABLE"):
-            continue
-        email = d["author"]
+        email = d.get("author", "")
         if not email or "@" not in email:
+            continue
+        if d["category"] == "EXTERNAL_UNVERIFIABLE":
+            unverifiable_by_author[email] = unverifiable_by_author.get(email, 0) + 1
+            continue
+        if d["category"] == "OTHER_MAINE_GOV":
             continue
         if email not in by_author:
             by_author[email] = []
@@ -496,14 +503,14 @@ def send_author_emails(dead_links, meta):
         <div style="font-family:Calibri,sans-serif;max-width:700px;margin:0 auto">
             <div style="background:#182b3c;padding:20px 24px;border-radius:8px 8px 0 0">
                 <h2 style="color:#fff;margin:0;font-size:20px">Broken Links Found on Your Pages</h2>
-                <p style="color:#8ab4d4;margin:6px 0 0;font-size:14px">Monthly scan — {scan_date}</p>
+                <p style="color:#42c3f7;margin:6px 0 0;font-size:14px">Monthly scan — {scan_date}</p>
             </div>
             <div style="padding:20px 24px;background:#fff;border:1px solid #e9ecef">
                 <p>Hi,</p>
                 <p>Our monthly link scan found <strong>{total} broken link{'' if total == 1 else 's'}</strong> across
                 <strong>{page_count} page{'' if page_count == 1 else 's'}</strong> that you author on maine.gov/doe.</p>
                 <p>These are links pointing to files, pages, or external sites that are no longer available.
-                Visitors clicking them are hitting dead ends.</p>
+                Visitors clicking them are hitting dead ends. Please address these within the next <strong>week</strong>.</p>
 
                 <p><strong>What to do:</strong></p>
                 <ul>
@@ -527,10 +534,10 @@ def send_author_emails(dead_links, meta):
 
                 <p style="color:#666;font-size:13px">If you have questions or need help, reply to this email or contact
                 the Web Team. This is an automated monthly scan.</p>
+
             </div>
             <div style="background:#f8f9fa;padding:12px 24px;border-radius:0 0 8px 8px;border:1px solid #e9ecef;border-top:none">
-                <p style="margin:0;font-size:12px;color:#999">Maine Department of Education · Website & Technology ·
-                <a href="https://www.maine.gov/doe" style="color:#42c3f7">maine.gov/doe</a></p>
+                <p style="margin:0;font-size:12px;color:#666">If you are not the appropriate owner for this page, please forward this email to <a href="mailto:matthew.g.leavitt@maine.gov" style="color:#42c3f7">matthew.g.leavitt@maine.gov</a> so it can be reassigned.</p>
             </div>
         </div>
         """
@@ -690,7 +697,7 @@ def save_orphan_results(orphans):
 
 
 
-# ─── Phase 5d: Content Audit Reminders ───────────────────────────────────────
+# ─── Phase 5d: Maine DOE Content Audits ───────────────────────────────────────
 def check_content_audits(pages):
     """Check which pages are due for content audit this month."""
     print("\nPhase 5d: Checking content audit schedule...")
@@ -801,22 +808,36 @@ def check_content_audits(pages):
             html_body = f"""
             <div style="font-family:Calibri,sans-serif;max-width:700px;margin:0 auto">
                 <div style="background:#182b3c;padding:20px 24px;border-radius:8px 8px 0 0">
-                    <h2 style="color:#fff;margin:0;font-size:20px">Content Audit Reminder</h2>
-                    <p style="color:#8ab4d4;margin:6px 0 0;font-size:14px">{scan_month} audit cycle</p>
+                    <h2 style="color:#fff;margin:0;font-size:20px">Maine DOE Content Audit</h2>
+                    <p style="color:#42c3f7;margin:6px 0 0;font-size:14px">{scan_month} audit cycle</p>
                 </div>
                 <div style="padding:20px 24px;background:#fff;border:1px solid #e9ecef">
                     <p>Hi,</p>
-                    <p>The following <strong>{len(owner_pages)} page(s)</strong> are scheduled for their annual content audit this month.
-                    Please review each page to ensure the content is accurate, up-to-date, and all links are working.</p>
+                    <p>The following <strong>{len(owner_pages)} page(s)</strong> are scheduled for their annual content audit.
+                    Please review each page within the next <strong>two weeks</strong> to ensure the content is accurate, up-to-date, and all links are working.</p>
                     
                     <p><strong>What to check:</strong></p>
                     <ul>
-                        <li>Is the content still accurate and relevant?</li>
-                        <li>Are all links working?</li>
-                        <li>Are any files/resources outdated and need replacing?</li>
-                        <li>Should any content be removed or consolidated?</li>
+                        <li><strong>Is the content still accurate and relevant?</strong><br>
+                        <span style="color:#555;font-size:13px">Read through all content on the page carefully. Verify that facts, figures, and descriptions are current. Check that any references to dates, school years, or deadlines still make sense. Update any language that no longer reflects current policy or practice.</span></li>
+
+                        <li style="margin-top:10px"><strong>Are all links working?</strong><br>
+                        <span style="color:#555;font-size:13px">Check every link on the page to ensure it leads to a valid destination. Even if you receive broken link reports, some external links change without notice and cannot be verified automatically. You can use a tool like <a href="https://chromewebstore.google.com/detail/check-my-links/aajoalonednamcpodaeocebfgldhcpbe" style="color:#42c3f7">Check My Links</a> (while logged out of Drupal) to scan the page. External links should be manually verified by clicking through.</span></li>
+
+                        <li style="margin-top:10px"><strong>Do any files or resources need replacing?</strong><br>
+                        <span style="color:#555;font-size:13px">Review linked PDFs, spreadsheets, and other documents to confirm they are still accurate and up to date. Replace any outdated versions with current files.</span></li>
+
+                        <li style="margin-top:10px"><strong>Should any content be removed or consolidated?</strong><br>
+                        <span style="color:#555;font-size:13px">To reduce clutter on the website, only include resources and information that provide clear value to visitors. Consider whether items can be combined, whether outdated announcements should be removed, or whether rarely accessed materials should be archived offline. If you feel an entire page is no longer necessary — for example, if the information could live on another page or is no longer relevant — reach out to <a href="mailto:matthew.g.leavitt@maine.gov" style="color:#42c3f7">matthew.g.leavitt@maine.gov</a> and we can consolidate or remove it.</span></li>
                     </ul>
                     
+                    <p><strong>After reviewing:</strong></p>
+                    <ul>
+                        <li>Use the <strong>Revision log</strong> on the side of the edit page to share what updates were made (generally speaking)</li>
+                        <li>If no changes are needed, simply enter <em>"This page was fully reviewed"</em> in the Revision log</li>
+                        <li>Submit the page for approval</li>
+                    </ul>
+
                     <table style="width:100%;border-collapse:collapse;margin:16px 0">
                         <thead>
                             <tr style="background:#182b3c;color:#fff">
@@ -827,12 +848,10 @@ def check_content_audits(pages):
                         <tbody>{rows}</tbody>
                     </table>
                     
-                    <p style="color:#666;font-size:13px">After reviewing, submit any changes for approval.
-                    If no changes are needed, no action is required — this page will be scheduled for audit again next year.</p>
+                    <p style="color:#666;font-size:13px">Page(s) will be scheduled for audit again next year.</p>
                 </div>
                 <div style="background:#f8f9fa;padding:12px 24px;border-radius:0 0 8px 8px;border:1px solid #e9ecef;border-top:none">
-                    <p style="margin:0;font-size:12px;color:#999">Maine Department of Education &middot; Annual Content Audit &middot;
-                    <a href="https://www.maine.gov/doe" style="color:#42c3f7">maine.gov/doe</a></p>
+                    <p style="margin:0;font-size:12px;color:#666">If you are not the appropriate owner for this page, please forward this email to <a href="mailto:matthew.g.leavitt@maine.gov" style="color:#42c3f7">matthew.g.leavitt@maine.gov</a> so it can be reassigned.</p>
                 </div>
             </div>"""
             
@@ -841,8 +860,8 @@ def check_content_audits(pages):
                     "https://api.mailersend.com/v1/email",
                     json={
                         "from": {"email": FROM_EMAIL, "name": FROM_NAME},
-                        "to": [{"email": owner_email}],
-                        "subject": f"Content Audit: {len(owner_pages)} Page(s) Due for Review — {scan_month}",
+                        "to": [{"email": ADMIN_EMAIL if TEST_MODE else owner_email}],
+                        "subject": f"{'[TEST → ' + owner_email + '] ' if TEST_MODE else ''}Action Needed: {len(owner_pages)} Page(s) Due for Content Audit — {scan_month}",
                         "html": html_body,
                     },
                     headers={"Authorization": f"Bearer {MAILERSEND_API_KEY}", "Content-Type": "application/json"},
@@ -1058,6 +1077,8 @@ def main():
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"External checks: {'enabled' if CHECK_EXTERNAL else 'disabled'}")
     print(f"Email sending: {'enabled' if SEND_EMAILS else 'disabled'}")
+    if TEST_MODE:
+        print(f"⚠ TEST MODE: All emails will go to {ADMIN_EMAIL} instead of real authors")
     print()
 
     # Load verified-alive allowlist (URLs to skip checking)
@@ -1100,7 +1121,7 @@ def main():
         <div style="font-family:Calibri,sans-serif;max-width:700px;margin:0 auto">
             <div style="background:#182b3c;padding:20px 24px;border-radius:8px 8px 0 0">
                 <h2 style="color:#fff;margin:0">📁 Orphan Files Detected</h2>
-                <p style="color:#8ab4d4;margin:6px 0 0;font-size:14px">Monthly scan — {datetime.now().strftime("%B %d, %Y")}</p>
+                <p style="color:#42c3f7;margin:6px 0 0;font-size:14px">Monthly scan — {datetime.now().strftime("%B %d, %Y")}</p>
             </div>
             <div style="padding:20px 24px;background:#fff;border:1px solid #e9ecef">
                 <p>{len(orphans)} managed files ({orphan_total_mb:.1f} MB) are not referenced in any page body.
