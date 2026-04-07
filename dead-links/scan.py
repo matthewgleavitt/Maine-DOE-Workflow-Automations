@@ -1,6 +1,6 @@
 """
 Maine DOE Dead Link Scanner
-Version: 1.9 — 2026-04-06 9:30 PM ET
+Version: 2.0 — 2026-04-06 9:30 PM ET
 Runs via GitHub Actions on a schedule.
 - Fetches all published pages via JSON:API
 - Extracts every <a href> and <img src>
@@ -132,7 +132,7 @@ def fetch_all_pages():
         url = (
             f"{JSONAPI_URL}?filter[status]=1"
             f"&include=uid"
-            f"&fields[node--multi_column_page]=body,title,path,drupal_internal__nid,field_page_owner_email"
+            f"&fields[node--multi_column_page]=body,title,path,drupal_internal__nid,field_page_owner_email,created"
             f"&fields[user--user]=mail,name,display_name"
             f"&page[limit]={PAGE_LIMIT}&page[offset]={offset}"
         )
@@ -189,6 +189,7 @@ def fetch_all_pages():
                 "url": page_url,
                 "author": author_email,
                 "body": body_html,
+                "created": attrs.get("created", ""),
             })
 
         print(f"  Loaded {len(pages)} pages...")
@@ -687,8 +688,179 @@ def save_orphan_results(orphans):
     print(f"  Orphan results saved to {orphan_path}")
     return output
 
+
+
+# ─── Phase 5d: Content Audit Reminders ───────────────────────────────────────
+def check_content_audits(pages):
+    """Check which pages are due for content audit this month."""
+    print("\nPhase 5d: Checking content audit schedule...")
+    
+    schedule_path = os.path.join(os.path.dirname(__file__), "audit-schedule.json")
+    if not os.path.exists(schedule_path):
+        print("  No audit-schedule.json found — creating empty schedule")
+        schedule_data = {"schedule": {}, "summary": {}}
+    else:
+        with open(schedule_path) as f:
+            schedule_data = json.load(f)
+    
+    schedule = schedule_data.get("schedule", {})
+    current_month = datetime.now().month
+    month_names = ["", "January","February","March","April","May","June",
+                   "July","August","September","October","November","December"]
+    
+    print(f"  Loaded schedule ({len(schedule)} pages)")
+    
+    # ─── Auto-sync: detect new pages, removed pages, owner changes ───
+    schedule_changed = False
+    page_nids = set()
+    
+    for page in pages:
+        nid_str = str(page["nid"])
+        page_nids.add(nid_str)
+        owner = page.get("author", "")
+        
+        if nid_str not in schedule:
+            # NEW PAGE: assign to its creation month (audited annually on that month)
+            created = page.get("created", "")
+            if created:
+                try:
+                    creation_month = int(created[5:7])  # ISO format: 2026-04-07T...
+                except (ValueError, IndexError):
+                    creation_month = current_month
+            else:
+                creation_month = current_month
+            schedule[nid_str] = {
+                "month": creation_month,
+                "month_name": month_names[creation_month],
+                "owner": owner,
+            }
+            schedule_changed = True
+            print(f"    + New page NID {nid_str}: '{page['title'][:50]}' → {month_names[creation_month]} (created {created[:10]})")
+        
+        elif owner and schedule[nid_str].get("owner", "") != owner:
+            # OWNER CHANGED: update schedule
+            old_owner = schedule[nid_str].get("owner", "(none)")
+            schedule[nid_str]["owner"] = owner
+            schedule_changed = True
+            print(f"    ~ Owner changed NID {nid_str}: {old_owner} → {owner}")
+    
+    # REMOVED PAGES: pages in schedule but no longer published
+    removed = [nid for nid in list(schedule.keys()) if nid not in page_nids]
+    if removed:
+        for nid in removed:
+            del schedule[nid]
+        schedule_changed = True
+        print(f"    - Removed {len(removed)} unpublished page(s) from schedule")
+    
+    # Save if changed
+    if schedule_changed:
+        schedule_data["schedule"] = schedule
+        schedule_data["last_synced"] = datetime.now().isoformat()
+        with open(schedule_path, "w") as f:
+            json.dump(schedule_data, f, indent=2)
+        print(f"  Schedule updated and saved ({len(schedule)} pages)")
+    else:
+        print(f"  Schedule unchanged")
+    
+    print(f"  Current month: {month_names[current_month]} (month {current_month})")
+    
+    # Find pages due this month
+    due_pages = []
+    for page in pages:
+        nid_str = str(page["nid"])
+        if nid_str in schedule and schedule[nid_str].get("month") == current_month:
+            due_pages.append({
+                "nid": page["nid"],
+                "title": page["title"],
+                "url": page["url"],
+                "owner": schedule[nid_str].get("owner", page.get("author", "")),
+            })
+    
+    print(f"  {len(due_pages)} pages due for audit this month")
+    
+    # Send audit reminder emails
+    if SEND_EMAILS and MAILERSEND_API_KEY and due_pages:
+        # Group by owner
+        by_owner = {}
+        for p in due_pages:
+            owner = p["owner"]
+            if not owner or "@" not in owner:
+                continue
+            if owner not in by_owner:
+                by_owner[owner] = []
+            by_owner[owner].append(p)
+        
+        print(f"  Sending audit reminders to {len(by_owner)} authors...")
+        scan_month = month_names[current_month]
+        
+        for owner_email, owner_pages in by_owner.items():
+            rows = ""
+            for p in owner_pages:
+                rows += f'<tr><td style="padding:8px 12px;border-bottom:1px solid #eee"><a href="{p["url"]}" style="color:#182b3c">{p["title"]}</a></td><td style="padding:8px 12px;border-bottom:1px solid #eee;font-size:12px;color:#666">{p["url"].replace("https://www.maine.gov/doe/", "/doe/")}</td></tr>'
+            
+            html_body = f"""
+            <div style="font-family:Calibri,sans-serif;max-width:700px;margin:0 auto">
+                <div style="background:#182b3c;padding:20px 24px;border-radius:8px 8px 0 0">
+                    <h2 style="color:#fff;margin:0;font-size:20px">Content Audit Reminder</h2>
+                    <p style="color:#8ab4d4;margin:6px 0 0;font-size:14px">{scan_month} audit cycle</p>
+                </div>
+                <div style="padding:20px 24px;background:#fff;border:1px solid #e9ecef">
+                    <p>Hi,</p>
+                    <p>The following <strong>{len(owner_pages)} page(s)</strong> are scheduled for their annual content audit this month.
+                    Please review each page to ensure the content is accurate, up-to-date, and all links are working.</p>
+                    
+                    <p><strong>What to check:</strong></p>
+                    <ul>
+                        <li>Is the content still accurate and relevant?</li>
+                        <li>Are all links working?</li>
+                        <li>Are any files/resources outdated and need replacing?</li>
+                        <li>Should any content be removed or consolidated?</li>
+                    </ul>
+                    
+                    <table style="width:100%;border-collapse:collapse;margin:16px 0">
+                        <thead>
+                            <tr style="background:#182b3c;color:#fff">
+                                <th style="padding:8px 12px;text-align:left">Page Title</th>
+                                <th style="padding:8px 12px;text-align:left">Path</th>
+                            </tr>
+                        </thead>
+                        <tbody>{rows}</tbody>
+                    </table>
+                    
+                    <p style="color:#666;font-size:13px">After reviewing, submit any changes for approval.
+                    If no changes are needed, no action is required — this page will be scheduled for audit again next year.</p>
+                </div>
+                <div style="background:#f8f9fa;padding:12px 24px;border-radius:0 0 8px 8px;border:1px solid #e9ecef;border-top:none">
+                    <p style="margin:0;font-size:12px;color:#999">Maine Department of Education &middot; Annual Content Audit &middot;
+                    <a href="https://www.maine.gov/doe" style="color:#42c3f7">maine.gov/doe</a></p>
+                </div>
+            </div>"""
+            
+            try:
+                resp = requests.post(
+                    "https://api.mailersend.com/v1/email",
+                    json={
+                        "from": {"email": FROM_EMAIL, "name": FROM_NAME},
+                        "to": [{"email": owner_email}],
+                        "subject": f"Content Audit: {len(owner_pages)} Page(s) Due for Review — {scan_month}",
+                        "html": html_body,
+                    },
+                    headers={"Authorization": f"Bearer {MAILERSEND_API_KEY}", "Content-Type": "application/json"},
+                    timeout=15,
+                )
+                if resp.status_code in (200, 201, 202):
+                    print(f"    ✓ {owner_email} ({len(owner_pages)} pages)")
+                else:
+                    print(f"    ✗ {owner_email}: {resp.status_code}")
+            except Exception as e:
+                print(f"    ✗ {owner_email}: {e}")
+            
+            time.sleep(0.5)
+    
+    return due_pages
+
 # ─── Phase 5b: Generate HTML report page ─────────────────────────────────────
-def generate_report(dead_links, meta, orphans=None):
+def generate_report(dead_links, meta, orphans=None, audit_pages=None):
     print("Generating HTML report...")
     scan_date = datetime.fromisoformat(meta["scan_date"]).strftime("%B %d, %Y")
     by_cat = meta.get("by_category", {})
@@ -767,6 +939,44 @@ def generate_report(dead_links, meta, orphans=None):
         </table>
         </div>"""
 
+    # Build audit section HTML
+    if audit_pages:
+        month_names = ["","January","February","March","April","May","June",
+                       "July","August","September","October","November","December"]
+        current_month = datetime.now().month
+        audit_by_owner = {}
+        for p in audit_pages:
+            o = p.get("owner", "(no owner)")
+            if o not in audit_by_owner:
+                audit_by_owner[o] = []
+            audit_by_owner[o].append(p)
+        
+        audit_rows = ""
+        for owner, pages_list in sorted(audit_by_owner.items()):
+            for i, p in enumerate(pages_list):
+                owner_cell = f'<td style="padding:6px 12px;border-bottom:1px solid rgba(109,139,166,0.1);font-weight:600">{owner.replace("@maine.gov","")}</td>' if i == 0 else '<td style="padding:6px 12px;border-bottom:1px solid rgba(109,139,166,0.1)"></td>'
+                audit_rows += f"""<tr>
+                  {owner_cell}
+                  <td style="padding:6px 12px;border-bottom:1px solid rgba(109,139,166,0.1)"><a href="{p['url']}" target="_blank" style="color:#42c3f7;text-decoration:underline">{p['title']}</a></td>
+                </tr>"""
+        
+        audit_html = f"""
+        <div style="margin-top:24px;background:rgba(27,58,84,0.4);border:1px solid rgba(109,139,166,0.15);border-radius:10px;padding:20px">
+          <h2 style="font-size:18px;color:#fff;margin:0 0 8px">📋 Content Audit — {month_names[current_month]}</h2>
+          <p style="font-size:13px;color:#8ab4d4;margin-bottom:12px">{len(audit_pages)} pages due for annual review this month across {len(audit_by_owner)} authors</p>
+          <div style="overflow-x:auto">
+          <table style="width:100%;border-collapse:collapse;font-size:13px">
+            <thead><tr style="background:#1b3a54">
+              <th style="padding:8px 12px;text-align:left;color:#42c3f7">Author</th>
+              <th style="padding:8px 12px;text-align:left;color:#42c3f7">Page</th>
+            </tr></thead>
+            <tbody>{audit_rows}</tbody>
+          </table>
+          </div>
+        </div>"""
+    else:
+        audit_html = ""
+
     # Build orphan section HTML
     if orphans:
         orphan_total_mb = sum(f.get("filesize") or 0 for f in orphans) / 1024 / 1024
@@ -825,6 +1035,7 @@ def generate_report(dead_links, meta, orphans=None):
   {status_html}
 </div>
 <div style="padding:0 24px 24px">
+  {audit_html}
   {orphan_html}
 </div>
 <div style="padding:0 24px 24px;font-size:12px;color:#3a5068">
@@ -842,7 +1053,7 @@ def generate_report(dead_links, meta, orphans=None):
 # ─── Main ─────────────────────────────────────────────────────────────────────
 def main():
     start = time.time()
-    VERSION = "1.9 — 2026-04-06 9:30 PM ET"
+    VERSION = "2.0 — 2026-04-06 9:30 PM ET"
     print(f"═══ Maine DOE Dead Link Scanner v{VERSION} ═══")
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"External checks: {'enabled' if CHECK_EXTERNAL else 'disabled'}")
@@ -871,7 +1082,8 @@ def main():
     save_results(dead_links, meta)
     orphans = find_orphan_files(pages)
     save_orphan_results(orphans)
-    generate_report(dead_links, meta, orphans)
+    audit_pages = check_content_audits(pages)
+    generate_report(dead_links, meta, orphans, audit_pages)
     send_author_emails(dead_links, meta)
 
     # Send orphan notification to admin only
