@@ -55,7 +55,8 @@ jobs:
 
       - name: Run dead link scan
         env:
-          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           FROM_EMAIL: ${{ vars.FROM_EMAIL || 'matthew.g.leavitt@maine.gov' }}
           FROM_NAME: ${{ vars.FROM_NAME || 'Maine DOE Web Team' }}
           CHECK_EXTERNAL: ${{ github.event.inputs.check_external || 'true' }}

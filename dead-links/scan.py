@@ -6,11 +6,14 @@ Runs via GitHub Actions on a schedule.
 - Extracts every <a href> and <img src>
 - Checks each DOE URL via HEAD request (no CORS restrictions server-side)
 - Groups results by page author (node uid)
-- Sends email notifications to authors via SendGrid
+- Sends email notifications to authors via Gmail SMTP
 - Saves results JSON for the browser triage tool
 """
 
 import requests
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import json
@@ -31,8 +34,9 @@ CHECK_TIMEOUT = 15
 MAX_WORKERS = 10
 RESULTS_FILE = "dead-links/scan-results.json"
 
-# SendGrid
-SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY", "")
+# Gmail SMTP
+SMTP_USER = os.environ.get("SMTP_USER", "mdoecomm@gmail.com")
+SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD", "")
 FROM_EMAIL = os.environ.get("FROM_EMAIL", "matthew.g.leavitt@maine.gov")
 FROM_NAME = os.environ.get("FROM_NAME", "Maine DOE Web Team")
 SEND_EMAILS = os.environ.get("SEND_EMAILS", "false").lower() == "true"
@@ -442,32 +446,26 @@ def save_results(dead_links, meta):
 # ─── Phase 6: Email authors ──────────────────────────────────────────────────
 
 def send_email(to_email, subject, html_body):
-    """Send an HTML email via SendGrid API."""
-    if not SENDGRID_API_KEY:
-        return False, "No SENDGRID_API_KEY set"
+    """Send an HTML email via Gmail SMTP."""
+    if not SMTP_PASSWORD:
+        return False, "No SMTP_PASSWORD set"
     
     actual_to = ADMIN_EMAIL if TEST_MODE else to_email
     actual_subject = f"[TEST → {to_email}] {subject}" if TEST_MODE else subject
     
+    msg = MIMEMultipart("alternative")
+    msg["From"] = f"{FROM_NAME} <{SMTP_USER}>"
+    msg["To"] = actual_to
+    msg["Subject"] = actual_subject
+    msg["Reply-To"] = FROM_EMAIL
+    msg.attach(MIMEText(html_body, "html"))
+    
     try:
-        resp = requests.post(
-            "https://api.sendgrid.com/v3/mail/send",
-            json={
-                "personalizations": [{"to": [{"email": actual_to}]}],
-                "from": {"email": FROM_EMAIL, "name": FROM_NAME},
-                "subject": actual_subject,
-                "content": [{"type": "text/html", "value": html_body}],
-            },
-            headers={
-                "Authorization": f"Bearer {SENDGRID_API_KEY}",
-                "Content-Type": "application/json",
-            },
-            timeout=15,
-        )
-        if resp.status_code in (200, 201, 202):
-            return True, "sent"
-        else:
-            return False, f"{resp.status_code} {resp.text[:100]}"
+        with smtplib.SMTP("smtp.gmail.com", 587) as server:
+            server.starttls()
+            server.login(SMTP_USER, SMTP_PASSWORD)
+            server.send_message(msg)
+        return True, "sent"
     except Exception as e:
         return False, str(e)[:100]
 
@@ -475,8 +473,8 @@ def send_author_emails(dead_links, meta):
     if not SEND_EMAILS:
         print("\nEmail sending disabled (set SEND_EMAILS=true to enable)")
         return
-    if not SENDGRID_API_KEY:
-        print("\nNo SENDGRID_API_KEY set — skipping emails")
+    if not SMTP_PASSWORD:
+        print("\nNo SMTP_PASSWORD set — skipping emails")
         return
 
     # Group by author (actionable only)
@@ -799,7 +797,7 @@ def check_content_audits(pages):
     print(f"  {len(due_pages)} pages due for audit this month")
     
     # Send audit reminder emails
-    if SEND_EMAILS and SENDGRID_API_KEY and due_pages:
+    if SEND_EMAILS and SMTP_PASSWORD and due_pages:
         # Group by owner
         by_owner = {}
         for p in due_pages:
@@ -1109,7 +1107,7 @@ def main():
     send_author_emails(dead_links, meta)
 
     # Send orphan notification to admin only
-    if SEND_EMAILS and SENDGRID_API_KEY and orphans:
+    if SEND_EMAILS and SMTP_PASSWORD and orphans:
         print(f"\nSending orphan file notification to {ADMIN_EMAIL}...")
         orphan_total_mb = sum(f.get("filesize") or 0 for f in orphans) / 1024 / 1024
         orphan_rows = ""
