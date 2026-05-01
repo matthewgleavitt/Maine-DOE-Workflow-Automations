@@ -982,7 +982,7 @@
     "4653": {
       "month": 8,
       "month_name": "August",
-      "owner": "matthew.g.leavitt@maine.gov"
+      "owner": "lori.huot@maine.gov"
     },
     "4539": {
       "month": 8,
@@ -1125,16 +1125,6 @@
       "owner": "charlotte.ellis@maine.gov"
     },
     "356": {
-      "month": 3,
-      "month_name": "March",
-      "owner": "charlotte.ellis@maine.gov"
-    },
-    "687": {
-      "month": 3,
-      "month_name": "March",
-      "owner": "charlotte.ellis@maine.gov"
-    },
-    "688": {
       "month": 3,
       "month_name": "March",
       "owner": "charlotte.ellis@maine.gov"
@@ -3309,11 +3299,6 @@
       "month_name": "October",
       "owner": "Wendy.Robichaud@maine.gov"
     },
-    "4447": {
-      "month": 10,
-      "month_name": "October",
-      "owner": "Wendy.Robichaud@maine.gov"
-    },
     "3238": {
       "month": 10,
       "month_name": "October",
@@ -3824,11 +3809,6 @@
       "month_name": "June",
       "owner": "theodore.lyman@maine.gov"
     },
-    "4587": {
-      "month": 6,
-      "month_name": "June",
-      "owner": "theodore.lyman@maine.gov"
-    },
     "2622": {
       "month": 7,
       "month_name": "July",
@@ -4273,7 +4253,27 @@
       "month": 11,
       "month_name": "November",
       "owner": "Carolyn.Gross@maine.gov"
+    },
+    "4669": {
+      "month": 4,
+      "month_name": "April",
+      "owner": ""
+    },
+    "4671": {
+      "month": 4,
+      "month_name": "April",
+      "owner": ""
+    },
+    "4667": {
+      "month": 4,
+      "month_name": "April",
+      "owner": "charlotte.ellis@maine.gov"
+    },
+    "4673": {
+      "month": 4,
+      "month_name": "April",
+      "owner": ""
     }
   },
-  "last_synced": "2026-04-07T13:44:00.994729"
+  "last_synced": "2026-05-01T08:19:37.506186"
 }
