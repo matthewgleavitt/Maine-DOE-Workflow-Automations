@@ -1,0 +1,29 @@
+name: File Reference Scanner
+
+on:
+  schedule:
+    - cron: '0 6 * * 0'  # Weekly on Sunday at 6am UTC (1am EST)
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install google-api-python-client google-auth requests
+
+      - name: Run file reference scanner
+        env:
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          CACHE_SHEET_ID: ${{ secrets.CACHE_SHEET_ID }}
+        run: python file-reference-scanner.py
