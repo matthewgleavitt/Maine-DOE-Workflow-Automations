@@ -1,7 +1,7 @@
 {
-  "scan_date": "2026-05-01T08:19:37.497342",
-  "orphan_count": 1207,
-  "total_size_bytes": 1169209493,
+  "scan_date": "2026-06-01T11:40:49.307052",
+  "orphan_count": 1307,
+  "total_size_bytes": 1215888399,
   "files": [
     {
       "fid": 26772,
@@ -347,6 +347,13 @@
       "created": "2020-05-28T14:20:29+00:00"
     },
     {
+      "fid": 44373,
+      "filename": "Child Nutrition - Child and Adult Care Food Program Budget Refresher - 4.15.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20Child%20and%20Adult%20Care%20Food%20Program%20Budget%20Refresher%20-%204.15.2025.pdf",
+      "filesize": 5185499,
+      "created": "2025-04-23T12:40:59+00:00"
+    },
+    {
       "fid": 10497,
       "filename": "Approved ESSA Amendment October 2019.docx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Approved%20ESSA%20Amendment%20October%202019.docx",
@@ -627,11 +634,25 @@
       "created": "2018-09-24T15:43:52+00:00"
     },
     {
+      "fid": 44377,
+      "filename": "Child Nutrition - Farm & Sea to Child and Adult Care Food Program - 4.15.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20Farm%20%26%20Sea%20to%20Child%20and%20Adult%20Care%20Food%20Program%20-%204.15.2025.pdf",
+      "filesize": 2978853,
+      "created": "2025-04-23T12:41:31+00:00"
+    },
+    {
       "fid": 5322,
       "filename": "Module-1-Facilitator-Guide (2).docx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Module-1-Facilitator-Guide%20%282%29.docx",
       "filesize": 2890658,
       "created": "2018-09-24T15:37:42+00:00"
+    },
+    {
+      "fid": 42667,
+      "filename": "Early Learning - MRBN PDG Workshop Registration Flyer - 2.14.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20MRBN%20PDG%20Workshop%20Registration%20Flyer%20-%202.14.2025.pdf",
+      "filesize": 2869894,
+      "created": "2025-02-14T19:44:16+00:00"
     },
     {
       "fid": 26729,
@@ -674,6 +695,13 @@
       "url": "/doe/sites/maine.gov.doe/files/2021-10/pexels-lukas-669612.jpg",
       "filesize": 2677860,
       "created": "2021-10-15T01:37:15+00:00"
+    },
+    {
+      "fid": 44379,
+      "filename": "Child Nutrition - Meal Pattern Changes Added Sugars in Cereal and Yogurt - 4.15.25.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20Meal%20Pattern%20Changes%20Added%20Sugars%20in%20Cereal%20and%20Yogurt%20-%204.15.25.pdf",
+      "filesize": 2653822,
+      "created": "2025-04-23T12:42:01+00:00"
     },
     {
       "fid": 20143,
@@ -970,6 +998,13 @@
       "created": "2024-05-14T17:24:43+00:00"
     },
     {
+      "fid": 44895,
+      "filename": "Child Nutrition - SY26 Paid Lunch Equity Tool - 6.6.2025.xlsx",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20SY26%20Paid%20Lunch%20Equity%20Tool%20-%206.6.2025.xlsx",
+      "filesize": 1813203,
+      "created": "2025-06-10T22:07:34+00:00"
+    },
+    {
       "fid": 13127,
       "filename": "Best Practices in Social Studies 6_4 Part One.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Best%20Practices%20in%20Social%20Studies%206_4%20Part%20One.pdf",
@@ -1010,6 +1045,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/115%20Webinar%203.pptx",
       "filesize": 1701368,
       "created": "2022-06-09T20:24:54+00:00"
+    },
+    {
+      "fid": 44369,
+      "filename": "Child Nutrition - Agreement & Administrative Review Reminders - 4.15.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20Agreement%20%26%20Administrative%20Review%20Reminders%20-%204.15.2025.pdf",
+      "filesize": 1695944,
+      "created": "2025-04-23T12:40:27+00:00"
     },
     {
       "fid": 13552,
@@ -1101,6 +1143,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Maine%20Model%20June%202019.docx",
       "filesize": 1538231,
       "created": "2019-06-20T14:05:49+00:00"
+    },
+    {
+      "fid": 44375,
+      "filename": "Child Nutrition - Child and Adult Care Food Program Financial Reviews - 4.15.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20Child%20and%20Adult%20Care%20Food%20Program%20Financial%20Reviews%20-%204.15.2025.pdf",
+      "filesize": 1515381,
+      "created": "2025-04-23T12:41:15+00:00"
     },
     {
       "fid": 13246,
@@ -1208,6 +1257,13 @@
       "created": "2018-07-20T16:56:59+00:00"
     },
     {
+      "fid": 44381,
+      "filename": "Child Nutrition - Serving Milk in the Child and Adult Care Food Program - 4.15.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20Serving%20Milk%20in%20the%20Child%20and%20Adult%20Care%20Food%20Program%20-%204.15.2025.pdf",
+      "filesize": 1336736,
+      "created": "2025-04-23T12:42:19+00:00"
+    },
+    {
       "fid": 13709,
       "filename": "8.PNG",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/8.PNG",
@@ -1269,6 +1325,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/LEPG%20Module%202%20PowerPoint.pptx",
       "filesize": 1212231,
       "created": "2018-09-24T15:46:51+00:00"
+    },
+    {
+      "fid": 14395,
+      "filename": "USDA Accommoding Children with Disabilities.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/USDA%20Accommoding%20Children%20with%20Disabilities.pdf",
+      "filesize": 1199736,
+      "created": "2020-09-10T17:41:45+00:00"
     },
     {
       "fid": 20559,
@@ -1334,6 +1397,13 @@
       "created": "2021-09-20T14:28:02+00:00"
     },
     {
+      "fid": 47589,
+      "filename": "USSYP - Official 2025 Brochure - 10.9.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/USSYP%20-%20Official%202025%20Brochure%20-%2010.9.2025.pdf",
+      "filesize": 1134576,
+      "created": "2025-10-09T12:44:46+00:00"
+    },
+    {
       "fid": 26846,
       "filename": "METF Report v4.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/METF%20Report%20v4.pdf",
@@ -1353,6 +1423,20 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Virtual%20Hands%20on%20History_0.pdf",
       "filesize": 1111684,
       "created": "2020-04-15T12:48:33+00:00"
+    },
+    {
+      "fid": 52865,
+      "filename": "Early Learning - Solutions Lab School-Community Partnership Playbook - 5.18.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20School-Community%20Partnership%20Playbook%20-%205.18.2026.pdf",
+      "filesize": 1110798,
+      "created": "2026-05-19T01:19:58+00:00"
+    },
+    {
+      "fid": 52875,
+      "filename": "Early Learning - Solutions Lab School-Community Partnership Playbook - 5.18.2026_0.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20School-Community%20Partnership%20Playbook%20-%205.18.2026_0.pdf",
+      "filesize": 1110798,
+      "created": "2026-05-19T01:24:41+00:00"
     },
     {
       "fid": 13557,
@@ -1453,6 +1537,13 @@
       "created": "2020-10-15T18:36:07+00:00"
     },
     {
+      "fid": 44641,
+      "filename": "Child Nutrition - SY2025 Annual Financial Report Presentation - 5.22.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20SY2025%20Annual%20Financial%20Report%20Presentation%20-%205.22.2025.pdf",
+      "filesize": 918957,
+      "created": "2025-05-23T20:03:13+00:00"
+    },
+    {
       "fid": 22791,
       "filename": "MSSC Effects of F.I. on Student.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/MSSC%20Effects%20of%20F.I.%20on%20Student.pdf",
@@ -1549,6 +1640,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Unit%203_Kinyarwanda_Final.pdf",
       "filesize": 804045,
       "created": "2021-02-08T14:27:09+00:00"
+    },
+    {
+      "fid": 44371,
+      "filename": "Child Nutrition - Annual Timeline Overview - 4.15.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20Annual%20Timeline%20Overview%20-%204.15.2025.pdf",
+      "filesize": 801870,
+      "created": "2025-04-23T12:40:44+00:00"
     },
     {
       "fid": 14529,
@@ -1971,6 +2069,13 @@
       "created": "2021-02-08T14:39:04+00:00"
     },
     {
+      "fid": 44503,
+      "filename": "State Board - Chapter 115 Part 2 Amended - 5.14.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Chapter%20115%20Part%202%20Amended%20-%205.14.2025.pdf",
+      "filesize": 620253,
+      "created": "2025-05-08T13:46:14+00:00"
+    },
+    {
       "fid": 7724,
       "filename": "School Safety vol. 6 Planning for those with Access and Functional Needs_FINAL.._.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/School%20Safety%20vol.%206%20Planning%20for%20those%20with%20Access%20and%20Functional%20Needs_FINAL.._.pdf",
@@ -2272,11 +2377,53 @@
       "created": "2021-08-12T14:25:54+00:00"
     },
     {
+      "fid": 52697,
+      "filename": "How to use your SUN Bucks English 8.14.25.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/How%20to%20use%20your%20SUN%20Bucks%20English%208.14.25.png",
+      "filesize": 518595,
+      "created": "2026-05-06T12:59:18+00:00"
+    },
+    {
+      "fid": 52699,
+      "filename": "How to use your SUN Bucks English 8.14.25_0.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/How%20to%20use%20your%20SUN%20Bucks%20English%208.14.25_0.png",
+      "filesize": 518595,
+      "created": "2026-05-06T13:01:01+00:00"
+    },
+    {
+      "fid": 52705,
+      "filename": "How to use your SUN Bucks English 8.14.25_1.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/How%20to%20use%20your%20SUN%20Bucks%20English%208.14.25_1.png",
+      "filesize": 518595,
+      "created": "2026-05-06T13:15:55+00:00"
+    },
+    {
+      "fid": 52707,
+      "filename": "How to use your SUN Bucks English 8.14.25_2.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/How%20to%20use%20your%20SUN%20Bucks%20English%208.14.25_2.png",
+      "filesize": 518595,
+      "created": "2026-05-06T13:31:47+00:00"
+    },
+    {
+      "fid": 52713,
+      "filename": "How to use your SUN Bucks English 8.14.25_3.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/How%20to%20use%20your%20SUN%20Bucks%20English%208.14.25_3.png",
+      "filesize": 518595,
+      "created": "2026-05-06T13:34:28+00:00"
+    },
+    {
       "fid": 468,
       "filename": "revised-qa-meal-pattern.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/revised-qa-meal-pattern.pdf",
       "filesize": 516092,
       "created": "2018-07-20T16:03:31+00:00"
+    },
+    {
+      "fid": 52105,
+      "filename": "Assessment - 2025-2026 MECAS Guidelines - 4.10.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%202025-2026%20MECAS%20Guidelines%20-%204.10.2026.pdf",
+      "filesize": 515538,
+      "created": "2026-04-10T19:00:25+00:00"
     },
     {
       "fid": 27023,
@@ -2482,6 +2629,34 @@
       "created": "2021-01-20T15:47:54+00:00"
     },
     {
+      "fid": 52701,
+      "filename": "SUN Bucks Info Sheet_English.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/SUN%20Bucks%20Info%20Sheet_English.png",
+      "filesize": 418168,
+      "created": "2026-05-06T13:01:59+00:00"
+    },
+    {
+      "fid": 52709,
+      "filename": "SUN Bucks Info Sheet_English_1.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/SUN%20Bucks%20Info%20Sheet_English_1.png",
+      "filesize": 418168,
+      "created": "2026-05-06T13:32:10+00:00"
+    },
+    {
+      "fid": 52703,
+      "filename": "SUN Bucks Info Sheet_English_0.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/SUN%20Bucks%20Info%20Sheet_English_0.png",
+      "filesize": 418168,
+      "created": "2026-05-06T13:03:29+00:00"
+    },
+    {
+      "fid": 52711,
+      "filename": "SUN Bucks Info Sheet_English_2.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/SUN%20Bucks%20Info%20Sheet_English_2.png",
+      "filesize": 418168,
+      "created": "2026-05-06T13:32:58+00:00"
+    },
+    {
       "fid": 17241,
       "filename": "Final-EANS-FAQ-2.0-3.19.21_1.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Final-EANS-FAQ-2.0-3.19.21_1.pdf",
@@ -2566,6 +2741,13 @@
       "created": "2022-12-02T13:05:10+00:00"
     },
     {
+      "fid": 46671,
+      "filename": "Legislative - Rule Chapter 33 - 8.13.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Legislative%20-%20Rule%20Chapter%2033%20-%208.13.2025.pdf",
+      "filesize": 396067,
+      "created": "2025-08-13T14:39:20+00:00"
+    },
+    {
       "fid": 6054,
       "filename": "Vol 9 Issue 3 August 2018.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Vol%209%20Issue%203%20August%202018_0.pdf",
@@ -2615,11 +2797,32 @@
       "created": "2021-12-21T14:26:20+00:00"
     },
     {
+      "fid": 44643,
+      "filename": "Child Nutrition -  Annual Financial Report Instructions - 5.22.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20%20Annual%20Financial%20Report%20Instructions%20-%205.22.2025.pdf",
+      "filesize": 386991,
+      "created": "2025-05-23T20:03:39+00:00"
+    },
+    {
       "fid": 5,
       "filename": "informal01-200.png",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/informal01-200.png",
       "filesize": 386909,
       "created": "2018-01-30T21:36:18+00:00"
+    },
+    {
+      "fid": 52873,
+      "filename": "Early Learning - Solutions Lab School-Community Partnership Toolkit - 5.18.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20School-Community%20Partnership%20Toolkit%20-%205.18.2026.pdf",
+      "filesize": 385247,
+      "created": "2026-05-19T01:21:36+00:00"
+    },
+    {
+      "fid": 47261,
+      "filename": "Legislative - Chapter 33 Red Line Version - 9.17.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Legislative%20-%20Chapter%2033%20Red%20Line%20Version%20-%209.17.2025.pdf",
+      "filesize": 383709,
+      "created": "2025-09-18T16:18:51+00:00"
     },
     {
       "fid": 9795,
@@ -2648,6 +2851,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Read.Inquire.Write_.%20Webinar%20Handout%20-%206.10.20.docx.pdf",
       "filesize": 371103,
       "created": "2020-06-09T19:03:36+00:00"
+    },
+    {
+      "fid": 47263,
+      "filename": "Legislative - Chapter 33 Clean Version - 9.17.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Legislative%20-%20Chapter%2033%20Clean%20Version%20-%209.17.2025.pdf",
+      "filesize": 366072,
+      "created": "2025-09-18T16:20:07+00:00"
     },
     {
       "fid": 35189,
@@ -2692,11 +2902,25 @@
       "created": "2018-09-18T11:46:23+00:00"
     },
     {
+      "fid": 45403,
+      "filename": "Assessment - 2025 MSAA Parent Guide Grade 8 - 7.16.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%202025%20MSAA%20Parent%20Guide%20Grade%208%20-%207.16.2025.pdf",
+      "filesize": 355912,
+      "created": "2025-07-16T16:02:39+00:00"
+    },
+    {
       "fid": 15185,
       "filename": "boots small_0.jpg",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/boots%20small_0.jpg",
       "filesize": 355686,
       "created": "2020-11-06T14:39:18+00:00"
+    },
+    {
+      "fid": 45399,
+      "filename": "Assessment - 2025 MSAA Parent Guide Grade 6 - 7.16.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%202025%20MSAA%20Parent%20Guide%20Grade%206%20-%207.16.2025.pdf",
+      "filesize": 354809,
+      "created": "2025-07-16T16:02:20+00:00"
     },
     {
       "fid": 7668,
@@ -2711,6 +2935,20 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/DIRECTIONS%20FOR%20BUILDING%20A%20BUS_V3_012519_0.pdf",
       "filesize": 354718,
       "created": "2019-01-30T18:56:37+00:00"
+    },
+    {
+      "fid": 45397,
+      "filename": "Assessment - 2025 MSAA Parent Guide Grade 5 - 7.16.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%202025%20MSAA%20Parent%20Guide%20Grade%205%20-%207.16.2025.pdf",
+      "filesize": 354691,
+      "created": "2025-07-16T16:02:09+00:00"
+    },
+    {
+      "fid": 45395,
+      "filename": "Assessment - 2025 MSAA Parent Guide Grade 4 - 7.16.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%202025%20MSAA%20Parent%20Guide%20Grade%204%20-%207.16.2025.pdf",
+      "filesize": 353776,
+      "created": "2025-07-16T16:02:00+00:00"
     },
     {
       "fid": 7768,
@@ -2734,11 +2972,25 @@
       "created": "2018-10-25T15:30:56+00:00"
     },
     {
+      "fid": 45401,
+      "filename": "Assessment - 2025 MSAA Parent Guide Grade 7 - 7.16.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%202025%20MSAA%20Parent%20Guide%20Grade%207%20-%207.16.2025.pdf",
+      "filesize": 351816,
+      "created": "2025-07-16T16:02:29+00:00"
+    },
+    {
       "fid": 52195,
       "filename": "Module-2-Visions-of-Support-presentation-20220516(1).pptx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Module-2-Visions-of-Support-presentation-20220516%281%29.pptx",
       "filesize": 351754,
       "created": "2026-04-13T19:45:53+00:00"
+    },
+    {
+      "fid": 52877,
+      "filename": "Early Learning - Solutions Lab Banner.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/Early%20Learning%20-%20Solutions%20Lab%20Banner.png",
+      "filesize": 351667,
+      "created": "2026-05-19T01:25:03+00:00"
     },
     {
       "fid": 6917,
@@ -2753,6 +3005,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Website_Landing%20Page_Maine%20School%20Bus%20Bid%20and%20Purchase%20System_Update%20111918_2.pdf",
       "filesize": 351254,
       "created": "2018-11-20T18:08:54+00:00"
+    },
+    {
+      "fid": 45393,
+      "filename": "Assessment - 2025 MSAA Parent Guide Grade 3 - 7.16.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%202025%20MSAA%20Parent%20Guide%20Grade%203%20-%207.16.2025.pdf",
+      "filesize": 350122,
+      "created": "2025-07-16T16:01:39+00:00"
     },
     {
       "fid": 44813,
@@ -2774,6 +3033,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/School%20Safety%20vol.%203%20Door%20Locks%20and%20Code%20Compliance_FINAL%20approved_0.pdf",
       "filesize": 348578,
       "created": "2018-11-05T19:01:07+00:00"
+    },
+    {
+      "fid": 45405,
+      "filename": "Assessment - 2025 MSAA Parent Guide High School - 7.16.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%202025%20MSAA%20Parent%20Guide%20High%20School%20-%207.16.2025.pdf",
+      "filesize": 347949,
+      "created": "2025-07-16T16:02:49+00:00"
     },
     {
       "fid": 48653,
@@ -2832,6 +3098,13 @@
       "created": "2019-09-16T14:39:52+00:00"
     },
     {
+      "fid": 52869,
+      "filename": "Early Learning - Solutions Lab Accountability Pathway - 5.18.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20Accountability%20Pathway%20-%205.18.2026.pdf",
+      "filesize": 336517,
+      "created": "2026-05-19T01:20:32+00:00"
+    },
+    {
       "fid": 26405,
       "filename": "MSAD 59 RREV Pilot.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/MSAD%2059%20RREV%20Pilot.pdf",
@@ -2879,6 +3152,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-images/workshop-1746275_1920_0.jpg",
       "filesize": 321017,
       "created": "2020-08-12T01:04:04+00:00"
+    },
+    {
+      "fid": 51507,
+      "filename": "School Finance - Cost Analysis Expenditure Detail Report Template and Sample - 3.11.2026.xlsx",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%20Cost%20Analysis%20Expenditure%20Detail%20Report%20Template%20and%20Sample%20-%203.11.2026.xlsx",
+      "filesize": 318438,
+      "created": "2026-03-12T18:48:06+00:00"
     },
     {
       "fid": 6528,
@@ -3014,6 +3294,13 @@
       "created": "2022-10-06T17:33:44+00:00"
     },
     {
+      "fid": 44797,
+      "filename": "State Board - FY26 Perkins State Preliminary Budget - 6.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20FY26%20Perkins%20State%20Preliminary%20Budget%20-%206.11.2025.pdf",
+      "filesize": 290063,
+      "created": "2025-06-05T19:53:51+00:00"
+    },
+    {
       "fid": 25363,
       "filename": "41 Common Signs of Homelessness.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/41%20Common%20Signs%20of%20Homelessness.pdf",
@@ -3091,6 +3378,13 @@
       "created": "2020-12-17T15:40:55+00:00"
     },
     {
+      "fid": 49159,
+      "filename": "State Board - Business Agenda - 12.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Business%20Agenda%20-%2012.11.2025.pdf",
+      "filesize": 276129,
+      "created": "2025-12-05T20:21:55+00:00"
+    },
+    {
       "fid": 26402,
       "filename": "MeANS RREV Pilot.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/MeANS%20RREV%20Pilot.pdf",
@@ -3152,6 +3446,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-images/MIYHS%20Image.png",
       "filesize": 270933,
       "created": "2021-11-02T12:55:04+00:00"
+    },
+    {
+      "fid": 47103,
+      "filename": "State Board - State Board of Education Business Agenda - 9.10.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20State%20Board%20of%20Education%20Business%20Agenda%20-%209.10.2025.pdf",
+      "filesize": 270800,
+      "created": "2025-09-03T19:45:38+00:00"
     },
     {
       "fid": 6048,
@@ -3231,6 +3532,13 @@
       "created": "2020-07-30T17:10:24+00:00"
     },
     {
+      "fid": 45435,
+      "filename": "ESEA - Title IV-A Spending Snapshot - 7.17.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20Title%20IV-A%20Spending%20Snapshot%20-%207.17.2025.pdf",
+      "filesize": 261033,
+      "created": "2025-07-17T13:57:27+00:00"
+    },
+    {
       "fid": 46779,
       "filename": "ESEA - Title IV-A Spending Snapshot - 7.17.2025_0.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20Title%20IV-A%20Spending%20Snapshot%20-%207.17.2025_0.pdf",
@@ -3292,6 +3600,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Unit%203%20Links_1.pdf",
       "filesize": 256140,
       "created": "2019-09-12T20:08:11+00:00"
+    },
+    {
+      "fid": 45141,
+      "filename": "State Board - Business Agenda - 7.9.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Business%20Agenda%20-%207.9.2025.pdf",
+      "filesize": 252770,
+      "created": "2025-07-03T12:21:36+00:00"
     },
     {
       "fid": 20620,
@@ -3378,6 +3693,13 @@
       "created": "2022-10-06T17:28:19+00:00"
     },
     {
+      "fid": 43807,
+      "filename": "State Board - CTE Meeting Minutes - 2.27.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20CTE%20Meeting%20Minutes%20-%202.27.2025.pdf",
+      "filesize": 243317,
+      "created": "2025-03-28T11:42:18+00:00"
+    },
+    {
       "fid": 20562,
       "filename": "SAMPLE Best Interest Determination Checklist.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/SAMPLE%20Best%20Interest%20Determination%20Checklist.pdf",
@@ -3462,6 +3784,13 @@
       "created": "2021-05-04T19:07:47+00:00"
     },
     {
+      "fid": 52639,
+      "filename": "ESEA - Title I Schoolwide Guidance - 4.30.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20Title%20I%20Schoolwide%20Guidance%20-%204.30.2026.pdf",
+      "filesize": 238329,
+      "created": "2026-05-01T13:16:07+00:00"
+    },
+    {
       "fid": 23583,
       "filename": "standardsreview.png",
       "url": "/doe/sites/maine.gov.doe/files/2022-04/standardsreview.png",
@@ -3504,6 +3833,27 @@
       "created": "2019-02-14T19:54:47+00:00"
     },
     {
+      "fid": 47587,
+      "filename": "USSYP - press release - 10.9.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/USSYP%20-%20press%20release%20-%2010.9.2025.pdf",
+      "filesize": 232595,
+      "created": "2025-10-09T12:43:09+00:00"
+    },
+    {
+      "fid": 48883,
+      "filename": "State Board - Business Agenda - 11.13.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Business%20Agenda%20-%2011.13.2025.pdf",
+      "filesize": 232419,
+      "created": "2025-11-10T19:54:02+00:00"
+    },
+    {
+      "fid": 47425,
+      "filename": "State Board - Business Agenda - 10.9.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Business%20Agenda%20-%2010.9.2025.pdf",
+      "filesize": 231118,
+      "created": "2025-10-02T19:14:53+00:00"
+    },
+    {
       "fid": 26708,
       "filename": "EANS Weekly Timesheets10.26.22.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/EANS%20Weekly%20Timesheets10.26.22.pdf",
@@ -3537,6 +3887,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-images/graphic%202_0.png",
       "filesize": 224480,
       "created": "2022-01-19T19:04:23+00:00"
+    },
+    {
+      "fid": 47105,
+      "filename": "State Board - State Board of Education Business Agenda - 9.8.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20State%20Board%20of%20Education%20Business%20Agenda%20-%209.8.2025.pdf",
+      "filesize": 222934,
+      "created": "2025-09-03T19:45:46+00:00"
     },
     {
       "fid": 52255,
@@ -3805,6 +4162,13 @@
       "created": "2018-09-24T15:49:04+00:00"
     },
     {
+      "fid": 52671,
+      "filename": "Legislative - Rule Chapter 54 - 4.30.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Legislative%20-%20Rule%20Chapter%2054%20-%204.30.2026.pdf",
+      "filesize": 198255,
+      "created": "2026-05-01T13:29:48+00:00"
+    },
+    {
       "fid": 26693,
       "filename": "EANS Weekly Timesheets.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/EANS%20Weekly%20Timesheets.pdf",
@@ -3819,11 +4183,53 @@
       "created": "2018-10-22T18:19:31+00:00"
     },
     {
+      "fid": 28539,
+      "filename": "Supporting School Reform By Leveraging Federal Funds in Schoolwide Program.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Supporting%20School%20Reform%20By%20Leveraging%20Federal%20Funds%20in%20Schoolwide%20Program.pdf",
+      "filesize": 196286,
+      "created": "2023-03-15T16:54:11+00:00"
+    },
+    {
+      "fid": 46543,
+      "filename": "State Board - Business Meeting Agenda - 8.13.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Business%20Meeting%20Agenda%20-%208.13.2025.pdf",
+      "filesize": 196281,
+      "created": "2025-08-07T17:07:53+00:00"
+    },
+    {
+      "fid": 46541,
+      "filename": "State Board - Workshop Meeting Agenda - 8.13.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Workshop%20Meeting%20Agenda%20-%208.13.2025.pdf",
+      "filesize": 196023,
+      "created": "2025-08-07T17:07:45+00:00"
+    },
+    {
       "fid": 13525,
       "filename": "SY 2020 Veazie Admin Review and CA Letter_0.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/SY%202020%20Veazie%20Admin%20Review%20and%20CA%20Letter_0.pdf",
       "filesize": 195790,
       "created": "2020-07-20T14:35:24+00:00"
+    },
+    {
+      "fid": 45139,
+      "filename": "State Board - Workshop Agenda - 7.9.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Workshop%20Agenda%20-%207.9.2025.pdf",
+      "filesize": 195687,
+      "created": "2025-07-03T12:21:28+00:00"
+    },
+    {
+      "fid": 48881,
+      "filename": "State Board - Workshop Agenda - 11.13.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Workshop%20Agenda%20-%2011.13.2025.pdf",
+      "filesize": 195676,
+      "created": "2025-11-10T19:53:52+00:00"
+    },
+    {
+      "fid": 49157,
+      "filename": "State Board - Workshop Agenda - 12.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Workshop%20Agenda%20-%2012.11.2025.pdf",
+      "filesize": 195245,
+      "created": "2025-12-05T20:21:47+00:00"
     },
     {
       "fid": 14587,
@@ -3838,6 +4244,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/revised%20model%20bullying%20policy%20JICK%20SO.pdf",
       "filesize": 194162,
       "created": "2018-10-18T18:04:53+00:00"
+    },
+    {
+      "fid": 47101,
+      "filename": "State Board - State Board of Education Workshop Agenda - 9.10.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20State%20Board%20of%20Education%20Workshop%20Agenda%20-%209.10.2025.pdf",
+      "filesize": 192040,
+      "created": "2025-09-03T19:45:28+00:00"
     },
     {
       "fid": 16163,
@@ -3903,13 +4316,6 @@
       "created": "2022-10-06T12:43:03+00:00"
     },
     {
-      "fid": 52189,
-      "filename": "Equitable Services Spending Snapshot (1) (1)_0.pdf",
-      "url": "/doe/sites/maine.gov.doe/files/inline-files/Equitable%20Services%20Spending%20Snapshot%20%281%29%20%281%29_0.pdf",
-      "filesize": 187585,
-      "created": "2026-04-13T19:45:42+00:00"
-    },
-    {
       "fid": 26379,
       "filename": "MSAD 49 Abstract.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/MSAD%2049%20Abstract.pdf",
@@ -3924,6 +4330,13 @@
       "created": "2019-09-12T19:31:24+00:00"
     },
     {
+      "fid": 47423,
+      "filename": "State Board - Workshop Agenda - 10.9.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Workshop%20Agenda%20-%2010.9.2025.pdf",
+      "filesize": 186371,
+      "created": "2025-10-02T19:14:45+00:00"
+    },
+    {
       "fid": 11501,
       "filename": "00a- Week 1 Weekly Plan Full Day .pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/00a-%20Week%201%20Weekly%20Plan%20Full%20Day%20.pdf",
@@ -3936,6 +4349,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/A%20K%20for%20ME%20U1%20W3%20%20Week%20At%20a%20Glance.pdf",
       "filesize": 186237,
       "created": "2021-08-02T18:41:18+00:00"
+    },
+    {
+      "fid": 44809,
+      "filename": "State Board - CTE ONLY Certification Revisions - 6.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20CTE%20ONLY%20Certification%20Revisions%20-%206.11.2025.pdf",
+      "filesize": 185745,
+      "created": "2025-06-05T19:55:56+00:00"
     },
     {
       "fid": 25912,
@@ -3973,6 +4393,20 @@
       "created": "2018-09-24T15:45:13+00:00"
     },
     {
+      "fid": 43853,
+      "filename": "State Board - SBE Colby Exhibit - 4.9.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20SBE%20Colby%20Exhibit%20-%204.9.2025.pdf",
+      "filesize": 183223,
+      "created": "2025-04-03T12:19:24+00:00"
+    },
+    {
+      "fid": 44505,
+      "filename": "State Board - Colby Exhibit - 5.14.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Colby%20Exhibit%20-%205.14.2025.pdf",
+      "filesize": 182819,
+      "created": "2025-05-08T13:46:29+00:00"
+    },
+    {
       "fid": 24679,
       "filename": "3.png",
       "url": "/doe/sites/maine.gov.doe/files/2022-06/3.png",
@@ -3992,6 +4426,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Cornville%20Regional%20Charter%20School%20Plan.pdf",
       "filesize": 181606,
       "created": "2020-08-04T19:11:32+00:00"
+    },
+    {
+      "fid": 43685,
+      "filename": "Child Nutrition - Special Dietary Needs Quick Guide - 3.14.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20Special%20Dietary%20Needs%20Quick%20Guide%20-%203.14.2025.pdf",
+      "filesize": 179156,
+      "created": "2025-03-17T17:48:13+00:00"
     },
     {
       "fid": 19022,
@@ -4022,6 +4463,13 @@
       "created": "2018-09-24T15:56:11+00:00"
     },
     {
+      "fid": 44801,
+      "filename": "State Board - Briggs Request Amended - 6.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Briggs%20Request%20Amended%20-%206.11.2025.pdf",
+      "filesize": 176306,
+      "created": "2025-06-05T19:54:30+00:00"
+    },
+    {
       "fid": 17847,
       "filename": "Writing in the History Classroom.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Writing%20in%20the%20History%20Classroom.pdf",
@@ -4034,6 +4482,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Maine%20Learning%20Results%20for%20Social%20Studies%20%28Civics%20%26%20Government%29%20-%20Revised%202019_0.pdf",
       "filesize": 176205,
       "created": "2019-04-18T18:05:08+00:00"
+    },
+    {
+      "fid": 44805,
+      "filename": "State Board - Chapter 115 Middle Section 1.3 - 4.15.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Chapter%20115%20Middle%20Section%201.3%20-%204.15.2025.pdf",
+      "filesize": 175980,
+      "created": "2025-06-05T19:55:13+00:00"
     },
     {
       "fid": 34207,
@@ -4057,11 +4512,25 @@
       "created": "2019-01-08T13:42:28+00:00"
     },
     {
+      "fid": 43543,
+      "filename": "State Board - SBE Meeting Agenda - 3.12.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20SBE%20Meeting%20Agenda%20-%203.12.2025.pdf",
+      "filesize": 174018,
+      "created": "2025-03-05T20:43:51+00:00"
+    },
+    {
       "fid": 17430,
       "filename": "Provisional Suicide Data for Maine Youth 2020.pptx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Provisional%20Suicide%20Data%20for%20Maine%20Youth%202020.pptx",
       "filesize": 173856,
       "created": "2021-04-05T16:16:53+00:00"
+    },
+    {
+      "fid": 50647,
+      "filename": "Legislative - Chapter 54 Later Start Planning Grant Rule - 1.16.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Legislative%20-%20Chapter%2054%20Later%20Start%20Planning%20Grant%20Rule%20-%201.16.2026.pdf",
+      "filesize": 173804,
+      "created": "2026-01-16T15:23:19+00:00"
     },
     {
       "fid": 6335,
@@ -4169,6 +4638,13 @@
       "created": "2021-11-05T17:53:01+00:00"
     },
     {
+      "fid": 44791,
+      "filename": "State Board - Exhibit XA RSU 17 Site Approval - 6.11.25.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Exhibit%20XA%20RSU%2017%20Site%20Approval%20-%206.11.25.pdf",
+      "filesize": 168371,
+      "created": "2025-06-05T19:52:30+00:00"
+    },
+    {
       "fid": 10253,
       "filename": "Q&A for LD 577_2.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Q%26A%20for%20LD%20577_2.pdf",
@@ -4246,6 +4722,13 @@
       "created": "2019-09-17T16:39:58+00:00"
     },
     {
+      "fid": 44799,
+      "filename": "State Board - Briggs Funding Proposal to the Maine State Board of Education - 6.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Briggs%20Funding%20Proposal%20to%20the%20Maine%20State%20Board%20of%20Education%20-%206.11.2025.pdf",
+      "filesize": 164171,
+      "created": "2025-06-05T19:54:13+00:00"
+    },
+    {
       "fid": 13380,
       "filename": "Whole Grain Waiver.2021.docx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Whole%20Grain%20Waiver.2021.docx",
@@ -4302,6 +4785,13 @@
       "created": "2022-10-06T17:24:39+00:00"
     },
     {
+      "fid": 49059,
+      "filename": "State Board - Special Meeting Agenda - 12.1.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Special%20Meeting%20Agenda%20-%2012.1.2025.pdf",
+      "filesize": 158336,
+      "created": "2025-12-01T14:27:16+00:00"
+    },
+    {
       "fid": 25602,
       "filename": "EANS_Disposition_Clarification_8_2_22 (003).pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/EANS_Disposition_Clarification_8_2_22%20%28003%29.pdf",
@@ -4351,6 +4841,13 @@
       "created": "2026-04-13T19:45:02+00:00"
     },
     {
+      "fid": 46345,
+      "filename": "State Board - Special Meeting Business Agenda - 8.5.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Special%20Meeting%20Business%20Agenda%20-%208.5.2025.pdf",
+      "filesize": 155384,
+      "created": "2025-07-31T12:38:26+00:00"
+    },
+    {
       "fid": 26386,
       "filename": "MeANS_RREV_Budget.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/MeANS_RREV_Budget.pdf",
@@ -4372,6 +4869,13 @@
       "created": "2020-12-01T16:27:17+00:00"
     },
     {
+      "fid": 44509,
+      "filename": "State Board - Perkins Third Quarter Exhibit - 5.14.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Perkins%20Third%20Quarter%20Exhibit%20-%205.14.2025.pdf",
+      "filesize": 152685,
+      "created": "2025-05-08T13:46:51+00:00"
+    },
+    {
       "fid": 52103,
       "filename": "Homepage - Welcome Message Card.jpg",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/Homepage%20-%20Welcome%20Message%20Card.jpg",
@@ -4384,6 +4888,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/01.%20U4%20W5%20K%20for%20ME%20%20Week%20At%20a%20Glance.pdf",
       "filesize": 151436,
       "created": "2022-02-28T15:02:39+00:00"
+    },
+    {
+      "fid": 42513,
+      "filename": "State Board - SBE Perkins FY25 Exhibit - 2.12.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20SBE%20Perkins%20FY25%20Exhibit%20-%202.12.2025.pdf",
+      "filesize": 151077,
+      "created": "2025-02-11T16:40:04+00:00"
     },
     {
       "fid": 28036,
@@ -4428,6 +4939,13 @@
       "created": "2022-06-23T18:39:29+00:00"
     },
     {
+      "fid": 44793,
+      "filename": "State Board - Exhibit XB FY26 Perkins Preliminary Budget - 6.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Exhibit%20XB%20FY26%20Perkins%20Preliminary%20Budget%20-%206.11.2025.pdf",
+      "filesize": 149618,
+      "created": "2025-06-05T19:52:39+00:00"
+    },
+    {
       "fid": 24107,
       "filename": "Maine DOE_Summer 2022 and SY 2022-23 12(l) Waive...2 update.Additional Flexibilities_.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Maine%20DOE_Summer%202022%20and%20SY%202022-23%2012%28l%29%20Waive...2%20update.Additional%20Flexibilities_.pdf",
@@ -4440,6 +4958,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/SP07-2020os%20PLE%20SY2021.pdf",
       "filesize": 148409,
       "created": "2020-02-27T14:39:44+00:00"
+    },
+    {
+      "fid": 44795,
+      "filename": "State Board - Exhibit XC FY26 Briggs Maine Administrators CTE - 6.11.2025 .pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Exhibit%20XC%20FY26%20Briggs%20Maine%20Administrators%20CTE%20-%206.11.2025%20.pdf",
+      "filesize": 147094,
+      "created": "2025-06-05T19:53:30+00:00"
     },
     {
       "fid": 5365,
@@ -4526,6 +5051,20 @@
       "created": "2018-10-18T18:07:53+00:00"
     },
     {
+      "fid": 44877,
+      "filename": "Student Senate - Application Guidelines - 6.9.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Student%20Senate%20-%20Application%20Guidelines%20-%206.9.2025.pdf",
+      "filesize": 139798,
+      "created": "2025-06-09T20:31:18+00:00"
+    },
+    {
+      "fid": 43545,
+      "filename": "State Board - SBE Workshop Agenda - 3.12.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20SBE%20Workshop%20Agenda%20-%203.12.2025.pdf",
+      "filesize": 139789,
+      "created": "2025-03-05T20:44:02+00:00"
+    },
+    {
       "fid": 14351,
       "filename": "Transition to Kindergarten Tip Sheet_1.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Transition%20to%20Kindergarten%20Tip%20Sheet_1.pdf",
@@ -4545,6 +5084,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Private%20School%20Complaint%20Process%20%28updated%2002-27-24%29.pdf",
       "filesize": 137879,
       "created": "2026-04-13T19:45:46+00:00"
+    },
+    {
+      "fid": 52863,
+      "filename": "Early Learning - Solutions Lab Strategic Plan Template - 5.18.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20Strategic%20Plan%20Template%20-%205.18.2026.pdf",
+      "filesize": 137382,
+      "created": "2026-05-19T01:18:54+00:00"
     },
     {
       "fid": 9800,
@@ -4631,11 +5177,25 @@
       "created": "2019-05-09T16:44:18+00:00"
     },
     {
+      "fid": 44807,
+      "filename": "State Board - Chapter 115 Section 2 - 6.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Chapter%20115%20Section%202%20-%206.11.2025.pdf",
+      "filesize": 132615,
+      "created": "2025-06-05T19:55:30+00:00"
+    },
+    {
       "fid": 1047,
       "filename": "application-fy2017.doc",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/application-fy2017.doc",
       "filesize": 132608,
       "created": "2018-08-31T14:16:18+00:00"
+    },
+    {
+      "fid": 39957,
+      "filename": "Early Learning - MyT Primary Logo - 1.20.2024.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/Early%20Learning%20-%20MyT%20Primary%20Logo%20-%201.20.2024.png",
+      "filesize": 132374,
+      "created": "2024-11-20T20:28:58+00:00"
     },
     {
       "fid": 44681,
@@ -4650,6 +5210,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/englishcompanion%20%282%29.rtf",
       "filesize": 130944,
       "created": "2018-10-30T13:12:19+00:00"
+    },
+    {
+      "fid": 44789,
+      "filename": "State Board - Business Agenda - 6.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Business%20Agenda%20-%206.11.2025.pdf",
+      "filesize": 130729,
+      "created": "2025-06-05T19:52:19+00:00"
     },
     {
       "fid": 11346,
@@ -4729,6 +5296,13 @@
       "created": "2020-01-23T19:39:39+00:00"
     },
     {
+      "fid": 53011,
+      "filename": "Special Services - Inclusive Education Banner.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/Special%20Services%20-%20Inclusive%20Education%20Banner.png",
+      "filesize": 126057,
+      "created": "2026-05-27T14:16:11+00:00"
+    },
+    {
       "fid": 22380,
       "filename": "Chapter 33 Proposed Targeted Language\u00a0Definitions Refined 2.2022.docx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Chapter%2033%20Proposed%20Targeted%20Language%C2%A0Definitions%20Refined%202.2022.docx",
@@ -4776,6 +5350,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/CRF%20Invoice%20Timeline%282%29_2.pdf",
       "filesize": 123601,
       "created": "2021-05-20T15:47:15+00:00"
+    },
+    {
+      "fid": 52871,
+      "filename": "Early Learning - Solutions Lab Implementation Plan - 5.18.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20Implementation%20Plan%20-%205.18.2026.pdf",
+      "filesize": 123254,
+      "created": "2026-05-19T01:20:57+00:00"
     },
     {
       "fid": 1733,
@@ -4832,6 +5413,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Parent%20Letter%20for%20Free%20and%20Reduced%20Price%20Meals%20SY%202020_0.pdf",
       "filesize": 121053,
       "created": "2019-08-01T14:53:26+00:00"
+    },
+    {
+      "fid": 44879,
+      "filename": "Student Senate - Nomination Form - 6.9.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Student%20Senate%20-%20Nomination%20Form%20-%206.9.2025.pdf",
+      "filesize": 120719,
+      "created": "2025-06-09T20:31:33+00:00"
     },
     {
       "fid": 22176,
@@ -5219,6 +5807,13 @@
       "created": "2020-12-28T17:22:36+00:00"
     },
     {
+      "fid": 29547,
+      "filename": "Guidance for Staffing Health Services in Schools_5_5_2023.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Guidance%20for%20Staffing%20Health%20Services%20in%20Schools_5_5_2023.pdf",
+      "filesize": 100587,
+      "created": "2023-05-10T13:39:07+00:00"
+    },
+    {
       "fid": 21311,
       "filename": "A U3 W2  Week At a Glance.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/A%20U3%20W2%20%20Week%20At%20a%20Glance.pdf",
@@ -5296,6 +5891,13 @@
       "created": "2022-01-06T16:07:41+00:00"
     },
     {
+      "fid": 43547,
+      "filename": "State Board - SBE Perkins Exhibit X.A - 3.12.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20SBE%20Perkins%20Exhibit%20X.A%20-%203.12.2025.pdf",
+      "filesize": 95177,
+      "created": "2025-03-05T20:44:11+00:00"
+    },
+    {
       "fid": 21473,
       "filename": "A U3 W5  Week At a Glance  (1).pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/A%20U3%20W5%20%20Week%20At%20a%20Glance%20%20%281%29.pdf",
@@ -5331,11 +5933,25 @@
       "created": "2020-08-04T19:07:21+00:00"
     },
     {
+      "fid": 44787,
+      "filename": "State Board - Workshop Agenda - 6.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Workshop%20Agenda%20-%206.11.2025.pdf",
+      "filesize": 91959,
+      "created": "2025-06-05T19:52:08+00:00"
+    },
+    {
       "fid": 10378,
       "filename": "2019 Changes to Compulsory Attendance and Truancy Statues.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/2019%20Changes%20to%20Compulsory%20Attendance%20and%20Truancy%20Statues.pdf",
       "filesize": 91626,
       "created": "2019-09-27T18:12:09+00:00"
+    },
+    {
+      "fid": 44593,
+      "filename": "State Board - Workshop Agenda - 5.21.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Workshop%20Agenda%20-%205.21.2025.pdf",
+      "filesize": 91499,
+      "created": "2025-05-16T14:58:42+00:00"
     },
     {
       "fid": 26650,
@@ -5345,11 +5961,25 @@
       "created": "2022-10-21T14:37:51+00:00"
     },
     {
+      "fid": 44513,
+      "filename": "State Board - Workshop Agenda - 5.14.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Workshop%20Agenda%20-%205.14.2025.pdf",
+      "filesize": 90869,
+      "created": "2025-05-08T13:48:42+00:00"
+    },
+    {
       "fid": 9093,
       "filename": "FY19 SAIPE data couts and percents.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/FY19%20SAIPE%20data%20couts%20and%20percents.pdf",
       "filesize": 90864,
       "created": "2019-05-09T16:50:31+00:00"
+    },
+    {
+      "fid": 43849,
+      "filename": "State Board- SBE Workshop Agenda - 4.9.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board-%20SBE%20Workshop%20Agenda%20-%204.9.2025.pdf",
+      "filesize": 90834,
+      "created": "2025-04-03T12:19:07+00:00"
     },
     {
       "fid": 9094,
@@ -5371,6 +6001,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Hearing%20Screening%20Worksheet.doc",
       "filesize": 90112,
       "created": "2022-02-22T20:50:10+00:00"
+    },
+    {
+      "fid": 42505,
+      "filename": "State Board - SBE Workshop Agenda - 2.12.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20SBE%20Workshop%20Agenda%20-%202.12.2025.pdf",
+      "filesize": 89689,
+      "created": "2025-02-11T16:39:32+00:00"
     },
     {
       "fid": 25362,
@@ -5485,6 +6122,13 @@
       "created": "2021-01-11T19:48:56+00:00"
     },
     {
+      "fid": 44893,
+      "filename": "Child Nutrition - Paid Lunch Equity Guidance Memo SP 12-2025 - 6.6.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20Paid%20Lunch%20Equity%20Guidance%20Memo%20SP%2012-2025%20-%206.6.2025.pdf",
+      "filesize": 85669,
+      "created": "2025-06-10T22:07:05+00:00"
+    },
+    {
       "fid": 18699,
       "filename": "A U1 W1 At a Glance.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/A%20U1%20W1%20At%20a%20Glance.pdf",
@@ -5518,6 +6162,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/partc-2017_1.pdf",
       "filesize": 84337,
       "created": "2021-01-12T15:56:24+00:00"
+    },
+    {
+      "fid": 43549,
+      "filename": "State Board - SBE Colby Exhibit - 3.12.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20SBE%20Colby%20Exhibit%20-%203.12.2025.pdf",
+      "filesize": 84325,
+      "created": "2025-03-05T20:44:23+00:00"
     },
     {
       "fid": 9616,
@@ -5667,6 +6318,13 @@
       "created": "2020-05-05T12:50:51+00:00"
     },
     {
+      "fid": 44511,
+      "filename": "State Board - Business Agenda - 5.14.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Business%20Agenda%20-%205.14.2025.pdf",
+      "filesize": 76500,
+      "created": "2025-05-08T13:48:31+00:00"
+    },
+    {
       "fid": 12107,
       "filename": "site eligibility waiver signed.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/site%20eligibility%20waiver%20signed.pdf",
@@ -5674,11 +6332,25 @@
       "created": "2020-03-26T20:02:33+00:00"
     },
     {
+      "fid": 42509,
+      "filename": "State Board - SBE Business Agenda - 2.12.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20SBE%20Business%20Agenda%20-%202.12.2025.pdf",
+      "filesize": 76159,
+      "created": "2025-02-11T16:39:51+00:00"
+    },
+    {
       "fid": 3468,
       "filename": "USDA.jpg",
       "url": "/doe/sites/maine.gov.doe/files/2018-09/USDA.jpg",
       "filesize": 76070,
       "created": "2018-09-19T20:16:36+00:00"
+    },
+    {
+      "fid": 43851,
+      "filename": "State Board - SBE Business Agenda - 4.9.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20SBE%20Business%20Agenda%20-%204.9.2025.pdf",
+      "filesize": 75681,
+      "created": "2025-04-03T12:19:15+00:00"
     },
     {
       "fid": 7946,
@@ -5700,6 +6372,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Part%20C%20App%20FFY2019_1.docx",
       "filesize": 75128,
       "created": "2019-11-04T14:58:31+00:00"
+    },
+    {
+      "fid": 44507,
+      "filename": "State Board - Perkins Report - 5.14.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Perkins%20Report%20-%205.14.2025.pdf",
+      "filesize": 75029,
+      "created": "2025-05-08T13:46:40+00:00"
     },
     {
       "fid": 14396,
@@ -5833,6 +6512,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Due%20date%20Monitoring%20timeline%202019-2020.docx",
       "filesize": 71492,
       "created": "2019-08-06T20:01:23+00:00"
+    },
+    {
+      "fid": 44811,
+      "filename": "State Board - Endorsement 515 Adapted Physical Education Amendments - 6.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Endorsement%20515%20Adapted%20Physical%20Education%20Amendments%20-%206.11.2025.pdf",
+      "filesize": 71253,
+      "created": "2025-06-05T19:56:20+00:00"
     },
     {
       "fid": 13767,
@@ -5982,6 +6668,13 @@
       "created": "2019-05-09T16:20:41+00:00"
     },
     {
+      "fid": 44803,
+      "filename": "State Board - CH115 Part 2 Section 1.3 Proposed DSW - 6.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20CH115%20Part%202%20Section%201.3%20Proposed%20DSW%20-%206.11.2025.pdf",
+      "filesize": 67306,
+      "created": "2025-06-05T19:54:51+00:00"
+    },
+    {
       "fid": 21075,
       "filename": "Part C Established Conditions List.docx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Part%20C%20Established%20Conditions%20List.docx",
@@ -5994,6 +6687,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Part%20C%20Established%20Conditions%20List_0.docx",
       "filesize": 67288,
       "created": "2021-12-03T16:18:13+00:00"
+    },
+    {
+      "fid": 52693,
+      "filename": "Assessment - Question 6 Terms and Their Definitions - 5.5.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Question%206%20Terms%20and%20Their%20Definitions%20-%205.5.2026.pdf",
+      "filesize": 67243,
+      "created": "2026-05-05T16:36:15+00:00"
     },
     {
       "fid": 13000,
@@ -6071,6 +6771,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-images/graphic.JPG",
       "filesize": 63525,
       "created": "2021-04-29T14:41:03+00:00"
+    },
+    {
+      "fid": 44595,
+      "filename": "State Board - Business Meeting Agenda - 5.21.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Business%20Meeting%20Agenda%20-%205.21.2025.pdf",
+      "filesize": 63518,
+      "created": "2025-05-16T14:58:54+00:00"
     },
     {
       "fid": 23485,
@@ -6213,6 +6920,13 @@
       "created": "2022-09-20T19:56:47+00:00"
     },
     {
+      "fid": 34867,
+      "filename": "SY 2024-2025 PLE Tools Flowchart.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/SY%202024-2025%20PLE%20Tools%20Flowchart.pdf",
+      "filesize": 58609,
+      "created": "2024-03-21T19:43:57+00:00"
+    },
+    {
       "fid": 8071,
       "filename": "2017-18_FY20funding.xlsx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/2017-18_FY20funding_0.xlsx",
@@ -6351,6 +7065,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-images/1029_3.JPG",
       "filesize": 54351,
       "created": "2021-09-24T18:36:45+00:00"
+    },
+    {
+      "fid": 52467,
+      "filename": "ESEA - FY27 Title V Part B Preliminary Estimates - 4.16.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20FY27%20Title%20V%20Part%20B%20Preliminary%20Estimates%20-%204.16.2026.pdf",
+      "filesize": 54315,
+      "created": "2026-04-16T15:29:29+00:00"
     },
     {
       "fid": 6544,
@@ -6612,13 +7333,6 @@
       "created": "2018-11-08T14:49:46+00:00"
     },
     {
-      "fid": 9120,
-      "filename": "ME-King-JY3728_0.jpg",
-      "url": "/doe/sites/maine.gov.doe/files/inline-images/ME-King-JY3728_0.jpg",
-      "filesize": 44558,
-      "created": "2019-05-10T12:48:06+00:00"
-    },
-    {
       "fid": 27297,
       "filename": "question-mark-g81c34c947_640.jpg",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/question-mark-g81c34c947_640.jpg",
@@ -6703,13 +7417,6 @@
       "created": "2020-04-27T13:39:35+00:00"
     },
     {
-      "fid": 9119,
-      "filename": "ME-Collins-DR3505_0.jpg",
-      "url": "/doe/sites/maine.gov.doe/files/inline-images/ME-Collins-DR3505_0.jpg",
-      "filesize": 41162,
-      "created": "2019-05-10T12:47:07+00:00"
-    },
-    {
       "fid": 12911,
       "filename": "Links for today\u2019s session_ Object-Based Learning 101.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Links%20for%20today%E2%80%99s%20session_%20Object-Based%20Learning%20101.pdf",
@@ -6792,13 +7499,6 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/AGENDA-Perkins%20V%20Stakeholders-11.1.19.pdf",
       "filesize": 39292,
       "created": "2019-12-30T13:54:07+00:00"
-    },
-    {
-      "fid": 13215,
-      "filename": "People talking_0.jpg",
-      "url": "/doe/sites/maine.gov.doe/files/inline-images/People%20talking_0.jpg",
-      "filesize": 39173,
-      "created": "2020-06-12T01:24:31+00:00"
     },
     {
       "fid": 9,

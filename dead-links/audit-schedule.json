@@ -357,7 +357,7 @@
     "616": {
       "month": 11,
       "month_name": "November",
-      "owner": "Beth.Lambert@maine.gov"
+      "owner": "Leann.Larsen@maine.gov"
     },
     "670": {
       "month": 11,
@@ -880,11 +880,6 @@
       "owner": "matthew.g.leavitt@maine.gov"
     },
     "375": {
-      "month": 4,
-      "month_name": "April",
-      "owner": "matthew.g.leavitt@maine.gov"
-    },
-    "1017": {
       "month": 4,
       "month_name": "April",
       "owner": "matthew.g.leavitt@maine.gov"
@@ -2530,11 +2525,6 @@
       "owner": "Leeann.Larsen@maine.gov"
     },
     "3103": {
-      "month": 7,
-      "month_name": "July",
-      "owner": "Leeann.Larsen@maine.gov"
-    },
-    "3182": {
       "month": 7,
       "month_name": "July",
       "owner": "Leeann.Larsen@maine.gov"
@@ -4272,8 +4262,8 @@
     "4673": {
       "month": 4,
       "month_name": "April",
-      "owner": ""
+      "owner": "charlotte.ellis@maine.gov"
     }
   },
-  "last_synced": "2026-05-01T08:19:37.506186"
+  "last_synced": "2026-06-01T11:40:49.316434"
 }
