@@ -1,7 +1,7 @@
 {
-  "scan_date": "2026-06-01T11:40:49.307052",
-  "orphan_count": 1307,
-  "total_size_bytes": 1215888399,
+  "scan_date": "2026-07-01T09:53:40.456774",
+  "orphan_count": 1462,
+  "total_size_bytes": 1322161889,
   "files": [
     {
       "fid": 26772,
@@ -200,6 +200,13 @@
       "created": "2020-09-18T19:13:09+00:00"
     },
     {
+      "fid": 52745,
+      "filename": "Early Learning - 2025 Preschool Development Grant Application - 5.7.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%202025%20Preschool%20Development%20Grant%20Application%20-%205.7.2026.pdf",
+      "filesize": 9079084,
+      "created": "2026-05-07T15:58:26+00:00"
+    },
+    {
       "fid": 12380,
       "filename": "MDOE Geography Webinar.pptx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/MDOE%20Geography%20Webinar.pptx",
@@ -221,11 +228,25 @@
       "created": "2020-10-30T14:58:54+00:00"
     },
     {
+      "fid": 53617,
+      "filename": "Multilingual Learners - Building Capacity Secondary Cohort Session 4 Slidedeck - 4.7.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Multilingual%20Learners%20-%20Building%20Capacity%20Secondary%20Cohort%20Session%204%20Slidedeck%20-%204.7.2026.pdf",
+      "filesize": 7861281,
+      "created": "2026-06-15T20:17:59+00:00"
+    },
+    {
       "fid": 14471,
       "filename": "WIC Participant Food List.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/WIC%20Participant%20Food%20List.pdf",
       "filesize": 7457173,
       "created": "2020-09-15T18:21:58+00:00"
+    },
+    {
+      "fid": 45035,
+      "filename": "Supervision and Monitoring - 25-26 Preparing for the File Review slides - 6.16.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Supervision%20and%20Monitoring%20-%2025-26%20Preparing%20for%20the%20File%20Review%20slides%20-%206.16.2025.pdf",
+      "filesize": 7319143,
+      "created": "2025-06-17T19:29:48+00:00"
     },
     {
       "fid": 12934,
@@ -305,11 +326,25 @@
       "created": "2020-06-18T16:41:24+00:00"
     },
     {
+      "fid": 44859,
+      "filename": "Supervision and Monitoring - 2025-26 Cohort Training Slides - 6.5.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Supervision%20and%20Monitoring%20-%202025-26%20Cohort%20Training%20Slides%20-%206.5.2025.pdf",
+      "filesize": 6217405,
+      "created": "2025-06-06T11:43:01+00:00"
+    },
+    {
       "fid": 12789,
       "filename": "Maine LOC.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Maine%20LOC.pdf",
       "filesize": 6184376,
       "created": "2020-05-13T13:40:18+00:00"
+    },
+    {
+      "fid": 53609,
+      "filename": "Multilingual Learners - Building Capacity Secondary Cohort Session 2 Slidedeck - 2.24.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Multilingual%20Learners%20-%20Building%20Capacity%20Secondary%20Cohort%20Session%202%20Slidedeck%20-%202.24.2026.pdf",
+      "filesize": 5952935,
+      "created": "2026-06-15T20:16:47+00:00"
     },
     {
       "fid": 12933,
@@ -352,6 +387,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20Child%20and%20Adult%20Care%20Food%20Program%20Budget%20Refresher%20-%204.15.2025.pdf",
       "filesize": 5185499,
       "created": "2025-04-23T12:40:59+00:00"
+    },
+    {
+      "fid": 28896,
+      "filename": "pexels-tima-miroshnichenko-5428267.jpg",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/pexels-tima-miroshnichenko-5428267.jpg",
+      "filesize": 5162750,
+      "created": "2023-04-12T20:27:45+00:00"
     },
     {
       "fid": 10497,
@@ -508,6 +550,20 @@
       "created": "2021-04-07T16:22:35+00:00"
     },
     {
+      "fid": 48527,
+      "filename": "Multilingual Learning - Roles and Responsbilities - 10.17.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Multilingual%20Learning%20-%20Roles%20and%20Responsbilities%20-%2010.17.2025.pdf",
+      "filesize": 4032291,
+      "created": "2025-10-17T13:07:34+00:00"
+    },
+    {
+      "fid": 28890,
+      "filename": "pexels-yan-krukau-8199555.jpg",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/pexels-yan-krukau-8199555.jpg",
+      "filesize": 4001063,
+      "created": "2023-04-12T20:20:08+00:00"
+    },
+    {
       "fid": 12375,
       "filename": "Research Webinar.pptx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Research%20Webinar.pptx",
@@ -550,11 +606,25 @@
       "created": "2018-09-24T16:38:06+00:00"
     },
     {
+      "fid": 52333,
+      "filename": "pexels-lumn-167682 (1).jpg",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/pexels-lumn-167682%20%281%29.jpg",
+      "filesize": 3785115,
+      "created": "2026-04-13T19:48:36+00:00"
+    },
+    {
       "fid": 12910,
       "filename": "Maine- Object-Based Learning 101.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Maine-%20Object-Based%20Learning%20101.pdf",
       "filesize": 3771684,
       "created": "2020-05-19T14:28:34+00:00"
+    },
+    {
+      "fid": 28894,
+      "filename": "pexels-thirdman-8926556.jpg",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/pexels-thirdman-8926556.jpg",
+      "filesize": 3683063,
+      "created": "2023-04-12T20:24:17+00:00"
     },
     {
       "fid": 5473,
@@ -583,6 +653,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/More%20Bang%20for%20your%20book%206-12%20for%20distribution.pptx",
       "filesize": 3572059,
       "created": "2020-05-21T16:51:46+00:00"
+    },
+    {
+      "fid": 28889,
+      "filename": "pexels-katerina-holmes-5905456.jpg",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/pexels-katerina-holmes-5905456.jpg",
+      "filesize": 3483480,
+      "created": "2023-04-12T20:16:45+00:00"
     },
     {
       "fid": 26401,
@@ -632,6 +709,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Module-1-PowerPoint-principal.ppt",
       "filesize": 3104768,
       "created": "2018-09-24T15:43:52+00:00"
+    },
+    {
+      "fid": 45407,
+      "filename": "Assessment - 2025 MSAA Score Report Interpretation Guide - 7.16.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%202025%20MSAA%20Score%20Report%20Interpretation%20Guide%20-%207.16.2025.pdf",
+      "filesize": 3092450,
+      "created": "2025-07-16T16:04:01+00:00"
     },
     {
       "fid": 44377,
@@ -753,11 +837,32 @@
       "created": "2020-05-13T12:05:13+00:00"
     },
     {
+      "fid": 20652,
+      "filename": "Cultural Appropriation in World Languages Classrooms.pptx",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Cultural%20Appropriation%20in%20World%20Languages%20Classrooms.pptx",
+      "filesize": 2504765,
+      "created": "2021-10-21T19:57:55+00:00"
+    },
+    {
+      "fid": 20798,
+      "filename": "Increasing Student Motivation.pptx",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Increasing%20Student%20Motivation.pptx",
+      "filesize": 2470758,
+      "created": "2021-11-03T18:26:25+00:00"
+    },
+    {
       "fid": 25317,
       "filename": "1 Ed.Summit National.Service1.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/1%20Ed.Summit%20National.Service1.pdf",
       "filesize": 2466260,
       "created": "2022-08-09T18:26:37+00:00"
+    },
+    {
+      "fid": 28891,
+      "filename": "pexels-cottonbro-studio-7207550.jpg",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/pexels-cottonbro-studio-7207550.jpg",
+      "filesize": 2455390,
+      "created": "2023-04-12T20:20:58+00:00"
     },
     {
       "fid": 27796,
@@ -912,6 +1017,13 @@
       "url": "/doe/sites/maine.gov.doe/files/2020-12/teaming.png",
       "filesize": 1999198,
       "created": "2020-12-15T17:36:58+00:00"
+    },
+    {
+      "fid": 52747,
+      "filename": "Early Learning - 2022 Preschool Development Grant Application - 5.7.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%202022%20Preschool%20Development%20Grant%20Application%20-%205.7.2026.pdf",
+      "filesize": 1985211,
+      "created": "2026-05-07T15:59:21+00:00"
     },
     {
       "fid": 14491,
@@ -1101,6 +1213,13 @@
       "url": "/doe/sites/maine.gov.doe/files/2020-12/upcoming%20training.png",
       "filesize": 1645218,
       "created": "2020-12-15T17:44:29+00:00"
+    },
+    {
+      "fid": 28893,
+      "filename": "pexels-alena-darmel-7742817.jpg",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/pexels-alena-darmel-7742817.jpg",
+      "filesize": 1641978,
+      "created": "2023-04-12T20:23:10+00:00"
     },
     {
       "fid": 12914,
@@ -1306,6 +1425,13 @@
       "created": "2022-08-23T19:17:32+00:00"
     },
     {
+      "fid": 52183,
+      "filename": "Teaching & Learning - EngageMEnt In-Person Card.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/Teaching%20%26%20Learning%20-%20EngageMEnt%20In-Person%20Card.png",
+      "filesize": 1233990,
+      "created": "2026-04-13T19:45:35+00:00"
+    },
+    {
       "fid": 13211,
       "filename": "So you want to be president_0.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/So%20you%20want%20to%20be%20president_0.pdf",
@@ -1341,6 +1467,13 @@
       "created": "2021-10-15T02:00:21+00:00"
     },
     {
+      "fid": 52181,
+      "filename": "Teaching & Learning - EngageMEnt Event Details Card.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/Teaching%20%26%20Learning%20-%20EngageMEnt%20Event%20Details%20Card.png",
+      "filesize": 1194524,
+      "created": "2026-04-13T19:45:33+00:00"
+    },
+    {
       "fid": 26204,
       "filename": "Nature Based Education resource table (1).pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Nature%20Based%20Education%20resource%20table%20%281%29.pdf",
@@ -1353,6 +1486,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Wabanaki%20Studies%20Webinar.pdf",
       "filesize": 1184769,
       "created": "2021-03-18T21:22:30+00:00"
+    },
+    {
+      "fid": 37813,
+      "filename": "Special Services - Submitted PART B APR FFY 2022-23 - 9.5.24.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Special%20Services%20-%20Submitted%20PART%20B%20APR%20FFY%202022-23%20-%209.5.24.pdf",
+      "filesize": 1184530,
+      "created": "2024-09-06T14:48:03+00:00"
     },
     {
       "fid": 19228,
@@ -1423,20 +1563,6 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Virtual%20Hands%20on%20History_0.pdf",
       "filesize": 1111684,
       "created": "2020-04-15T12:48:33+00:00"
-    },
-    {
-      "fid": 52865,
-      "filename": "Early Learning - Solutions Lab School-Community Partnership Playbook - 5.18.2026.pdf",
-      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20School-Community%20Partnership%20Playbook%20-%205.18.2026.pdf",
-      "filesize": 1110798,
-      "created": "2026-05-19T01:19:58+00:00"
-    },
-    {
-      "fid": 52875,
-      "filename": "Early Learning - Solutions Lab School-Community Partnership Playbook - 5.18.2026_0.pdf",
-      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20School-Community%20Partnership%20Playbook%20-%205.18.2026_0.pdf",
-      "filesize": 1110798,
-      "created": "2026-05-19T01:24:41+00:00"
     },
     {
       "fid": 13557,
@@ -1768,6 +1894,13 @@
       "created": "2021-02-08T14:26:02+00:00"
     },
     {
+      "fid": 53519,
+      "filename": "ESEA - C4 Title III Effective Professional Development - 6.15.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20C4%20Title%20III%20Effective%20Professional%20Development%20-%206.15.2026.pdf",
+      "filesize": 728231,
+      "created": "2026-06-15T19:42:09+00:00"
+    },
+    {
       "fid": 12567,
       "filename": "CARESActOverviewPresentation4-24-20.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/CARESActOverviewPresentation4-24-20.pdf",
@@ -1878,6 +2011,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Home%20Instruction%20Statutes%20and%20Information2022-3-3a_0.pdf",
       "filesize": 668376,
       "created": "2022-03-03T16:05:43+00:00"
+    },
+    {
+      "fid": 53515,
+      "filename": "ESEA - D1 Timely and Meaningful Non-Public Consultation - 6.15.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20D1%20Timely%20and%20Meaningful%20Non-Public%20Consultation%20-%206.15.2026.pdf",
+      "filesize": 663075,
+      "created": "2026-06-15T19:40:37+00:00"
     },
     {
       "fid": 7451,
@@ -2167,6 +2307,20 @@
       "created": "2021-10-01T17:39:37+00:00"
     },
     {
+      "fid": 53517,
+      "filename": "ESEA - E5 Non-Public Procurement & Payment Process - 6.15.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20E5%20Non-Public%20Procurement%20%26%20Payment%20Process%20-%206.15.2026.pdf",
+      "filesize": 597274,
+      "created": "2026-06-15T19:41:07+00:00"
+    },
+    {
+      "fid": 53505,
+      "filename": "ESEA - A5 ML Identification and Exit Procedures - 6.15.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20A5%20ML%20Identification%20and%20Exit%20Procedures%20-%206.15.2026.pdf",
+      "filesize": 594545,
+      "created": "2026-06-15T19:37:59+00:00"
+    },
+    {
       "fid": 11765,
       "filename": "Online Dashboard_7.xlsx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Online%20Dashboard_7.xlsx",
@@ -2251,6 +2405,13 @@
       "created": "2019-12-02T14:25:57+00:00"
     },
     {
+      "fid": 33751,
+      "filename": "SCA Rounds 1-4 Website Post.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/SCA%20Rounds%201-4%20Website%20Post.pdf",
+      "filesize": 560308,
+      "created": "2024-01-08T18:56:38+00:00"
+    },
+    {
       "fid": 12443,
       "filename": "FY21_Federal_Allocation_Memo.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/FY21_Federal_Allocation_Memo.pdf",
@@ -2321,11 +2482,25 @@
       "created": "2022-08-15T20:18:03+00:00"
     },
     {
+      "fid": 52601,
+      "filename": "ESEA - FY27 Title III Part A Preliminary Allocations - 4.23.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20FY27%20Title%20III%20Part%20A%20Preliminary%20Allocations%20-%204.23.2026.pdf",
+      "filesize": 537624,
+      "created": "2026-04-27T14:13:55+00:00"
+    },
+    {
       "fid": 22803,
       "filename": "04a. K for ME U4 W5 Centers Art Table.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/04a.%20K%20for%20ME%20U4%20W5%20Centers%20Art%20Table.pdf",
       "filesize": 534006,
       "created": "2022-02-28T15:08:48+00:00"
+    },
+    {
+      "fid": 53123,
+      "filename": "School Health Services - Toileting Support Recource - 6.08.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/School%20Health%20Services%20-%20Toileting%20Support%20Recource%20-%206.08.2026.pdf",
+      "filesize": 533769,
+      "created": "2026-06-08T21:05:48+00:00"
     },
     {
       "fid": 13744,
@@ -2382,13 +2557,6 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-images/How%20to%20use%20your%20SUN%20Bucks%20English%208.14.25.png",
       "filesize": 518595,
       "created": "2026-05-06T12:59:18+00:00"
-    },
-    {
-      "fid": 52699,
-      "filename": "How to use your SUN Bucks English 8.14.25_0.png",
-      "url": "/doe/sites/maine.gov.doe/files/inline-images/How%20to%20use%20your%20SUN%20Bucks%20English%208.14.25_0.png",
-      "filesize": 518595,
-      "created": "2026-05-06T13:01:01+00:00"
     },
     {
       "fid": 52705,
@@ -2531,6 +2699,13 @@
       "created": "2021-02-08T14:01:47+00:00"
     },
     {
+      "fid": 53509,
+      "filename": "ESEA - B9 ML Guardian Outreach - 6.15.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20B9%20ML%20Guardian%20Outreach%20-%206.15.2026.pdf",
+      "filesize": 473460,
+      "created": "2026-06-15T19:38:59+00:00"
+    },
+    {
       "fid": 1511,
       "filename": "SP41ShareTabels_CACFP13_SFSP15_2016.docx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/SP41ShareTabels_CACFP13_SFSP15_2016.docx",
@@ -2543,6 +2718,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-images/promising%20bridge_1.jpg",
       "filesize": 466485,
       "created": "2022-09-29T18:33:57+00:00"
+    },
+    {
+      "fid": 46533,
+      "filename": "DATA - SIF Objects - 8.7.25.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/DATA%20-%20SIF%20Objects%20-%208.7.25.png",
+      "filesize": 465877,
+      "created": "2025-08-07T14:45:53+00:00"
     },
     {
       "fid": 13743,
@@ -2566,11 +2748,25 @@
       "created": "2022-08-11T12:44:41+00:00"
     },
     {
+      "fid": 44865,
+      "filename": "Supervision and Monitoring - 2025-26 SAU Monitoring Timeline - 6.5.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Supervision%20and%20Monitoring%20-%202025-26%20SAU%20Monitoring%20Timeline%20-%206.5.2025.pdf",
+      "filesize": 452547,
+      "created": "2025-06-06T11:51:28+00:00"
+    },
+    {
       "fid": 13079,
       "filename": "Work that Engages Students.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Work%20that%20Engages%20Students.pdf",
       "filesize": 451244,
       "created": "2020-06-02T17:59:37+00:00"
+    },
+    {
+      "fid": 52197,
+      "filename": "Allocation of Supply Chain Assistance (SCA) Funds.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Allocation%20of%20Supply%20Chain%20Assistance%20%28SCA%29%20Funds.pdf",
+      "filesize": 449948,
+      "created": "2026-04-13T19:45:58+00:00"
     },
     {
       "fid": 24151,
@@ -2585,6 +2781,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Maine%20Learning%20Results%20for%20Social%20Studies%20-%20Revised%202019_1.pdf",
       "filesize": 435579,
       "created": "2019-04-12T15:15:18+00:00"
+    },
+    {
+      "fid": 46435,
+      "filename": "Child Nutrition - FY26 Fresh Fruit and Vegetable Program Awards - 7.29.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20FY26%20Fresh%20Fruit%20and%20Vegetable%20Program%20Awards%20-%207.29.2025.pdf",
+      "filesize": 434836,
+      "created": "2025-07-31T16:17:14+00:00"
     },
     {
       "fid": 9524,
@@ -2643,13 +2846,6 @@
       "created": "2026-05-06T13:32:10+00:00"
     },
     {
-      "fid": 52703,
-      "filename": "SUN Bucks Info Sheet_English_0.png",
-      "url": "/doe/sites/maine.gov.doe/files/inline-images/SUN%20Bucks%20Info%20Sheet_English_0.png",
-      "filesize": 418168,
-      "created": "2026-05-06T13:03:29+00:00"
-    },
-    {
       "fid": 52711,
       "filename": "SUN Bucks Info Sheet_English_2.png",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/SUN%20Bucks%20Info%20Sheet_English_2.png",
@@ -2662,6 +2858,20 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Final-EANS-FAQ-2.0-3.19.21_1.pdf",
       "filesize": 417781,
       "created": "2021-03-23T18:43:24+00:00"
+    },
+    {
+      "fid": 53507,
+      "filename": "ESEA - A8 Student Supports - Title III Family Engagement.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20A8%20Student%20Supports%20-%20Title%20III%20Family%20Engagement.pdf",
+      "filesize": 415775,
+      "created": "2026-06-15T19:38:31+00:00"
+    },
+    {
+      "fid": 46677,
+      "filename": "Assessment - MECAS Math & ELA Assessment Landing Page Banner.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/Assessment%20-%20MECAS%20Math%20%26%20ELA%20Assessment%20Landing%20Page%20Banner.png",
+      "filesize": 413677,
+      "created": "2025-08-14T13:58:03+00:00"
     },
     {
       "fid": 25670,
@@ -2811,13 +3021,6 @@
       "created": "2018-01-30T21:36:18+00:00"
     },
     {
-      "fid": 52873,
-      "filename": "Early Learning - Solutions Lab School-Community Partnership Toolkit - 5.18.2026.pdf",
-      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20School-Community%20Partnership%20Toolkit%20-%205.18.2026.pdf",
-      "filesize": 385247,
-      "created": "2026-05-19T01:21:36+00:00"
-    },
-    {
       "fid": 47261,
       "filename": "Legislative - Chapter 33 Red Line Version - 9.17.2025.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Legislative%20-%20Chapter%2033%20Red%20Line%20Version%20-%209.17.2025.pdf",
@@ -2839,11 +3042,25 @@
       "created": "2020-12-22T18:58:28+00:00"
     },
     {
+      "fid": 53739,
+      "filename": "Assessment - MECAS Math & Literacy Assessment Landing Page Banner.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/Assessment%20-%20MECAS%20Math%20%26%20Literacy%20Assessment%20Landing%20Page%20Banner.png",
+      "filesize": 377504,
+      "created": "2026-06-29T16:50:10+00:00"
+    },
+    {
       "fid": 28019,
       "filename": "EANS_Disposition_FAQs_Addendum_FINAL_1.23.23.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/EANS_Disposition_FAQs_Addendum_FINAL_1.23.23.pdf",
       "filesize": 376216,
       "created": "2023-01-26T16:24:03+00:00"
+    },
+    {
+      "fid": 44857,
+      "filename": "Supervision and Monitoring - 2025-26 CDS Monitoring Timeline - 6.5.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Supervision%20and%20Monitoring%20-%202025-26%20CDS%20Monitoring%20Timeline%20-%206.5.2025.pdf",
+      "filesize": 373598,
+      "created": "2025-06-06T11:41:35+00:00"
     },
     {
       "fid": 13141,
@@ -2986,13 +3203,6 @@
       "created": "2026-04-13T19:45:53+00:00"
     },
     {
-      "fid": 52877,
-      "filename": "Early Learning - Solutions Lab Banner.png",
-      "url": "/doe/sites/maine.gov.doe/files/inline-images/Early%20Learning%20-%20Solutions%20Lab%20Banner.png",
-      "filesize": 351667,
-      "created": "2026-05-19T01:25:03+00:00"
-    },
-    {
       "fid": 6917,
       "filename": "Website_Landing Page_Maine School Bus Bid and Purchase System_Update 111918.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Website_Landing%20Page_Maine%20School%20Bus%20Bid%20and%20Purchase%20System_Update%20111918_1.pdf",
@@ -3096,13 +3306,6 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/SP33-2019a%20Procurement%20Tool%20%281%29.xlsx",
       "filesize": 336591,
       "created": "2019-09-16T14:39:52+00:00"
-    },
-    {
-      "fid": 52869,
-      "filename": "Early Learning - Solutions Lab Accountability Pathway - 5.18.2026.pdf",
-      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20Accountability%20Pathway%20-%205.18.2026.pdf",
-      "filesize": 336517,
-      "created": "2026-05-19T01:20:32+00:00"
     },
     {
       "fid": 26405,
@@ -3287,6 +3490,13 @@
       "created": "2018-10-18T18:09:53+00:00"
     },
     {
+      "fid": 50355,
+      "filename": "School Finance - FY25 Resident Expenditure Totals - 1.7.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%20FY25%20Resident%20Expenditure%20Totals%20-%201.7.2026.pdf",
+      "filesize": 294463,
+      "created": "2026-01-08T15:57:54+00:00"
+    },
+    {
       "fid": 26406,
       "filename": "RSU 35 RREV Pilot.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/RSU%2035%20RREV%20Pilot.pdf",
@@ -3385,6 +3595,13 @@
       "created": "2025-12-05T20:21:55+00:00"
     },
     {
+      "fid": 45243,
+      "filename": "Assessment - Spring 2025 Grade 7 Understanding Your Students Report [Arabic] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%207%20Understanding%20Your%20Students%20Report%20%5BArabic%5D%20-%207.2.2025.pdf",
+      "filesize": 275433,
+      "created": "2025-07-03T17:15:08+00:00"
+    },
+    {
       "fid": 26402,
       "filename": "MeANS RREV Pilot.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/MeANS%20RREV%20Pilot.pdf",
@@ -3392,11 +3609,53 @@
       "created": "2022-10-06T17:32:31+00:00"
     },
     {
+      "fid": 45203,
+      "filename": "Assessment - Spring 2025 Grade 5 Understanding Your Students Report [Arabic] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%205%20Understanding%20Your%20Students%20Report%20%5BArabic%5D%20-%207.2.2025.pdf",
+      "filesize": 275144,
+      "created": "2025-07-03T17:10:48+00:00"
+    },
+    {
+      "fid": 45263,
+      "filename": "Assessment - Spring 2025 Grade 8 Understanding Your Students Report [Arabic] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%208%20Understanding%20Your%20Students%20Report%20%5BArabic%5D%20-%207.2.2025.pdf",
+      "filesize": 274970,
+      "created": "2025-07-03T17:17:20+00:00"
+    },
+    {
       "fid": 6902,
       "filename": "Website_Maine School Bus Bid System_Update 111918.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Website_Maine%20School%20Bus%20Bid%20System_Update%20111918.pdf",
       "filesize": 274806,
       "created": "2018-11-20T13:38:39+00:00"
+    },
+    {
+      "fid": 45223,
+      "filename": "Assessment - Spring 2025 Grade 6 Understanding Your Students Report [Arabic] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%206%20Understanding%20Your%20Students%20Report%20%5BArabic%5D%20-%207.2.2025.pdf",
+      "filesize": 274714,
+      "created": "2025-07-03T17:12:54+00:00"
+    },
+    {
+      "fid": 45283,
+      "filename": "Assessment - Spring 2025 High School Understanding Your Students Report [Arabic] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20High%20School%20Understanding%20Your%20Students%20Report%20%5BArabic%5D%20-%207.2.2025.pdf",
+      "filesize": 274489,
+      "created": "2025-07-03T17:19:17+00:00"
+    },
+    {
+      "fid": 45183,
+      "filename": "Assessment - Spring 2025 Grade 4 Understanding Your Students Report [Arabic] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%204%20Understanding%20Your%20Students%20Report%20%5BArabic%5D%20-%207.2.2025.pdf",
+      "filesize": 274451,
+      "created": "2025-07-03T17:07:48+00:00"
+    },
+    {
+      "fid": 53121,
+      "filename": "Child Nutrition - CACFP At Risk ED 534 - 3.13.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20CACFP%20At%20Risk%20ED%20534%20-%203.13.2026.pdf",
+      "filesize": 274282,
+      "created": "2026-06-08T20:57:47+00:00"
     },
     {
       "fid": 6916,
@@ -3511,6 +3770,13 @@
       "created": "2020-10-15T11:51:53+00:00"
     },
     {
+      "fid": 53513,
+      "filename": "ESEA - B12 Title I School-Parent Compact - 6.8.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20B12%20Title%20I%20School-Parent%20Compact%20-%206.8.2026.pdf",
+      "filesize": 266478,
+      "created": "2026-06-15T19:40:02+00:00"
+    },
+    {
       "fid": 7321,
       "filename": "Vol 10 Issue 1 Jan 2019.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Vol%2010%20Issue%201%20Jan%202019.pdf",
@@ -3530,6 +3796,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-images/human-3305707_1920.jpg",
       "filesize": 262358,
       "created": "2020-07-30T17:10:24+00:00"
+    },
+    {
+      "fid": 45159,
+      "filename": "Assessment - Spring 2025 Grade 3 Understanding Your Students Report [Arabic] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%203%20Understanding%20Your%20Students%20Report%20%5BArabic%5D%20-%207.2.2025.pdf",
+      "filesize": 261349,
+      "created": "2025-07-03T17:03:37+00:00"
     },
     {
       "fid": 45435,
@@ -3623,11 +3896,25 @@
       "created": "2019-09-12T19:26:32+00:00"
     },
     {
+      "fid": 45205,
+      "filename": "Assessment - Spring 2025 Grade 5 Understanding Your Students Report [Chinese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%205%20Understanding%20Your%20Students%20Report%20%5BChinese%5D%20-%207.2.2025.pdf",
+      "filesize": 249983,
+      "created": "2025-07-03T17:10:55+00:00"
+    },
+    {
       "fid": 9801,
       "filename": "Copy of 19-20 Master EMT.xlsx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Copy%20of%2019-20%20Master%20EMT.xlsx",
       "filesize": 249384,
       "created": "2019-08-06T20:02:48+00:00"
+    },
+    {
+      "fid": 45265,
+      "filename": "Assessment - Spring 2025 Grade 8 Understanding Your Students Report [Chinese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%208%20Understanding%20Your%20Students%20Report%20%5BChinese%5D%20-%207.2.2025.pdf",
+      "filesize": 248930,
+      "created": "2025-07-03T17:17:28+00:00"
     },
     {
       "fid": 6055,
@@ -3658,6 +3945,13 @@
       "created": "2020-04-01T18:50:44+00:00"
     },
     {
+      "fid": 45245,
+      "filename": "Assessment - Spring 2025 Grade 7 Understanding Your Students Report [Chinese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%207%20Understanding%20Your%20Students%20Report%20%5BChinese%5D%20-%207.2.2025.pdf",
+      "filesize": 247119,
+      "created": "2025-07-03T17:15:15+00:00"
+    },
+    {
       "fid": 9030,
       "filename": "Maine Waiver Request OVS Updated NERO Approval.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Maine%20Waiver%20Request%20OVS%20Updated%20NERO%20Approval.pdf",
@@ -3665,11 +3959,39 @@
       "created": "2019-05-02T15:35:39+00:00"
     },
     {
+      "fid": 45285,
+      "filename": "Assessment - Spring 2025 High School Understanding Your Students Report [Chinese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20High%20School%20Understanding%20Your%20Students%20Report%20%5BChinese%5D%20-%207.2.2025.pdf",
+      "filesize": 246460,
+      "created": "2025-07-03T17:19:26+00:00"
+    },
+    {
+      "fid": 45185,
+      "filename": "Assessment - Spring 2025 Grade 4 Understanding Your Students Report [Chinese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%204%20Understanding%20Your%20Students%20Report%20%5BChinese%5D%20-%207.2.2025.pdf",
+      "filesize": 246386,
+      "created": "2025-07-03T17:07:57+00:00"
+    },
+    {
+      "fid": 45225,
+      "filename": "Assessment - Spring 2025 Grade 6 Understanding Your Students Report [Chinese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%206%20Understanding%20Your%20Students%20Report%20%5BChinese%5D%20-%207.2.2025.pdf",
+      "filesize": 246237,
+      "created": "2025-07-03T17:13:05+00:00"
+    },
+    {
       "fid": 20570,
       "filename": "An-Interview-Checklist-For-Supporting-School-Selection-Unaccompanied-Youth_0.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/An-Interview-Checklist-For-Supporting-School-Selection-Unaccompanied-Youth_0.pdf",
       "filesize": 245840,
       "created": "2021-10-15T12:15:19+00:00"
+    },
+    {
+      "fid": 44715,
+      "filename": "Child Nutrition - FY26 Center Budget Form - 5.2.25.xlsx",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20FY26%20Center%20Budget%20Form%20-%205.2.25.xlsx",
+      "filesize": 245366,
+      "created": "2025-06-02T13:00:47+00:00"
     },
     {
       "fid": 18553,
@@ -3728,6 +4050,13 @@
       "created": "2021-09-27T15:15:14+00:00"
     },
     {
+      "fid": 46781,
+      "filename": "ESEA - Title I Equitable Service Program Information & USDA Income Guidelines - 8.18.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20Title%20I%20Equitable%20Service%20Program%20Information%20%26%20USDA%20Income%20Guidelines%20-%208.18.2025.pdf",
+      "filesize": 241874,
+      "created": "2025-08-18T16:09:12+00:00"
+    },
+    {
       "fid": 9794,
       "filename": "fed1.png",
       "url": "/doe/sites/maine.gov.doe/files/2019-08/fed1.png",
@@ -3761,6 +4090,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/WHP%20Graphic%20Biographies%20list.pdf",
       "filesize": 239137,
       "created": "2021-05-13T00:32:05+00:00"
+    },
+    {
+      "fid": 46655,
+      "filename": "ESEA - C4 Effective Professional Development - 8.11.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20C4%20Effective%20Professional%20Development%20-%208.11.2025.pdf",
+      "filesize": 239120,
+      "created": "2025-08-12T00:01:53+00:00"
     },
     {
       "fid": 6532,
@@ -3798,6 +4134,13 @@
       "created": "2022-04-05T18:27:55+00:00"
     },
     {
+      "fid": 33975,
+      "filename": "G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx_0.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx_0.pdf",
+      "filesize": 236268,
+      "created": "2024-01-19T14:42:23+00:00"
+    },
+    {
       "fid": 20560,
       "filename": "Common-Signs-of-Homelessness.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Common-Signs-of-Homelessness.pdf",
@@ -3817,6 +4160,20 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/CDS_Child%20Find%20Intake%20Form%20RLN.pdf",
       "filesize": 234695,
       "created": "2020-04-28T18:37:35+00:00"
+    },
+    {
+      "fid": 33976,
+      "filename": "G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx.pdf",
+      "filesize": 234487,
+      "created": "2024-01-19T14:42:39+00:00"
+    },
+    {
+      "fid": 33977,
+      "filename": "HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx.pdf",
+      "filesize": 234110,
+      "created": "2024-01-19T14:42:56+00:00"
     },
     {
       "fid": 13095,
@@ -3847,6 +4204,13 @@
       "created": "2025-11-10T19:54:02+00:00"
     },
     {
+      "fid": 45267,
+      "filename": "Assessment - Spring 2025 Grade 8 Understanding Your Students Report [French] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%208%20Understanding%20Your%20Students%20Report%20%5BFrench%5D%20-%207.2.2025.pdf",
+      "filesize": 231710,
+      "created": "2025-07-03T17:17:48+00:00"
+    },
+    {
       "fid": 47425,
       "filename": "State Board - Business Agenda - 10.9.2025.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Business%20Agenda%20-%2010.9.2025.pdf",
@@ -3854,11 +4218,53 @@
       "created": "2025-10-02T19:14:53+00:00"
     },
     {
+      "fid": 45207,
+      "filename": "Assessment - Spring 2025 Grade 5 Understanding Your Students Report [French] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%205%20Understanding%20Your%20Students%20Report%20%5BFrench%5D%20-%207.2.2025.pdf",
+      "filesize": 231037,
+      "created": "2025-07-03T17:11:02+00:00"
+    },
+    {
+      "fid": 45247,
+      "filename": "Assessment - Spring 2025 Grade 7 Understanding Your Students Report [French] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%207%20Understanding%20Your%20Students%20Report%20%5BFrench%5D%20-%207.2.2025.pdf",
+      "filesize": 228905,
+      "created": "2025-07-03T17:15:23+00:00"
+    },
+    {
+      "fid": 45187,
+      "filename": "Assessment - Spring 2025 Grade 4 Understanding Your Students Report [French] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%204%20Understanding%20Your%20Students%20Report%20%5BFrench%5D%20-%207.2.2025.pdf",
+      "filesize": 228897,
+      "created": "2025-07-03T17:08:08+00:00"
+    },
+    {
+      "fid": 33938,
+      "filename": "G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Chinese_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Chinese_Final.pdf",
+      "filesize": 228069,
+      "created": "2024-01-18T21:52:07+00:00"
+    },
+    {
+      "fid": 45227,
+      "filename": "Assessment - Spring 2025 Grade 6 Understanding Your Students Report [French] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%206%20Understanding%20Your%20Students%20Report%20%5BFrench%5D%20-%207.2.2025.pdf",
+      "filesize": 227823,
+      "created": "2025-07-03T17:13:14+00:00"
+    },
+    {
       "fid": 26708,
       "filename": "EANS Weekly Timesheets10.26.22.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/EANS%20Weekly%20Timesheets10.26.22.pdf",
       "filesize": 227299,
       "created": "2022-10-26T19:15:20+00:00"
+    },
+    {
+      "fid": 45273,
+      "filename": "Assessment - Spring 2025 Grade 8 Understanding Your Students Report [Portuguese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%208%20Understanding%20Your%20Students%20Report%20%5BPortuguese%5D%20-%207.2.2025.pdf",
+      "filesize": 226556,
+      "created": "2025-07-03T17:18:13+00:00"
     },
     {
       "fid": 25910,
@@ -3880,6 +4286,20 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-images/class.png",
       "filesize": 225399,
       "created": "2022-10-27T13:57:53+00:00"
+    },
+    {
+      "fid": 45301,
+      "filename": "Assessment - Spring 2025 High School Understanding Your Students Report [French] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20High%20School%20Understanding%20Your%20Students%20Report%20%5BFrench%5D%20-%207.2.2025.pdf",
+      "filesize": 225089,
+      "created": "2025-07-03T17:21:33+00:00"
+    },
+    {
+      "fid": 45213,
+      "filename": "Assessment - Spring 2025 Grade 5 Understanding Your Students Report [Portuguese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%205%20Understanding%20Your%20Students%20Report%20%5BPortuguese%5D%20-%207.2.2025.pdf",
+      "filesize": 224614,
+      "created": "2025-07-03T17:11:25+00:00"
     },
     {
       "fid": 21946,
@@ -3917,6 +4337,34 @@
       "created": "2018-09-24T18:02:17+00:00"
     },
     {
+      "fid": 45193,
+      "filename": "Assessment - Spring 2025 Grade 4 Understanding Your Students Report [Portuguese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%204%20Understanding%20Your%20Students%20Report%20%5BPortuguese%5D%20-%207.2.2025.pdf",
+      "filesize": 221668,
+      "created": "2025-07-03T17:08:38+00:00"
+    },
+    {
+      "fid": 45253,
+      "filename": "Assessment - Spring 2025 Grade 7 Understanding Your Students Report [Portuguese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%207%20Understanding%20Your%20Students%20Report%20%5BPortuguese%5D%20-%207.2.2025.pdf",
+      "filesize": 221548,
+      "created": "2025-07-03T17:15:53+00:00"
+    },
+    {
+      "fid": 45233,
+      "filename": "Assessment - Spring 2025 Grade 6 Understanding Your Students Report [Portuguese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%206%20Understanding%20Your%20Students%20Report%20%5BPortuguese%5D%20-%207.2.2025.pdf",
+      "filesize": 221181,
+      "created": "2025-07-03T17:13:40+00:00"
+    },
+    {
+      "fid": 33945,
+      "filename": "G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Vietnamese_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Vietnamese_Final.pdf",
+      "filesize": 219912,
+      "created": "2024-01-18T21:53:59+00:00"
+    },
+    {
       "fid": 14501,
       "filename": "ME-aprltr-2020c_0.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/ME-aprltr-2020c_0.pdf",
@@ -3924,11 +4372,102 @@
       "created": "2020-09-17T14:56:19+00:00"
     },
     {
+      "fid": 45277,
+      "filename": "Assessment - Spring 2025 Grade 8 Understanding Your Students Report [Spanish] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%208%20Understanding%20Your%20Students%20Report%20%5BSpanish%5D%20-%207.2.2025.pdf",
+      "filesize": 219153,
+      "created": "2025-07-03T17:18:31+00:00"
+    },
+    {
+      "fid": 45269,
+      "filename": "Assessment - Spring 2025 Grade 8 Understanding Your Students Report [Kinyarwanda] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%208%20Understanding%20Your%20Students%20Report%20%5BKinyarwanda%5D%20-%207.2.2025.pdf",
+      "filesize": 218640,
+      "created": "2025-07-03T17:17:55+00:00"
+    },
+    {
+      "fid": 45261,
+      "filename": "Assessment - Spring 2025 Grade 8 Understanding Your Students Report [English] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%208%20Understanding%20Your%20Students%20Report%20%5BEnglish%5D%20-%207.2.2025.pdf",
+      "filesize": 218623,
+      "created": "2025-07-03T17:17:00+00:00"
+    },
+    {
+      "fid": 45201,
+      "filename": "Assessment - Spring 2025 Grade 5 Understanding Your Students Report [English] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%205%20Understanding%20Your%20Students%20Report%20%5BEnglish%5D%20-%207.2.2025.pdf",
+      "filesize": 218174,
+      "created": "2025-07-03T17:10:27+00:00"
+    },
+    {
       "fid": 22085,
       "filename": "MTSS Tiers_0.jpg",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/MTSS%20Tiers_0.jpg",
       "filesize": 217780,
       "created": "2022-01-27T22:19:45+00:00"
+    },
+    {
+      "fid": 45209,
+      "filename": "Assessment - Spring 2025 Grade 5 Understanding Your Students Report [Kinyarwanda] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%205%20Understanding%20Your%20Students%20Report%20%5BKinyarwanda%5D%20-%207.2.2025.pdf",
+      "filesize": 217387,
+      "created": "2025-07-03T17:11:09+00:00"
+    },
+    {
+      "fid": 45217,
+      "filename": "Assessment - Spring 2025 Grade 5 Understanding Your Students Report [Spanish] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%205%20Understanding%20Your%20Students%20Report%20%5BSpanish%5D%20-%207.2.2025.pdf",
+      "filesize": 216484,
+      "created": "2025-07-03T17:11:43+00:00"
+    },
+    {
+      "fid": 45271,
+      "filename": "Assessment - Spring 2025 Grade 8 Understanding Your Students Report [Lingala] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%208%20Understanding%20Your%20Students%20Report%20%5BLingala%5D%20-%207.2.2025.pdf",
+      "filesize": 216399,
+      "created": "2025-07-03T17:18:04+00:00"
+    },
+    {
+      "fid": 45197,
+      "filename": "Assessment - Spring 2025 Grade 4 Understanding Your Students Report [Spanish] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%204%20Understanding%20Your%20Students%20Report%20%5BSpanish%5D%20-%207.2.2025.pdf",
+      "filesize": 216354,
+      "created": "2025-07-03T17:08:53+00:00"
+    },
+    {
+      "fid": 33954,
+      "filename": "G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Vietnamese_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Vietnamese_Final.pdf",
+      "filesize": 216024,
+      "created": "2024-01-18T21:56:49+00:00"
+    },
+    {
+      "fid": 45275,
+      "filename": "Assessment - Spring 2025 Grade 8 Understanding Your Students Report [Somali] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%208%20Understanding%20Your%20Students%20Report%20%5BSomali%5D%20-%207.2.2025.pdf",
+      "filesize": 216019,
+      "created": "2025-07-03T17:18:22+00:00"
+    },
+    {
+      "fid": 33937,
+      "filename": "G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Arabic_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Arabic_Final.pdf",
+      "filesize": 215862,
+      "created": "2024-01-18T21:51:50+00:00"
+    },
+    {
+      "fid": 45257,
+      "filename": "Assessment - Spring 2025 Grade 7 Understanding Your Students Report [Spanish] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%207%20Understanding%20Your%20Students%20Report%20%5BSpanish%5D%20-%207.2.2025.pdf",
+      "filesize": 215757,
+      "created": "2025-07-03T17:16:15+00:00"
+    },
+    {
+      "fid": 45237,
+      "filename": "Assessment - Spring 2025 Grade 6 Understanding Your Students Report [Spanish] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%206%20Understanding%20Your%20Students%20Report%20%5BSpanish%5D%20-%207.2.2025.pdf",
+      "filesize": 215705,
+      "created": "2025-07-03T17:13:58+00:00"
     },
     {
       "fid": 6535,
@@ -3952,6 +4491,13 @@
       "created": "2022-04-20T17:41:32+00:00"
     },
     {
+      "fid": 45241,
+      "filename": "Assessment - Spring 2025 Grade 7 Understanding Your Students Report [English] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%207%20Understanding%20Your%20Students%20Report%20%5BEnglish%5D%20-%207.2.2025.pdf",
+      "filesize": 215330,
+      "created": "2025-07-03T17:14:19+00:00"
+    },
+    {
       "fid": 5233,
       "filename": "menu-of-approved-models.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/menu-of-approved-models.pdf",
@@ -3964,6 +4510,27 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/SY%2019%20St%20George%20Admin%20Review%20and%20CAP%20Letter.pdf",
       "filesize": 215063,
       "created": "2020-01-08T19:39:33+00:00"
+    },
+    {
+      "fid": 45249,
+      "filename": "Assessment - Spring 2025 Grade 7 Understanding Your Students Report [Kinyarwanda] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%207%20Understanding%20Your%20Students%20Report%20%5BKinyarwanda%5D%20-%207.2.2025.pdf",
+      "filesize": 215053,
+      "created": "2025-07-03T17:15:30+00:00"
+    },
+    {
+      "fid": 45215,
+      "filename": "Assessment - Spring 2025 Grade 5 Understanding Your Students Report [Somali] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%205%20Understanding%20Your%20Students%20Report%20%5BSomali%5D%20-%207.2.2025.pdf",
+      "filesize": 214653,
+      "created": "2025-07-03T17:11:35+00:00"
+    },
+    {
+      "fid": 45221,
+      "filename": "Assessment - Spring 2025 Grade 6 Understanding Your Students Report [English] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%206%20Understanding%20Your%20Students%20Report%20%5BEnglish%5D%20-%207.2.2025.pdf",
+      "filesize": 214588,
+      "created": "2025-07-03T17:12:13+00:00"
     },
     {
       "fid": 6540,
@@ -3980,11 +4547,158 @@
       "created": "2022-03-31T18:16:05+00:00"
     },
     {
+      "fid": 45189,
+      "filename": "Assessment - Spring 2025 Grade 4 Understanding Your Students Report [Kinyarwanda] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%204%20Understanding%20Your%20Students%20Report%20%5BKinyarwanda%5D%20-%207.2.2025.pdf",
+      "filesize": 214392,
+      "created": "2025-07-03T17:08:19+00:00"
+    },
+    {
+      "fid": 33973,
+      "filename": "HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Vietnamese_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Vietnamese_Final.pdf",
+      "filesize": 214360,
+      "created": "2024-01-19T14:33:59+00:00"
+    },
+    {
+      "fid": 45173,
+      "filename": "Assessment - Spring 2025 Grade 4 Understanding Your Students Report [English] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%204%20Understanding%20Your%20Students%20Report%20%5BEnglish%5D%20-%207.2.2025.pdf",
+      "filesize": 214328,
+      "created": "2025-07-03T17:05:41+00:00"
+    },
+    {
+      "fid": 45229,
+      "filename": "Assessment - Spring 2025 Grade 6 Understanding Your Students Report [Kinyarwanda] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%206%20Understanding%20Your%20Students%20Report%20%5BKinyarwanda%5D%20-%207.2.2025.pdf",
+      "filesize": 214238,
+      "created": "2025-07-03T17:13:22+00:00"
+    },
+    {
+      "fid": 45211,
+      "filename": "Assessment - Spring 2025 Grade 5 Understanding Your Students Report [Lingala] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%205%20Understanding%20Your%20Students%20Report%20%5BLingala%5D%20-%207.2.2025.pdf",
+      "filesize": 214128,
+      "created": "2025-07-03T17:11:16+00:00"
+    },
+    {
       "fid": 6394,
       "filename": "2017-2018EarlyChildhoodSettingProfileUpdateForm.doc",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/2017-2018EarlyChildhoodSettingProfileUpdateForm.doc",
       "filesize": 213504,
       "created": "2018-10-09T15:56:58+00:00"
+    },
+    {
+      "fid": 45255,
+      "filename": "Assessment - Spring 2025 Grade 7 Understanding Your Students Report [Somali] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%207%20Understanding%20Your%20Students%20Report%20%5BSomali%5D%20-%207.2.2025.pdf",
+      "filesize": 213037,
+      "created": "2025-07-03T17:16:05+00:00"
+    },
+    {
+      "fid": 45305,
+      "filename": "Assessment - Spring 2025 High School Understanding Your Students Report [Spanish] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20High%20School%20Understanding%20Your%20Students%20Report%20%5BSpanish%5D%20-%207.2.2025.pdf",
+      "filesize": 212987,
+      "created": "2025-07-03T17:22:05+00:00"
+    },
+    {
+      "fid": 45251,
+      "filename": "Assessment - Spring 2025 Grade 7 Understanding Your Students Report [Lingala] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%207%20Understanding%20Your%20Students%20Report%20%5BLingala%5D%20-%207.2.2025.pdf",
+      "filesize": 212330,
+      "created": "2025-07-03T17:15:39+00:00"
+    },
+    {
+      "fid": 45281,
+      "filename": "Assessment - Spring 2025 High School Understanding Your Students Report [English] -7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20High%20School%20Understanding%20Your%20Students%20Report%20%5BEnglish%5D%20-7.2.2025.pdf",
+      "filesize": 212131,
+      "created": "2025-07-03T17:19:08+00:00"
+    },
+    {
+      "fid": 45303,
+      "filename": "Assessment - Spring 2025 High School Understanding Your Students Report [Kinyarwanda] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20High%20School%20Understanding%20Your%20Students%20Report%20%5BKinyarwanda%5D%20-%207.2.2025.pdf",
+      "filesize": 211986,
+      "created": "2025-07-03T17:21:48+00:00"
+    },
+    {
+      "fid": 33947,
+      "filename": "G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Chinese_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Chinese_Final.pdf",
+      "filesize": 211939,
+      "created": "2024-01-18T21:55:11+00:00"
+    },
+    {
+      "fid": 45231,
+      "filename": "Assessment - Spring 2025 Grade 6 Understanding Your Students Report [Lingala] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%206%20Understanding%20Your%20Students%20Report%20%5BLingala%5D%20-%207.2.2025.pdf",
+      "filesize": 211902,
+      "created": "2025-07-03T17:13:30+00:00"
+    },
+    {
+      "fid": 45161,
+      "filename": "Assessment - Spring 2025 Grade 3 Understanding Your Students Report [Chinese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%203%20Understanding%20Your%20Students%20Report%20%5BChinese%5D%20-%207.2.2025.pdf",
+      "filesize": 211775,
+      "created": "2025-07-03T17:04:07+00:00"
+    },
+    {
+      "fid": 45235,
+      "filename": "Assessment - Spring 2025 Grade 6 Understanding Your Students Report [Somali] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%206%20Understanding%20Your%20Students%20Report%20%5BSomali%5D%20-%207.2.2025.pdf",
+      "filesize": 211625,
+      "created": "2025-07-03T17:13:48+00:00"
+    },
+    {
+      "fid": 45191,
+      "filename": "Assessment - Spring 2025 Grade 4 Understanding Your Students Report [Lingala] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%204%20Understanding%20Your%20Students%20Report%20%5BLingala%5D%20-%207.2.2025.pdf",
+      "filesize": 211012,
+      "created": "2025-07-03T17:08:28+00:00"
+    },
+    {
+      "fid": 45195,
+      "filename": "Assessment - Spring 2025 Grade 4 Understanding Your Students Report [Somali] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%204%20Understanding%20Your%20Students%20Report%20%5BSomali%5D%20-%207.2.2025.pdf",
+      "filesize": 210775,
+      "created": "2025-07-03T17:08:45+00:00"
+    },
+    {
+      "fid": 45299,
+      "filename": "Assessment - Spring 2025 High School Understanding Your Students Report [Lingala] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20High%20School%20Understanding%20Your%20Students%20Report%20%5BLingala%5D%20-%207.2.2025.pdf",
+      "filesize": 210136,
+      "created": "2025-07-03T17:21:20+00:00"
+    },
+    {
+      "fid": 33955,
+      "filename": "HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Arabic_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Arabic_Final.pdf",
+      "filesize": 209936,
+      "created": "2024-01-18T21:57:47+00:00"
+    },
+    {
+      "fid": 33965,
+      "filename": "HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Chinese_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Chinese_Final.pdf",
+      "filesize": 209574,
+      "created": "2024-01-19T14:31:35+00:00"
+    },
+    {
+      "fid": 45081,
+      "filename": "Child Nutrition - AY2026 WIC Income Guidelines - 5.29.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20AY2026%20WIC%20Income%20Guidelines%20-%205.29.2025.pdf",
+      "filesize": 209555,
+      "created": "2025-06-24T18:03:45+00:00"
+    },
+    {
+      "fid": 45295,
+      "filename": "Assessment - Spring 2025 High School Understanding Your Students Report [Somali] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20High%20School%20Understanding%20Your%20Students%20Report%20%5BSomali%5D%20-%207.2.2025.pdf",
+      "filesize": 208996,
+      "created": "2025-07-03T17:20:54+00:00"
     },
     {
       "fid": 15669,
@@ -4022,6 +4736,13 @@
       "created": "2019-01-30T18:57:07+00:00"
     },
     {
+      "fid": 43329,
+      "filename": "Health Education - Model Policy for Child Sexual Abuse Prevention - 2.7.2018.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Health%20Education%20-%20Model%20Policy%20for%20Child%20Sexual%20Abuse%20Prevention%20-%202.7.2018.pdf",
+      "filesize": 207313,
+      "created": "2025-02-25T20:09:08+00:00"
+    },
+    {
       "fid": 6357,
       "filename": "Model_Policy_for_CSA_Prevention.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Model_Policy_for_CSA_Prevention.pdf",
@@ -4034,6 +4755,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/PartCapplication2018.doc",
       "filesize": 206848,
       "created": "2018-10-01T17:24:43+00:00"
+    },
+    {
+      "fid": 33946,
+      "filename": "G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Arabic_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Arabic_Final.pdf",
+      "filesize": 206765,
+      "created": "2024-01-18T21:54:59+00:00"
     },
     {
       "fid": 26359,
@@ -4099,6 +4827,13 @@
       "created": "2020-04-01T18:33:34+00:00"
     },
     {
+      "fid": 53427,
+      "filename": "Assessment - Spring 2026 Grade 6 Understanding Your Students Report [Lingala] - 6.11.2026_0.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202026%20Grade%206%20Understanding%20Your%20Students%20Report%20%5BLingala%5D%20-%206.11.2026_0.pdf",
+      "filesize": 202540,
+      "created": "2026-06-12T13:30:21+00:00"
+    },
+    {
       "fid": 6779,
       "filename": "CDS_Child Find Intake Form.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/CDS_Child%20Find%20Intake%20Form.pdf",
@@ -4160,6 +4895,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/LEPG%20Module%202%20Handouts.docx",
       "filesize": 198419,
       "created": "2018-09-24T15:49:04+00:00"
+    },
+    {
+      "fid": 44853,
+      "filename": "Supervision and Monitoring - 2025-26 Monitoring Visit Dates - 6.5.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Supervision%20and%20Monitoring%20-%202025-26%20Monitoring%20Visit%20Dates%20-%206.5.2025.pdf",
+      "filesize": 198384,
+      "created": "2025-06-06T11:38:41+00:00"
     },
     {
       "fid": 52671,
@@ -4251,6 +4993,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20State%20Board%20of%20Education%20Workshop%20Agenda%20-%209.10.2025.pdf",
       "filesize": 192040,
       "created": "2025-09-03T19:45:28+00:00"
+    },
+    {
+      "fid": 44717,
+      "filename": "Child Nutrition - FY26 DCH Budget Form - 5.3.2025.xlsx",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20FY26%20DCH%20Budget%20Form%20-%205.3.2025.xlsx",
+      "filesize": 191908,
+      "created": "2025-06-02T13:01:11+00:00"
     },
     {
       "fid": 16163,
@@ -4414,6 +5163,13 @@
       "created": "2022-06-27T13:29:39+00:00"
     },
     {
+      "fid": 53511,
+      "filename": "ESEA - B11 Timely Family Communication - 6.11.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20B11%20Timely%20Family%20Communication%20-%206.11.2026.pdf",
+      "filesize": 182278,
+      "created": "2026-06-15T19:39:30+00:00"
+    },
+    {
       "fid": 19630,
       "filename": "walk_1.jpg",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/walk_1.jpg",
@@ -4426,6 +5182,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Cornville%20Regional%20Charter%20School%20Plan.pdf",
       "filesize": 181606,
       "created": "2020-08-04T19:11:32+00:00"
+    },
+    {
+      "fid": 45163,
+      "filename": "Assessment - Spring 2025 Grade 3 Understanding Your Students Report [French] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%203%20Understanding%20Your%20Students%20Report%20%5BFrench%5D%20-%207.2.2025.pdf",
+      "filesize": 179798,
+      "created": "2025-07-03T17:04:17+00:00"
     },
     {
       "fid": 43685,
@@ -4582,6 +5345,20 @@
       "created": "2022-04-04T17:09:01+00:00"
     },
     {
+      "fid": 45169,
+      "filename": "Assessment - Spring 2025 Grade 3 Understanding Your Students Report [Portuguese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%203%20Understanding%20Your%20Students%20Report%20%5BPortuguese%5D%20-%207.2.2025.pdf",
+      "filesize": 172070,
+      "created": "2025-07-03T17:04:53+00:00"
+    },
+    {
+      "fid": 44863,
+      "filename": "Supervision and Monitoring - 2025-26 Regional Program Monitoring Timeline - 6.5.2025 .pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Supervision%20and%20Monitoring%20-%202025-26%20Regional%20Program%20Monitoring%20Timeline%20-%206.5.2025%20.pdf",
+      "filesize": 172014,
+      "created": "2025-06-06T11:49:47+00:00"
+    },
+    {
       "fid": 6538,
       "filename": "revised model Bullying Reporting Form JICK E1 SP.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/revised%20model%20Bullying%20Reporting%20Form%20JICK%20E1%20SP.pdf",
@@ -4594,6 +5371,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Leading%20Early%20Learning%20Informational%20Sheet%20Cohort%206%20-%204.15.2026.pdf",
       "filesize": 170698,
       "created": "2026-04-15T13:19:37+00:00"
+    },
+    {
+      "fid": 45179,
+      "filename": "Assessment - Spring 2025 Grade 3 Understanding Your Students Report [Vietnamese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%203%20Understanding%20Your%20Students%20Report%20%5BVietnamese%5D%20-%207.2.2025.pdf",
+      "filesize": 170489,
+      "created": "2025-07-03T17:06:44+00:00"
     },
     {
       "fid": 8912,
@@ -4645,6 +5429,13 @@
       "created": "2025-06-05T19:52:30+00:00"
     },
     {
+      "fid": 33944,
+      "filename": "G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Spanish_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Spanish_Final.pdf",
+      "filesize": 168078,
+      "created": "2024-01-18T21:53:45+00:00"
+    },
+    {
       "fid": 10253,
       "filename": "Q&A for LD 577_2.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Q%26A%20for%20LD%20577_2.pdf",
@@ -4666,6 +5457,20 @@
       "created": "2019-04-18T17:50:31+00:00"
     },
     {
+      "fid": 45175,
+      "filename": "Assessment - Spring 2025 Grade 3 Understanding Your Students Report [Spanish] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%203%20Understanding%20Your%20Students%20Report%20%5BSpanish%5D%20-%207.2.2025.pdf",
+      "filesize": 166061,
+      "created": "2025-07-03T17:06:00+00:00"
+    },
+    {
+      "fid": 45165,
+      "filename": "Assessment - Spring 2025 Grade 3 Understanding Your Students Report [Kinyarwanda] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%203%20Understanding%20Your%20Students%20Report%20%5BKinyarwanda%5D%20-%207.2.2025.pdf",
+      "filesize": 165905,
+      "created": "2025-07-03T17:04:29+00:00"
+    },
+    {
       "fid": 1292,
       "filename": "2015-16_FY18funding.xls",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/2015-16_FY18funding.xls",
@@ -4678,6 +5483,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/FY21%20611%20Allocations.pdf",
       "filesize": 165328,
       "created": "2021-05-04T19:06:22+00:00"
+    },
+    {
+      "fid": 45391,
+      "filename": "Assessment - Spring 2025 Grade 3 Understanding Your Students Report [English] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%203%20Understanding%20Your%20Students%20Report%20%5BEnglish%5D%20-%207.2.2025.pdf",
+      "filesize": 165245,
+      "created": "2025-07-16T14:13:33+00:00"
     },
     {
       "fid": 52423,
@@ -4757,11 +5569,39 @@
       "created": "2022-10-06T17:21:39+00:00"
     },
     {
+      "fid": 45167,
+      "filename": "Assessment - Spring 2025 Grade 3 Understanding Your Students Report [Lingala] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%203%20Understanding%20Your%20Students%20Report%20%5BLingala%5D%20-%207.2.2025.pdf",
+      "filesize": 161697,
+      "created": "2025-07-03T17:04:41+00:00"
+    },
+    {
       "fid": 52279,
       "filename": "23-24 Monitoring Cohort SAU SPED Dir Letter of Notification (1).pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/23-24%20Monitoring%20Cohort%20SAU%20SPED%20Dir%20Letter%20of%20Notification%20%281%29.pdf",
       "filesize": 161345,
       "created": "2026-04-13T19:47:32+00:00"
+    },
+    {
+      "fid": 45171,
+      "filename": "Assessment - Spring 2025 Grade 3 Understanding Your Students Report [Somali] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%203%20Understanding%20Your%20Students%20Report%20%5BSomali%5D%20-%207.2.2025.pdf",
+      "filesize": 161326,
+      "created": "2025-07-03T17:05:06+00:00"
+    },
+    {
+      "fid": 33941,
+      "filename": "G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Lingala_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Lingala_Final.pdf",
+      "filesize": 160639,
+      "created": "2024-01-18T21:53:01+00:00"
+    },
+    {
+      "fid": 28895,
+      "filename": "36366185351_59bd03c0ce_c.jpg",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/36366185351_59bd03c0ce_c.jpg",
+      "filesize": 160377,
+      "created": "2023-04-12T20:27:06+00:00"
     },
     {
       "fid": 26389,
@@ -4792,11 +5632,25 @@
       "created": "2025-12-01T14:27:16+00:00"
     },
     {
+      "fid": 45259,
+      "filename": "Assessment - Spring 2025 Grade 7 Understanding Your Students Report [Vietnamese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%207%20Understanding%20Your%20Students%20Report%20%5BVietnamese%5D%20-%207.2.2025.pdf",
+      "filesize": 158088,
+      "created": "2025-07-03T17:16:26+00:00"
+    },
+    {
       "fid": 25602,
       "filename": "EANS_Disposition_Clarification_8_2_22 (003).pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/EANS_Disposition_Clarification_8_2_22%20%28003%29.pdf",
       "filesize": 157942,
       "created": "2022-08-22T19:07:10+00:00"
+    },
+    {
+      "fid": 45279,
+      "filename": "Assessment - Spring 2025 Grade 8 Understanding Your Students Report [Vietnamese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%208%20Understanding%20Your%20Students%20Report%20%5BVietnamese%5D%20-%207.2.2025.pdf",
+      "filesize": 157709,
+      "created": "2025-07-03T17:18:41+00:00"
     },
     {
       "fid": 26387,
@@ -4827,6 +5681,34 @@
       "created": "2018-10-18T18:12:04+00:00"
     },
     {
+      "fid": 33939,
+      "filename": "G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_French_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_French_Final.pdf",
+      "filesize": 156499,
+      "created": "2024-01-18T21:52:26+00:00"
+    },
+    {
+      "fid": 45239,
+      "filename": "Assessment - Spring 2025 Grade 6 Understanding Your Students Report [Vietnamese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%206%20Understanding%20Your%20Students%20Report%20%5BVietnamese%5D%20-%207.2.2025.pdf",
+      "filesize": 156478,
+      "created": "2025-07-03T17:14:06+00:00"
+    },
+    {
+      "fid": 33940,
+      "filename": "G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Kinyarwanda_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Kinyarwanda_Final.pdf",
+      "filesize": 156386,
+      "created": "2024-01-18T21:52:43+00:00"
+    },
+    {
+      "fid": 45307,
+      "filename": "Assessment - Spring 2025 High School Understanding Your Students Report [Vietnamese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20High%20School%20Understanding%20Your%20Students%20Report%20%5BVietnamese%5D%20-%207.2.2025.pdf",
+      "filesize": 156021,
+      "created": "2025-07-03T17:22:14+00:00"
+    },
+    {
       "fid": 21947,
       "filename": "graphic 2_1.png",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/graphic%202_1.png",
@@ -4841,6 +5723,13 @@
       "created": "2026-04-13T19:45:02+00:00"
     },
     {
+      "fid": 45219,
+      "filename": "Assessment - Spring 2025 Grade 5 Understanding Your Students Report [Vietnamese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%205%20Understanding%20Your%20Students%20Report%20%5BVietnamese%5D%20-%207.2.2025.pdf",
+      "filesize": 155512,
+      "created": "2025-07-03T17:11:58+00:00"
+    },
+    {
       "fid": 46345,
       "filename": "State Board - Special Meeting Business Agenda - 8.5.2025.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Special%20Meeting%20Business%20Agenda%20-%208.5.2025.pdf",
@@ -4848,11 +5737,25 @@
       "created": "2025-07-31T12:38:26+00:00"
     },
     {
+      "fid": 33953,
+      "filename": "G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Spanish_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Spanish_Final.pdf",
+      "filesize": 154631,
+      "created": "2024-01-18T21:56:36+00:00"
+    },
+    {
       "fid": 26386,
       "filename": "MeANS_RREV_Budget.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/MeANS_RREV_Budget.pdf",
       "filesize": 154000,
       "created": "2022-10-06T17:23:56+00:00"
+    },
+    {
+      "fid": 45199,
+      "filename": "Assessment - Spring 2025 Grade 4 Understanding Your Students Report [Vietnamese] - 7.2.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%20Spring%202025%20Grade%204%20Understanding%20Your%20Students%20Report%20%5BVietnamese%5D%20-%207.2.2025.pdf",
+      "filesize": 153703,
+      "created": "2025-07-03T17:09:07+00:00"
     },
     {
       "fid": 51209,
@@ -4890,6 +5793,13 @@
       "created": "2022-02-28T15:02:39+00:00"
     },
     {
+      "fid": 33968,
+      "filename": "HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Kinyarwanda_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Kinyarwanda_Final.pdf",
+      "filesize": 151300,
+      "created": "2024-01-19T14:32:03+00:00"
+    },
+    {
       "fid": 42513,
       "filename": "State Board - SBE Perkins FY25 Exhibit - 2.12.2025.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20SBE%20Perkins%20FY25%20Exhibit%20-%202.12.2025.pdf",
@@ -4902,6 +5812,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Resources%20To%20Support%20The%20Impact%20Of%20Traumatic%20News%20Has%20In%20The%20Classroom.docx",
       "filesize": 150585,
       "created": "2023-01-29T23:08:07+00:00"
+    },
+    {
+      "fid": 33949,
+      "filename": "G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Kinyarwanda_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Kinyarwanda_Final.pdf",
+      "filesize": 150460,
+      "created": "2024-01-18T21:55:40+00:00"
     },
     {
       "fid": 12458,
@@ -4960,6 +5877,27 @@
       "created": "2020-02-27T14:39:44+00:00"
     },
     {
+      "fid": 33943,
+      "filename": "G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Somali_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Somali_Final.pdf",
+      "filesize": 148107,
+      "created": "2024-01-18T21:53:31+00:00"
+    },
+    {
+      "fid": 33972,
+      "filename": "HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Spanish_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Spanish_Final.pdf",
+      "filesize": 148040,
+      "created": "2024-01-19T14:33:41+00:00"
+    },
+    {
+      "fid": 33942,
+      "filename": "G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Portuguese_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G5_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Portuguese_Final.pdf",
+      "filesize": 147684,
+      "created": "2024-01-18T21:53:16+00:00"
+    },
+    {
       "fid": 44795,
       "filename": "State Board - Exhibit XC FY26 Briggs Maine Administrators CTE - 6.11.2025 .pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Exhibit%20XC%20FY26%20Briggs%20Maine%20Administrators%20CTE%20-%206.11.2025%20.pdf",
@@ -4995,11 +5933,39 @@
       "created": "2022-10-25T18:41:15+00:00"
     },
     {
+      "fid": 33951,
+      "filename": "G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Portuguese_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Portuguese_Final.pdf",
+      "filesize": 145806,
+      "created": "2024-01-18T21:56:10+00:00"
+    },
+    {
       "fid": 17142,
       "filename": "3.0-3.9 Sample Student Schedule vf.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/3.0-3.9%20Sample%20Student%20Schedule%20vf.pdf",
       "filesize": 145343,
       "created": "2021-03-18T19:19:33+00:00"
+    },
+    {
+      "fid": 33967,
+      "filename": "HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_French_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_French_Final.pdf",
+      "filesize": 144535,
+      "created": "2024-01-19T14:31:50+00:00"
+    },
+    {
+      "fid": 33970,
+      "filename": "HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Portuguese_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Portuguese_Final.pdf",
+      "filesize": 144488,
+      "created": "2024-01-19T14:33:09+00:00"
+    },
+    {
+      "fid": 33948,
+      "filename": "G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_French_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_French_Final.pdf",
+      "filesize": 143606,
+      "created": "2024-01-18T21:55:25+00:00"
     },
     {
       "fid": 19254,
@@ -5028,6 +5994,20 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Guidance%20on%20Enrollment.pdf",
       "filesize": 142469,
       "created": "2021-04-14T15:46:46+00:00"
+    },
+    {
+      "fid": 33971,
+      "filename": "HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Somali_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Somali_Final.pdf",
+      "filesize": 140887,
+      "created": "2024-01-19T14:33:24+00:00"
+    },
+    {
+      "fid": 33969,
+      "filename": "HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Lingala_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/HS_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Lingala_Final.pdf",
+      "filesize": 140614,
+      "created": "2024-01-19T14:32:16+00:00"
     },
     {
       "fid": 23805,
@@ -5065,6 +6045,13 @@
       "created": "2025-03-05T20:44:02+00:00"
     },
     {
+      "fid": 33950,
+      "filename": "G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Lingala_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Lingala_Final.pdf",
+      "filesize": 139493,
+      "created": "2024-01-18T21:55:53+00:00"
+    },
+    {
       "fid": 14351,
       "filename": "Transition to Kindergarten Tip Sheet_1.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Transition%20to%20Kindergarten%20Tip%20Sheet_1.pdf",
@@ -5072,25 +6059,18 @@
       "created": "2020-09-03T20:11:49+00:00"
     },
     {
+      "fid": 33952,
+      "filename": "G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for translation_Somali_Final.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/G8_SR_Sp23_SAUxxxx_Schoolxxxx_SSIDxxxxxxxxx-for%20translation_Somali_Final.pdf",
+      "filesize": 138200,
+      "created": "2024-01-18T21:56:23+00:00"
+    },
+    {
       "fid": 27246,
       "filename": "SM Image 1.png",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/SM%20Image%201.png",
       "filesize": 138179,
       "created": "2022-12-05T18:25:36+00:00"
-    },
-    {
-      "fid": 52191,
-      "filename": "Private School Complaint Process (updated 02-27-24).pdf",
-      "url": "/doe/sites/maine.gov.doe/files/inline-files/Private%20School%20Complaint%20Process%20%28updated%2002-27-24%29.pdf",
-      "filesize": 137879,
-      "created": "2026-04-13T19:45:46+00:00"
-    },
-    {
-      "fid": 52863,
-      "filename": "Early Learning - Solutions Lab Strategic Plan Template - 5.18.2026.pdf",
-      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20Strategic%20Plan%20Template%20-%205.18.2026.pdf",
-      "filesize": 137382,
-      "created": "2026-05-19T01:18:54+00:00"
     },
     {
       "fid": 9800,
@@ -5289,6 +6269,13 @@
       "created": "2020-01-23T19:58:32+00:00"
     },
     {
+      "fid": 53521,
+      "filename": "ESEA - E3 Procurement Standards (Conflict of Interest) - 6.15.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/ESEA%20-%20E3%20Procurement%20Standards%20%28Conflict%20of%20Interest%29%20-%206.15.2026.pdf",
+      "filesize": 126371,
+      "created": "2026-06-15T19:42:58+00:00"
+    },
+    {
       "fid": 11343,
       "filename": "Marginalization 2.JPG",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/Marginalization%202.JPG",
@@ -5350,13 +6337,6 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/CRF%20Invoice%20Timeline%282%29_2.pdf",
       "filesize": 123601,
       "created": "2021-05-20T15:47:15+00:00"
-    },
-    {
-      "fid": 52871,
-      "filename": "Early Learning - Solutions Lab Implementation Plan - 5.18.2026.pdf",
-      "url": "/doe/sites/maine.gov.doe/files/inline-files/Early%20Learning%20-%20Solutions%20Lab%20Implementation%20Plan%20-%205.18.2026.pdf",
-      "filesize": 123254,
-      "created": "2026-05-19T01:20:57+00:00"
     },
     {
       "fid": 1733,
@@ -5639,6 +6619,13 @@
       "created": "2021-09-21T18:28:39+00:00"
     },
     {
+      "fid": 53657,
+      "filename": "Special Services - PreK CARES Rate Package FY27 - 6.16.26.xlsx",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Special%20Services%20-%20PreK%20CARES%20Rate%20Package%20FY27%20-%206.16.26.xlsx",
+      "filesize": 108909,
+      "created": "2026-06-17T19:39:11+00:00"
+    },
+    {
       "fid": 25729,
       "filename": "Health Education Standards Revised April 2022 Childhood K-5.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Health%20Education%20Standards%20Revised%20April%202022%20Childhood%20K-5.pdf",
@@ -5672,6 +6659,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Application%20for%20Free%20Milk%20SY%202020_1.pdf",
       "filesize": 107626,
       "created": "2019-08-01T14:33:10+00:00"
+    },
+    {
+      "fid": 51503,
+      "filename": "2026 Maine FFA State Convention Logo.jpeg",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/2026%20Maine%20FFA%20State%20Convention%20Logo.jpeg",
+      "filesize": 106993,
+      "created": "2026-03-12T18:15:00+00:00"
     },
     {
       "fid": 1813,
@@ -5800,6 +6794,20 @@
       "created": "2021-10-13T12:24:28+00:00"
     },
     {
+      "fid": 53693,
+      "filename": "Technology & Learning - MTLI Year 1 Memo on Digital Divide in Maine - 6.25.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Technology%20%26%20Learning%20-%20MTLI%20Year%201%20Memo%20on%20Digital%20Divide%20in%20Maine%20-%206.25.2026.pdf",
+      "filesize": 102400,
+      "created": "2026-06-25T10:25:05+00:00"
+    },
+    {
+      "fid": 52971,
+      "filename": "Assessment - 2026 Maine Science Assessment Unsubmit Process - 5.20.2026.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Assessment%20-%202026%20Maine%20Science%20Assessment%20Unsubmit%20Process%20-%205.20.2026.pdf",
+      "filesize": 102066,
+      "created": "2026-05-21T12:36:09+00:00"
+    },
+    {
       "fid": 15687,
       "filename": "GT snap shot.JPG",
       "url": "/doe/sites/maine.gov.doe/files/inline-images/GT%20snap%20shot.JPG",
@@ -5926,6 +6934,13 @@
       "created": "2018-10-18T18:08:50+00:00"
     },
     {
+      "fid": 53655,
+      "filename": "Special Services - CARES Rate Package FY27 - 6.17.26.xlsx",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Special%20Services%20-%20CARES%20Rate%20Package%20FY27%20-%206.17.26.xlsx",
+      "filesize": 93508,
+      "created": "2026-06-17T19:38:48+00:00"
+    },
+    {
       "fid": 13819,
       "filename": "RSU 12 Birth - Grade 3 Action Plan 2018-19.pdf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/RSU%2012%20Birth%20-%20Grade%203%20Action%20Plan%202018-19.pdf",
@@ -6001,6 +7016,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/Hearing%20Screening%20Worksheet.doc",
       "filesize": 90112,
       "created": "2022-02-22T20:50:10+00:00"
+    },
+    {
+      "fid": 46209,
+      "filename": "DATA - Public SAU Reporting Calendar - 7.23.25.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/DATA%20-%20Public%20SAU%20Reporting%20Calendar%20-%207.23.25.png",
+      "filesize": 89756,
+      "created": "2025-07-25T17:58:50+00:00"
     },
     {
       "fid": 42505,
@@ -6465,6 +7487,13 @@
       "created": "2025-07-09T12:14:29+00:00"
     },
     {
+      "fid": 46211,
+      "filename": "DATA - Charter State Operated Reporting Calendar - 7.23.25.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/DATA%20-%20Charter%20State%20Operated%20Reporting%20Calendar%20-%207.23.25.png",
+      "filesize": 72368,
+      "created": "2025-07-25T17:59:32+00:00"
+    },
+    {
       "fid": 5868,
       "filename": "restraint and seclusion Maine DOE complaint process protocol.rtf",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/restraint%20and%20seclusion%20Maine%20DOE%20complaint%20process%20protocol.rtf",
@@ -6519,6 +7548,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/State%20Board%20-%20Endorsement%20515%20Adapted%20Physical%20Education%20Amendments%20-%206.11.2025.pdf",
       "filesize": 71253,
       "created": "2025-06-05T19:56:20+00:00"
+    },
+    {
+      "fid": 46217,
+      "filename": "DATA - Private 60 Funded Reporting Calendar - 7.23.25.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/DATA%20-%20Private%2060%20Funded%20Reporting%20Calendar%20-%207.23.25.png",
+      "filesize": 70663,
+      "created": "2025-07-25T18:02:00+00:00"
     },
     {
       "fid": 13767,
@@ -6596,6 +7632,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/2019%20LettertoParentsEligibilityNotification_2.doc",
       "filesize": 69120,
       "created": "2019-08-19T14:10:33+00:00"
+    },
+    {
+      "fid": 49455,
+      "filename": "Child Nutrition - SY25 CACFP Income Guidelines - 3.13.2025.pdf",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/Child%20Nutrition%20-%20SY25%20CACFP%20Income%20Guidelines%20-%203.13.2025.pdf",
+      "filesize": 68980,
+      "created": "2025-12-22T15:47:46+00:00"
     },
     {
       "fid": 13005,
@@ -6787,6 +7830,13 @@
       "created": "2022-03-30T16:12:58+00:00"
     },
     {
+      "fid": 46213,
+      "filename": "DATA - Applied Technology Regions Reporting Calendar - 7.23.25.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/DATA%20-%20Applied%20Technology%20Regions%20Reporting%20Calendar%20-%207.23.25.png",
+      "filesize": 63411,
+      "created": "2025-07-25T18:00:24+00:00"
+    },
+    {
       "fid": 21782,
       "filename": "2019-20_LEA Performanc on APR Indicators.xlsx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/2019-20_LEA%20Performanc%20on%20APR%20Indicators.xlsx",
@@ -6799,6 +7849,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/FY21_Award_by_Local%20Recipient.pdf",
       "filesize": 62861,
       "created": "2020-04-21T16:13:35+00:00"
+    },
+    {
+      "fid": 46221,
+      "filename": "DATA - Private Non Sectarian Reporting Calendar - 7.23.25.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/DATA%20-%20Private%20Non%20Sectarian%20Reporting%20Calendar%20-%207.23.25.png",
+      "filesize": 62446,
+      "created": "2025-07-25T18:03:34+00:00"
     },
     {
       "fid": 7113,
@@ -6820,6 +7877,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-images/FacilitatorGuide.JPG",
       "filesize": 61877,
       "created": "2022-03-15T14:30:22+00:00"
+    },
+    {
+      "fid": 46219,
+      "filename": "DATA - Private Sectarian Reporting Calendar - 7.23.25.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/DATA%20-%20Private%20Sectarian%20Reporting%20Calendar%20-%207.23.25.png",
+      "filesize": 61732,
+      "created": "2025-07-25T18:02:42+00:00"
     },
     {
       "fid": 17145,
@@ -6927,6 +7991,13 @@
       "created": "2024-03-21T19:43:57+00:00"
     },
     {
+      "fid": 46215,
+      "filename": "DATA - Regional Programs Reporting Calendar - 7.23.25.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/DATA%20-%20Regional%20Programs%20Reporting%20Calendar%20-%207.23.25.png",
+      "filesize": 58455,
+      "created": "2025-07-25T18:01:20+00:00"
+    },
+    {
       "fid": 8071,
       "filename": "2017-18_FY20funding.xlsx",
       "url": "/doe/sites/maine.gov.doe/files/inline-files/2017-18_FY20funding_0.xlsx",
@@ -6939,6 +8010,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-images/small-charlein-gracia--Ux5mdMJNEA-unsplash.jpg",
       "filesize": 58091,
       "created": "2020-11-06T14:56:47+00:00"
+    },
+    {
+      "fid": 46223,
+      "filename": "DATA - Private Special Purpose Reporting Calendar - 7.23.25.png",
+      "url": "/doe/sites/maine.gov.doe/files/inline-images/DATA%20-%20Private%20Special%20Purpose%20Reporting%20Calendar%20-%207.23.25.png",
+      "filesize": 57886,
+      "created": "2025-07-25T18:04:26+00:00"
     },
     {
       "fid": 26733,
@@ -7772,6 +8850,13 @@
       "url": "/doe/sites/maine.gov.doe/files/inline-files/incident_report_form_MDOE_6-15-12.doc",
       "filesize": 33280,
       "created": "2018-09-26T20:16:03+00:00"
+    },
+    {
+      "fid": 51317,
+      "filename": "DATA - Home Instruction Counts by District and Year 2026 - 3.3.2026.xlsx",
+      "url": "/doe/sites/maine.gov.doe/files/inline-files/DATA%20-%20Home%20Instruction%20Counts%20by%20District%20and%20Year%202026%20-%203.3.2026.xlsx",
+      "filesize": 32994,
+      "created": "2026-03-03T16:21:49+00:00"
     },
     {
       "fid": 6765,

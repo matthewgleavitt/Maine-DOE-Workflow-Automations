@@ -19,11 +19,6 @@
       "month_name": "January",
       "owner": "Beth.Lambert@maine.gov"
     },
-    "2397": {
-      "month": 1,
-      "month_name": "January",
-      "owner": "Beth.Lambert@maine.gov"
-    },
     "369": {
       "month": 1,
       "month_name": "January",
@@ -39,16 +34,6 @@
       "month_name": "January",
       "owner": "Beth.Lambert@maine.gov"
     },
-    "176": {
-      "month": 1,
-      "month_name": "January",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "178": {
-      "month": 1,
-      "month_name": "January",
-      "owner": "Beth.Lambert@maine.gov"
-    },
     "615": {
       "month": 1,
       "month_name": "January",
@@ -59,22 +44,12 @@
       "month_name": "January",
       "owner": "Beth.Lambert@maine.gov"
     },
-    "175": {
-      "month": 1,
-      "month_name": "January",
-      "owner": "Beth.Lambert@maine.gov"
-    },
     "4451": {
       "month": 1,
       "month_name": "January",
       "owner": "Beth.Lambert@maine.gov"
     },
     "1071": {
-      "month": 3,
-      "month_name": "March",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "152": {
       "month": 3,
       "month_name": "March",
       "owner": "Beth.Lambert@maine.gov"
@@ -104,11 +79,6 @@
       "month_name": "March",
       "owner": "Beth.Lambert@maine.gov"
     },
-    "939": {
-      "month": 3,
-      "month_name": "March",
-      "owner": "Beth.Lambert@maine.gov"
-    },
     "458": {
       "month": 3,
       "month_name": "March",
@@ -134,11 +104,6 @@
       "month_name": "March",
       "owner": "Beth.Lambert@maine.gov"
     },
-    "172": {
-      "month": 3,
-      "month_name": "March",
-      "owner": "Beth.Lambert@maine.gov"
-    },
     "579": {
       "month": 5,
       "month_name": "May",
@@ -159,84 +124,9 @@
       "month_name": "May",
       "owner": "Beth.Lambert@maine.gov"
     },
-    "1262": {
-      "month": 5,
-      "month_name": "May",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "1261": {
-      "month": 5,
-      "month_name": "May",
-      "owner": "Beth.Lambert@maine.gov"
-    },
     "60": {
       "month": 5,
       "month_name": "May",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "1128": {
-      "month": 5,
-      "month_name": "May",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "1129": {
-      "month": 5,
-      "month_name": "May",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "1472": {
-      "month": 5,
-      "month_name": "May",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "1130": {
-      "month": 5,
-      "month_name": "May",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "1091": {
-      "month": 5,
-      "month_name": "May",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "4045": {
-      "month": 5,
-      "month_name": "May",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "1090": {
-      "month": 5,
-      "month_name": "May",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "4049": {
-      "month": 7,
-      "month_name": "July",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "4299": {
-      "month": 7,
-      "month_name": "July",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "1473": {
-      "month": 7,
-      "month_name": "July",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "1471": {
-      "month": 7,
-      "month_name": "July",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "2754": {
-      "month": 7,
-      "month_name": "July",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "181": {
-      "month": 7,
-      "month_name": "July",
       "owner": "Beth.Lambert@maine.gov"
     },
     "638": {
@@ -277,16 +167,6 @@
     "1076": {
       "month": 7,
       "month_name": "July",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "2753": {
-      "month": 9,
-      "month_name": "September",
-      "owner": "Beth.Lambert@maine.gov"
-    },
-    "179": {
-      "month": 9,
-      "month_name": "September",
       "owner": "Beth.Lambert@maine.gov"
     },
     "642": {
@@ -2742,7 +2622,7 @@
     "4533": {
       "month": 12,
       "month_name": "December",
-      "owner": "Jennifer.Page@maine.gov"
+      "owner": "Beth.Lambert@maine.gov"
     },
     "4345": {
       "month": 3,
@@ -4252,7 +4132,7 @@
     "4671": {
       "month": 4,
       "month_name": "April",
-      "owner": ""
+      "owner": "Wendy.Robichaud@maine.gov"
     },
     "4667": {
       "month": 4,
@@ -4263,7 +4143,22 @@
       "month": 4,
       "month_name": "April",
       "owner": "charlotte.ellis@maine.gov"
+    },
+    "4777": {
+      "month": 6,
+      "month_name": "June",
+      "owner": ""
+    },
+    "4779": {
+      "month": 6,
+      "month_name": "June",
+      "owner": ""
+    },
+    "4675": {
+      "month": 5,
+      "month_name": "May",
+      "owner": ""
     }
   },
-  "last_synced": "2026-06-01T11:40:49.316434"
+  "last_synced": "2026-07-01T09:53:40.467042"
 }
